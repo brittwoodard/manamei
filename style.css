@@ -9,6 +9,11 @@
     body {
         @apply font-sans bg-black text-white
     }
+
+    /* Temporary styles */
+    section, div, h1, h2, h3, h4, h5, h6, p, span {
+        @apply border border-white/40
+    }
   }
 
 

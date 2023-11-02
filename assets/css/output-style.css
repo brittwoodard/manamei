@@ -325,6 +325,11 @@ body {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+/* Temporary styles */
+section, div, h1, h2, h3, h4, h5, h6, p, span {
+  border-width: 1px;
+  border-color: rgb(255 255 255 / 0.4);
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -423,6 +428,34 @@ body {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 .bg-image-style {
   background-color: rgb(237 213 135 / 0.5);
   background-size: cover;
@@ -435,12 +468,14 @@ body {
 .min-h-90 {
   min-height: 90vh;
 }
+.min-h-\[20vh\] {
+  min-height: 20vh;
+}
 .justify-between {
   justify-content: space-between;
 }
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+.justify-around {
+  justify-content: space-around;
 }
 
 

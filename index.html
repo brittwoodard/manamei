@@ -1,15 +1,45 @@
 ---
 layout: default 
 title: 
-banner: 
+header: 
   title: Mana Mei
   subtitle: Liberation Through Movement Founder
   subtitle-2: International Feminine Embodiedment Movement Leader
+  image_path: /uploads/image-1.jpg
+banner-1: 
+  text_html: Come back home to your True Self<br>Reclaim your Feminine Power<br>Liberate your Fullest Self Expression
+about-ltm:
+  heading: What is Liberation Through Movement?
+  description_html: Liberation Through Movement is a personal transformation and healing modality composed of intentionally crafted Embodied Movement and Somatic Dance Practices.<br>When you dive into the vast world of Liberation Through Movement, you are embarking on a life-changing journey into deep reconnection with all aspects of your TRUE SELF, remembering who you are, and coming back home to your inner sanctuary of SAFETY & FREEDOM<br>It is an all-in-one experience- mindfulness meditation, physical activation, and spiritual liberation.<br>It connects the energetic and physical bodies- heightening your inner wisdom and allowing you to meet thus world in full authentic expression<br>It awakens your authentic and unique expression by surpassing the language of the mind and accessing deep layers of intuitive knowing.<br>Liberation Through Movement HEALS- by way of returning you to your innate wholeness, reclaiming fragmented and forgotten aspects of your Self, and creating a safe container for you to step back into the driver seat of your life.<br>Quiet your Mind. Activate your Body. Awaken your Spirit.
+banner-2: 
+  image_path: /uploads/image-1.jpg
+  image_path: /uploads/image-1.jpg
+  image_path: /uploads/image-1.jpg
 ---
 
 <!-- Hero Banner -->
-<section class="min-h-90">
-    <h1>{{page.banner.title}}</h1>
-    <h2>{{page.banner.subtitle}}</h2>
-    <h2>{{page.banner.subtitle-2}}</h2>
+<section class="min-h-90" style="background-image: url('{{page.header.image_path}}')">
+    <h1>{{page.header.title}}</h1>
+    <h2>{{page.header.subtitle}}</h2>
+    <h2>{{page.header.subtitle-2}}</h2>
+</section>
+
+<!-- Banner 1 -->
+<section>
+    <p>{{page.banner-1.text_html}}</p>
+</section>
+
+<!-- About LTM -->
+<section>
+    <h2>{{page.about-ltm.heading}}</h2>
+    <div>
+        <p>{{page.about-ltm.description_html}}</p>
+    </div>
+</section>
+
+<!-- Banner 2 -->
+<section class="flex justify-around">
+    {% for item in page.banner-2 %}
+    <div class="bg-image-style min-h-[20vh]" style="background-image: url('{{item.image_path}}');"></div>
+    {% endfor %}
 </section>
