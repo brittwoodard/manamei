@@ -32,9 +32,8 @@ start-here:
   button: 
     text: Enroll now
     url: https://sso.teachable.com/secure/487916/checkout/3804105/mana-movement
-  images: 
-    background: 
-    featured: 
+  video_url: https://www.youtube.com/embed/5sEVM981_X0?si=ZQjVEKlLQNLUTPLR
+  image_path: 
 ---
 
 <!-- Hero Banner -->
@@ -74,7 +73,7 @@ start-here:
 </section>
 
 <!-- Start Here -->
-<section class="bg-image-style" style="background-image: url('{{page.start-here.images.featured_image}}');">
+<section class="bg-image-style" style="background-image: url('{{page.start-here.image_path}}');">
     <h2>Start Here</h2>
     <h3>{{page.start-here.heading}}</h3>
     <div>
@@ -91,8 +90,13 @@ start-here:
         </div>
         <div class=”youtube-container”>
             <div class='embed-container'>
-                <iframe src='https://www.youtube.com/embed/5sEVM981_X0?si=ZQjVEKlLQNLUTPLR' frameborder='0' allowfullscreen></iframe>
+                <iframe src='{{page.start-here.video_url}}' frameborder='0' allowfullscreen></iframe>
             </div>
         </div>
     </div>
+</section>
+
+<!-- Testimonies -->
+<section class="bg-image-style">
+    <div class="bg-image-style">icon</div>
 </section>
