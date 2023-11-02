@@ -1,0 +1,20 @@
+/* Import Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Default Styles to apply to the whole project */
+@layer base {
+    body {
+        @apply font-sans bg-black text-white
+    }
+  }
+
+
+/* ADDITIONAL COMPONENTS */
+@layer components {
+    .bg-image-style {
+        @apply bg-feature/50 bg-no-repeat bg-center bg-cover
+    }
+}

@@ -1,0 +1,8 @@
+<header class="flex justify-between">
+    <div class="bg-image-style"></div>
+    <nav>
+        {% for item in site.data.site-settings.navigation %}
+        <a href="{{item.url}}">{{item.title}}</a>
+        {% endfor %}
+    </nav>
+</header>

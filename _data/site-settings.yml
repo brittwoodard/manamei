@@ -1,0 +1,18 @@
+seo:
+  site_name: Mana Mei
+  title: International Feminine Embodiment Leader
+  description: 
+  keywords: 
+  social_image: 
+  author: Embodied Creative
+social:
+  instagram_username: manamei_movement
+navigation:
+  - url: "/index.html"
+    title: "Home"
+  - url: "/about.html"
+    title: "Meet Mana"
+  - url: "/offerings.html"
+    title: "Offerings"    
+  - url: "/contact.html"
+    title: "Contact"
