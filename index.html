@@ -11,14 +11,30 @@ banner-1:
 about-ltm:
   heading: What is Liberation Through Movement?
   description_html: Liberation Through Movement is a personal transformation and healing modality composed of intentionally crafted Embodied Movement and Somatic Dance Practices.<br>When you dive into the vast world of Liberation Through Movement, you are embarking on a life-changing journey into deep reconnection with all aspects of your TRUE SELF, remembering who you are, and coming back home to your inner sanctuary of SAFETY & FREEDOM<br>It is an all-in-one experience- mindfulness meditation, physical activation, and spiritual liberation.<br>It connects the energetic and physical bodies- heightening your inner wisdom and allowing you to meet thus world in full authentic expression<br>It awakens your authentic and unique expression by surpassing the language of the mind and accessing deep layers of intuitive knowing.<br>Liberation Through Movement HEALS- by way of returning you to your innate wholeness, reclaiming fragmented and forgotten aspects of your Self, and creating a safe container for you to step back into the driver seat of your life.<br>Quiet your Mind. Activate your Body. Awaken your Spirit.
+  image_path: /uploads/image-1.jpg
 banner-2: 
-  image_path: /uploads/image-1.jpg
-  image_path: /uploads/image-1.jpg
-  image_path: /uploads/image-1.jpg
+ - image_path: /uploads/image-1.jpg
+ - image_path: /uploads/image-1.jpg
+ - image_path: /uploads/image-1.jpg
 about-mana:
   heading: Meet Mana Mei
   description_html: Hi, I’m Mana. And I am undeniably obsessed with movement.<br>I was blessed to find my passion very early in life.<br>I first stepped foot in a dance studio at age 3. And from then on, I have continued to step foot onto a dance floor nearly every day of my life.<br>Since that fateful day 33 years ago, my life journey has been fueled by my absolutely unwavering obsession with dance.<br>But life as a dancer hasn’t always been glory and fame, rainbows and butterflies…
   button: Learn more
+  image_path: /uploads/image-1.jpg
+start-here:
+  heading: Mana Movement Foundations
+  description_html: Discover the perfect daily practice that will guide you towards a deeper sense of wholeness, peace, radiance, and empowerment. This course is your gateway to embodying your most authentic self. It's more than a practice; it's a path to rediscovering your inner strength.
+  benefits: 
+   - benefit: Drop into peaceful presence with the NOW.
+   - benefit: Awaken every layer of your physical body.
+   - benefit: Increase mobility, flexibility, and fluidity.
+   - benefit: Activate your innate creativity, inspiration, and power.
+  button: 
+    text: Enroll now
+    url: https://sso.teachable.com/secure/487916/checkout/3804105/mana-movement
+  images: 
+    background: 
+    featured: 
 ---
 
 <!-- Hero Banner -->
@@ -34,7 +50,7 @@ about-mana:
 </section>
 
 <!-- About LTM -->
-<section>
+<section class="bg-image-style" style="background-image: url({{page.about-ltm.image_path}});">
     <h2>{{page.about-ltm.heading}}</h2>
     <div>
         <p>{{page.about-ltm.description_html}}</p>
@@ -49,10 +65,34 @@ about-mana:
 </section>
 
 <!-- About Mana -->
-<section>
+<section class="bg-image-style" style="background-image: url('{{page.about-mana.image_path}});">
     <h2>{{page.about-mana.heading}}</h2>
     <div>
         <p>{{page.about-mana.description_html}}</p>
     </div>
     <a href="/about.html">{{page.about-mana.button}}</a>
+</section>
+
+<!-- Start Here -->
+<section class="bg-image-style" style="background-image: url('{{page.start-here.images.featured_image}}');">
+    <h2>Start Here</h2>
+    <h3>{{page.start-here.heading}}</h3>
+    <div>
+        <p>{{page.start-here.description_html}}</p>
+    </div>
+    <div class="grid grid-cols-3">
+        <div class="col-span-2">
+            <ul>
+                {% for item in page.start-here.benefits %}
+                <li>{{page.start-here.benefits.benifit}}</li>
+                {% endfor %}
+            </ul>
+            <a href="{{page.start-here.button.url}}">{{page.start-here.button.text}}</a>
+        </div>
+        <div class=”youtube-container”>
+            <div class='embed-container'>
+                <iframe src='https://www.youtube.com/embed/5sEVM981_X0?si=ZQjVEKlLQNLUTPLR' frameborder='0' allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </section>
