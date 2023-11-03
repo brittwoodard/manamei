@@ -14,35 +14,57 @@
     section, div, h1, h2, h3, h4, h5, h6, p, span {
         @apply border border-white/40
     }
-  }
+}
 
 
 /* ADDITIONAL COMPONENTS */
 @layer components {
+
+    /* Images */
     .bg-image-style {
         @apply bg-feature/50 bg-no-repeat bg-center bg-cover
     }
 
+    .portrait-tall {
+        padding-bottom: 175%;
+    }
+
+    .portrait {
+        padding-bottom: 125%;
+    }
+
+    .square {
+        padding-bottom: 100%;
+    }
+
+    .landscape {
+        padding-bottom: 66%;
+    }
+
+    .landscape-wide {
+        padding-bottom: 56%;
+    }
+
     /* Video */
-    .youtube-container { 
+    .youtube-container {
         max-width: 50%;
     }
-    
-    .embed-container { 
+
+    .embed-container {
         position: relative;
-        padding-bottom: 56.25%; 
-        height: 0; 
-        overflow: hidden; 
-        max-width: 100%; 
-    } 
-    
-    .embed-container iframe, 
-    .embed-container object, 
-    .embed-container embed { 
-        position: absolute; 
-          top: 0; 
-          left: 0; 
-          width: 100%; 
-          height: 100%; 
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
