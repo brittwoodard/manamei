@@ -1,43 +1,9 @@
-<section class="grid grid-cols-9 gap-2">
-    <!-- 1st Column -->
+<section class="gallery-item grid grid-cols-9 gap-2" id="lightgallery">
+
     {% for item in page.gallery %}
-    <div>
-        <div class="grid grid-cols-3 gap-2">
-            <div class="col-span-2 bg-image-style bg-[url('{{item.image_path}}')]">image 1</div>
-            <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 2</div>
-        </div>
-        <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 3</div>
-    </div>
-
-    <!-- 2nd Column -->
-    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 4</div>
-
-    <!-- 3rd Column -->
-    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 5</div>
-
-    <!-- 4th Column -->
-    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 6</div>
-
-    <!-- 5th Column -->
-    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 7</div>
-
-    <!-- 6th Column -->
-    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 8</div>
-
-    <!-- 7th Column -->
-    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 9</div>
-
-    <!-- 10th Column -->
-    <div>
-        <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 12</div>
-        <div class="grid grid-cols-3 gap-2">
-            <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 13</div>
-            <div class="col-span-2 bg-image-style bg-[url('{{item.image_path}}')]">image 14</div>
-        </div>
-    </div>
-
-    <!-- 11th Column -->
-    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 15</div>
+    <a href="{{item.image_path}}">
+        <div class="bg-image-style bg-[url('{{item.image_path}}')] gallery-item">image</div>
+    </a>
     {% endfor %}
-    
+
 </section>

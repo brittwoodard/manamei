@@ -45,6 +45,10 @@
         padding-bottom: 56%;
     }
 
+    .gallery-item {
+        min-height: 50vh;
+    }
+
     /* Video */
     .youtube-container {
         max-width: 50%;

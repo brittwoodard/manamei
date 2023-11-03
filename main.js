@@ -10,3 +10,9 @@ $('.testimonial-container').slick({
 	infinite: true, 
 	pauseOnHover: false, 
 });
+
+// Light Gallery
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    download: false
+});

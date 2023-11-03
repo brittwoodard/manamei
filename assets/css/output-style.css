@@ -472,8 +472,8 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .landscape {
         padding-bottom: 66%;
     }
-.landscape-wide {
-        padding-bottom: 56%;
+.gallery-item {
+        min-height: 50vh;
     }
 /* Video */
 .embed-container {
@@ -495,12 +495,6 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -513,20 +507,11 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .grid {
   display: grid;
 }
-.h-\[50vh\] {
-  height: 50vh;
-}
 .min-h-90 {
   min-height: 90vh;
 }
 .min-h-\[20vh\] {
   min-height: 20vh;
-}
-.min-h-50 {
-  min-height: 50vh;
-}
-.min-h-\[50vh\] {
-  min-height: 50vh;
 }
 .w-full {
   width: 100%;
@@ -536,9 +521,6 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 }
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 .justify-between {
   justify-content: space-between;
@@ -562,11 +544,11 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-\[url\(\'\{\{item\.image_path\}\}\'\)\] {
-  background-image: url('{{item.image_path}}');
-}
 .bg-\[url\(\'\/uploads\/image-1\.jpg\'\)\] {
   background-image: url('/uploads/image-1.jpg');
+}
+.bg-\[url\(\'\{\{item\.image_path\}\}\'\)\] {
+  background-image: url('{{item.image_path}}');
 }
 
 
