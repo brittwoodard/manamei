@@ -2,25 +2,26 @@
 layout: default 
 title: 
 header: 
+  logo: 
   title: Mana Mei
   subtitle: Liberation Through Movement Founder
   subtitle-2: International Feminine Embodiedment Movement Leader
-  image_path: /uploads/image-1.jpg
+  image_path: 
 banner-1: 
   text_html: Come back home to your True Self<br>Reclaim your Feminine Power<br>Liberate your Fullest Self Expression
 about-ltm:
   heading: What is Liberation Through Movement?
   description_html: Liberation Through Movement is a personal transformation and healing modality composed of intentionally crafted Embodied Movement and Somatic Dance Practices.<br>When you dive into the vast world of Liberation Through Movement, you are embarking on a life-changing journey into deep reconnection with all aspects of your TRUE SELF, remembering who you are, and coming back home to your inner sanctuary of SAFETY & FREEDOM<br>It is an all-in-one experience- mindfulness meditation, physical activation, and spiritual liberation.<br>It connects the energetic and physical bodies- heightening your inner wisdom and allowing you to meet thus world in full authentic expression<br>It awakens your authentic and unique expression by surpassing the language of the mind and accessing deep layers of intuitive knowing.<br>Liberation Through Movement HEALS- by way of returning you to your innate wholeness, reclaiming fragmented and forgotten aspects of your Self, and creating a safe container for you to step back into the driver seat of your life.<br>Quiet your Mind. Activate your Body. Awaken your Spirit.
-  image_path: /uploads/image-1.jpg
+  image_path: 
 banner-2: 
- - image_path: /uploads/image-1.jpg
- - image_path: /uploads/image-1.jpg
- - image_path: /uploads/image-1.jpg
+ - image_path: 
+ - image_path: 
+ - image_path: 
 about-mana:
   heading: Meet Mana Mei
   description_html: Hi, I’m Mana. And I am undeniably obsessed with movement.<br>I was blessed to find my passion very early in life.<br>I first stepped foot in a dance studio at age 3. And from then on, I have continued to step foot onto a dance floor nearly every day of my life.<br>Since that fateful day 33 years ago, my life journey has been fueled by my absolutely unwavering obsession with dance.<br>But life as a dancer hasn’t always been glory and fame, rainbows and butterflies…
   button: Learn more
-  image_path: /uploads/image-1.jpg
+  image_path: 
 start-here:
   heading: Mana Movement Foundations
   description_html: Discover the perfect daily practice that will guide you towards a deeper sense of wholeness, peace, radiance, and empowerment. This course is your gateway to embodying your most authentic self. It's more than a practice; it's a path to rediscovering your inner strength.
@@ -34,69 +35,30 @@ start-here:
     url: https://sso.teachable.com/secure/487916/checkout/3804105/mana-movement
   video_url: https://www.youtube.com/embed/5sEVM981_X0?si=ZQjVEKlLQNLUTPLR
   image_path: 
+testimonials:
+ - description: I feel infinitely grateful and blessed to have this opportunity to immerse myself and fully receive Mana’s wisdom, teachings and practices at such a potent time in the evolution of consciousness, and will continue daily with these rituals for the days, weeks, and years to come, watching the magic unfold.
+   author: Minou Sadeghi, Embodied Temple Keeper
+ - description: I am allowing energy to move through me, finding my own medicine, and the power in sisterhood continually helps me to come home to myself. I am eternally grateful
+   author: Julie De Lorenzo
 ---
 
 <!-- Hero Banner -->
-<section class="min-h-90" style="background-image: url('{{page.header.image_path}}')">
-    <h1>{{page.header.title}}</h1>
-    <h2>{{page.header.subtitle}}</h2>
-    <h2>{{page.header.subtitle-2}}</h2>
-</section>
+{% include hero-banner-home.html %}
 
-<!-- Banner 1 -->
-<section>
-    <p>{{page.banner-1.text_html}}</p>
-</section>
+<!-- Banner Text -->
+{% include banner-text.html %}
 
 <!-- About LTM -->
-<section class="bg-image-style" style="background-image: url({{page.about-ltm.image_path}});">
-    <h2>{{page.about-ltm.heading}}</h2>
-    <div>
-        <p>{{page.about-ltm.description_html}}</p>
-    </div>
-</section>
+{% include about-ltm.html %}
 
-<!-- Banner 2 -->
-<section class="flex justify-around">
-    {% for item in page.banner-2 %}
-    <div class="bg-image-style min-h-[20vh]" style="background-image: url('{{item.image_path}}');"></div>
-    {% endfor %}
-</section>
+<!-- Banner Iconds -->
+{% include banner-icons.html %}
 
 <!-- About Mana -->
-<section class="bg-image-style" style="background-image: url('{{page.about-mana.image_path}});">
-    <h2>{{page.about-mana.heading}}</h2>
-    <div>
-        <p>{{page.about-mana.description_html}}</p>
-    </div>
-    <a href="/about.html">{{page.about-mana.button}}</a>
-</section>
+{% include about-home.html %}
 
 <!-- Start Here -->
-<section class="bg-image-style" style="background-image: url('{{page.start-here.image_path}}');">
-    <h2>Start Here</h2>
-    <h3>{{page.start-here.heading}}</h3>
-    <div>
-        <p>{{page.start-here.description_html}}</p>
-    </div>
-    <div class="grid grid-cols-3">
-        <div class="col-span-2">
-            <ul>
-                {% for item in page.start-here.benefits %}
-                <li>{{page.start-here.benefits.benifit}}</li>
-                {% endfor %}
-            </ul>
-            <a href="{{page.start-here.button.url}}">{{page.start-here.button.text}}</a>
-        </div>
-        <div class=”youtube-container”>
-            <div class='embed-container'>
-                <iframe src='{{page.start-here.video_url}}' frameborder='0' allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</section>
+{% include start-here.html %}
 
-<!-- Testimonies -->
-<section class="bg-image-style">
-    <div class="bg-image-style">icon</div>
-</section>
+<!-- Testimonials -->
+{% include testimonials-home.html %}
