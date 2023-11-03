@@ -1,0 +1,45 @@
+<footer>
+    <div class="grid grid-cols-3">
+        <div>
+            <span>Mana Mei</span>
+            <h2>Offerings</h2>
+            <nav>
+                {% for item in site.data.site-settings.navigation-footer %}
+                <a href="{{item.url}}">{{item.title}}</a>
+                {% endfor %}
+            </nav>
+        </div>
+        <div class="col-span-2">
+            <h2>Contact</h2>
+            <form>
+                <div class="mb-4">
+                    <input type="text" id="first-name" name="first-name" class="block border-b border-white w-full">
+                    <label for="first-name">First Name:</label>
+                </div>
+
+                <div class="mb-4">
+                    <input type="text" id="last-name" name="last-name" class="block border-b border-white w-full">
+                    <label for="last-name">Last Name:</label>
+                </div>
+
+                <div class="mb-4">
+                    <input type="email" id="email" name="email" class="block border-b border-white w-full">
+                    <label for="email">Email:</label>
+                </div>
+
+                <div>
+                    <label for="message" class="block">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..."
+                        class="w-full border border-white bg-transparent box"></textarea>
+                </div>
+
+                <button type="submit" class="button">Send</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <a href="#">IG</a>
+        <a href="#">F</a>
+        <a href="#">YT</a>
+    </div>
+</footer>
