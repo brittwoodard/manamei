@@ -1,13 +1,11 @@
 <section class="bg-image-style">
     <div class="bg-image-style">icon</div>
     <div class="testimonial-container">
+        {% for item in page.testimonials %}
         <div class="testimonial-item">
-            {% for item in page.testimonials %}
-            <div>
-                <p>"{{item.description}}"</p>
-                <p>-- {{item.author}}</p>
-            </div>
-            {% endfor %}
+            <p>"{{item.description}}"</p>
+            <p>-- {{item.author}}</p>
         </div>
+        {% endfor %}
     </div>
 </section>
