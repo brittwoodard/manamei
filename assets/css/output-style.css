@@ -513,6 +513,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .min-h-\[20vh\] {
   min-height: 20vh;
 }
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
 .w-full {
   width: 100%;
 }
@@ -521,6 +524,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 }
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .justify-between {
   justify-content: space-between;
@@ -549,6 +555,12 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 }
 .bg-\[url\(\'\{\{item\.image_path\}\}\'\)\] {
   background-image: url('{{item.image_path}}');
+}
+.font-serif {
+  font-family: Italiana, serif;
+}
+.outline {
+  outline-style: solid;
 }
 
 

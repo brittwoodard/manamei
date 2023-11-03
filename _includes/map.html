@@ -1,0 +1,14 @@
+<section>
+    <h2>{{page.map.heading}}</h2>
+    <p>{{page.map.description}}</p>
+    <div class="grid grid-cols-2">
+        {% for item in page.map.offering %}
+        <div>
+            <h3>{{item.title}}</h3>
+            <span>{{item.type}}</span>
+            <p>{{item.description}}</p>
+            <a href="{{item.url}}">Learn more</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
