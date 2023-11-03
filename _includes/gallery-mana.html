@@ -2,42 +2,42 @@
     <!-- 1st Column -->
     {% for item in page.gallery %}
     <div>
-        <div class="grid grid-cols-3 gap-2">1
-            <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}"></div>
-            <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">2</div>
+        <div class="grid grid-cols-3 gap-2">
+            <div class="col-span-2 bg-image-style bg-[url('{{item.image_path}}')]">image 1</div>
+            <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 2</div>
         </div>
-        <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">3</div>
+        <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 3</div>
     </div>
 
     <!-- 2nd Column -->
-    <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 4</div>
+    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 4</div>
 
     <!-- 3rd Column -->
-    <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 5</div>
+    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 5</div>
 
     <!-- 4th Column -->
-    <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 6</div>
+    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 6</div>
 
     <!-- 5th Column -->
-    <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 7</div>
+    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 7</div>
 
     <!-- 6th Column -->
-    <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 8</div>
+    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 8</div>
 
     <!-- 7th Column -->
-    <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 9</div>
+    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 9</div>
 
-    <!-- 9th Column -->
+    <!-- 10th Column -->
     <div>
-        <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 12</div>
-        <div class="grid {{item.column-size}} gap-2">
-            <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 13</div>
+        <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 12</div>
+        <div class="grid grid-cols-3 gap-2">
+            <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 13</div>
             <div class="col-span-2 bg-image-style bg-[url('{{item.image_path}}')]">image 14</div>
         </div>
     </div>
 
-    <!-- 9th Column -->
-    <div class="{{item.column-size}} bg-image-style bg-[url('{{item.image_path}}')] {{item.aspect-ratio}}">image 15</div>
+    <!-- 11th Column -->
+    <div class="bg-image-style bg-[url('{{item.image_path}}')]">image 15</div>
     {% endfor %}
     
 </section>
