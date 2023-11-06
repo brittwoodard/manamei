@@ -1,3 +1,25 @@
 ---
 layout: default
 ---
+
+<!-- Course Heading -->
+<section class="bg-image-style">
+    <h2>{{page.heading.title}}</h2>
+    <h3>{{page.heading.subtitle}}</h3>
+    <p>{{page.heading.description}}</p>
+    <a href="{{page.heading.button.url}}">{{page.heading.button.text}}</a>
+    {% if page.heading.button-video == true %}
+    <a href="{{page.heading.button-video.url}}">{{page.heading.button-video.text}}</a>
+    {% endif %}
+</section>
+
+<!-- Banner -->
+<section class="flex justify-around">
+    {% for item in page.banner %}
+    <div class="flex">
+        <div class="bg-image bg-[url('{{page.banner.image_path}}')]"></div>
+        <span>{{page.banner.title}}</span>
+        <p>{{page.banner.benefit}}</p>
+    </div>
+    {% endfor %}
+</section>
