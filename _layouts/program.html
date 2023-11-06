@@ -8,7 +8,7 @@ layout: default
     <h3>{{page.heading.subtitle}}</h3>
     <p>{{page.heading.description}}</p>
     <a href="{{page.heading.button.url}}">{{page.heading.button.text}}</a>
-    {% if page.heading.button-video == true %}
+    {% if page.heading.button-video.show == true %}
     <a href="{{page.heading.button-video.url}}">{{page.heading.button-video.text}}</a>
     {% endif %}
 </section>

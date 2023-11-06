@@ -12,6 +12,7 @@ heading:
     text: Enroll now
     url: 
   button-video: 
+    show: true
     text: Watch the video
     url: 
 banner: 
@@ -26,9 +27,9 @@ banner:
    benefit: Your feminine passion and creativity
 video:
   url: 
-# course-description: 
-#   heading: Discover the essence of Wisdom Body
-#   description: This program is a personal deep dive into 12 powerful embodied movement and somatic dance practices - broken down into 4 themed-modules including 3 practices each, Movement Meditation, Somatic Activation, Embodied Liberation
+course-description: 
+  heading: Discover the essence of Wisdom Body
+  description: This program is a personal deep dive into 12 powerful embodied movement and somatic dance practices - broken down into 4 themed-modules including 3 practices each, Movement Meditation, Somatic Activation, Embodied Liberation
 #   module: 
 #    - image_path: 
 #      title: Meditation
