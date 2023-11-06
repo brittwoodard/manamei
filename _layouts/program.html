@@ -25,7 +25,7 @@ layout: default
 </section>
 
 <!-- Video -->
-{% if page.video == true %}
+{% if page.video.show == true %}
 <section class="min-h-70vh"></section>
 {% endif %}
 
@@ -34,11 +34,13 @@ layout: default
     <h2>{{page.course-description.heading}}</h2>
     <p>{{page.course-description.description}}</p>
     <div class="grid grid-cols-5">
+        {% for item in page.course-description.module %}
         <div class="bg-image-style bg-[url('{{page.course-description.module.image_path}}')]"></div>
         <div class="col-span-4">
-            <h3>{{page.course-description.module.title}}</h3>
-            <p>{{page.course-description.module.description_html}}</p>
+            <h3>{{item.title}}</h3>
+            <p>{{item.description_html}}</p>
         </div>
+        {% endfor %}
     </div>
 </section>
 
