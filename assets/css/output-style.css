@@ -562,11 +562,11 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-\[url\(\'\{\{item\.image_path\}\}\'\)\] {
   background-image: url('{{item.image_path}}');
 }
-.bg-\[url\(\'\{\{page\.banner\.image_path\}\}\'\)\] {
-  background-image: url('{{page.banner.image_path}}');
-}
 .bg-\[url\(\'\{\{page\.course-description\.module\.image_path\}\}\'\)\] {
   background-image: url('{{page.course-description.module.image_path}}');
+}
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
 }
 .font-serif {
   font-family: Italiana, serif;

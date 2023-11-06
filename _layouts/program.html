@@ -15,13 +15,13 @@ layout: default
 
 <!-- Banner -->
 <section class="flex justify-around">
-    {% for item in page.banner %}
-    <div class="flex">
-        <div class="bg-image bg-[url('{{page.banner.image_path}}')]"></div>
-        <span>{{page.banner.title}}</span>
-        <p>{{page.banner.benefit}}</p>
+    <div>
+        {% for item in page.banner %}
+        <div class="bg-image bg-[url('{{item.image_path}}')]"></div>
+        <span>{{item.title}}</span>
+        <p>{{item.benefit}}</p>
+        {% endfor %}
     </div>
-    {% endfor %}
 </section>
 
 <!-- Video -->
