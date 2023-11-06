@@ -23,3 +23,27 @@ layout: default
     </div>
     {% endfor %}
 </section>
+
+<!-- Video -->
+{% if page.video == true %}
+<section class="min-h-70vh"></section>
+{% endif %}
+
+<!-- Course Description -->
+<section>
+    <h2>{{page.course-description.heading}}</h2>
+    <p>{{page.course-description.description}}</p>
+    <div class="grid grid-cols-5">
+        <div class="bg-image-style bg-[url('{{page.course-description.module.image_path}}')]"></div>
+        <div class="col-span-4">
+            <h3>{{page.course-description.module.title}}</h3>
+            <p>{{page.course-description.module.description_html}}</p>
+        </div>
+    </div>
+</section>
+
+<!-- Who It's For -->
+<section class="bg-image-style">
+    <h2>{{page.heading.title}} is for</h2>
+    <p>{{page.who-its-for.description_html}}</p>
+</section>
