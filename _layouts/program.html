@@ -49,3 +49,23 @@ layout: default
     <h2>{{page.heading.title}} is for</h2>
     <p>{{page.who-its-for.description_html}}</p>
 </section>
+
+<!-- Inside the Course -->
+<section>
+    <h2>{{page.inside-the-course.heading}}</h2>
+    <p>{{page.inside-the-course.description_html}}</p>
+    <ul>
+        {% for item in page.faq %}
+        <li x-data="{ open: false }" class="border-b border-white my-8">
+            <button @click="open = ! open" class="flex justify-between w-full">
+                <h3 class="text-left mb-8 mr-8">{{item.question}}</h3>
+
+                <span x-show="!open">→</span>
+                <span x-show="open">&nbsp;&nbsp;↓</span>
+            </button>
+            <div x-show="open" @click.outside="open = false">
+                <p class="mb-8 mr-8 italic">{{item.answer_html}}</p>
+            </div>
+        </li>
+        {% endfor %}
+</section>

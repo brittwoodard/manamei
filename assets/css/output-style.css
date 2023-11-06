@@ -498,8 +498,18 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mr-8 {
+  margin-right: 2rem;
 }
 .block {
   display: block;
@@ -568,8 +578,14 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
 }
+.text-left {
+  text-align: left;
+}
 .font-serif {
   font-family: Italiana, serif;
+}
+.italic {
+  font-style: italic;
 }
 .outline {
   outline-style: solid;
