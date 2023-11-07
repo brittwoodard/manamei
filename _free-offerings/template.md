@@ -18,4 +18,7 @@ instructor:
   show: true
   heading: Your Facilitator, Mana Mei
   description_html: I am a passionate curator of embodiment ceremonies and sacred dance spaces, as well as a professional dancer and performer with over 20 years of classical dance training.<br>Through my life-long studies of classical dance techniques and over 10 years of exploring non-traditional movement techniques, I have discovered the immense healing power of movement and am passionate about sharing this wisdom with women all over the world.<br>I believe that our bodies are vessels gifted to us to explore all of the complexities of the human experience and the infinite expression of our Spirit, and by becoming deeply embodied and cultivating unwavering inner safety and freedom, we can live in Full Authentic Liberation
+cta: 
+  heading: Reserve your spot
+  share-text: Share this invitation with a friend.
 ---

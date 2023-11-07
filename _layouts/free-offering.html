@@ -21,3 +21,29 @@ layout: default
 
     <!-- Your Instructor -->
     {% include about-mana-course.html %}
+
+    <!-- CTA -->
+    <section class="bg-image-style bg-[url('{{page.cta.background_image}}')]">
+        <h2>{{page.cta.heading}}</h2>
+        <form>
+            <div class="mb-4">
+                <input type="text" id="first-name" name="first-name" class="block border-b border-white w-full">
+                <label for="first-name">First Name:</label>
+            </div>
+    
+            <div class="mb-4">
+                <input type="text" id="last-name" name="last-name" class="block border-b border-white w-full">
+                <label for="last-name">Last Name:</label>
+            </div>
+    
+            <div class="mb-4">
+                <input type="email" id="email" name="email" class="block border-b border-white w-full">
+                <label for="email">Email:</label>
+            </div>
+    
+            <button type="submit" class="button">Submit</button>
+        </form>
+
+        <h3>{{page.cta.share-text}}</h3>
+        <p>FB IG MAIL</p>
+    </section>
