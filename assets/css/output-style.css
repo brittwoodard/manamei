@@ -529,6 +529,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
 .w-full {
   width: 100%;
 }
@@ -566,6 +569,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
 .bg-\[url\(\'\/uploads\/image-1\.jpg\'\)\] {
   background-image: url('/uploads/image-1.jpg');
 }
@@ -575,8 +581,8 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-\[url\(\'\{\{page\.course-description\.module\.image_path\}\}\'\)\] {
   background-image: url('{{page.course-description.module.image_path}}');
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
+.bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
+  background-image: url('{{page.testimonials.background_image}}');
 }
 .text-left {
   text-align: left;

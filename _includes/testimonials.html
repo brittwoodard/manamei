@@ -1,9 +1,9 @@
-<section class="bg-image-style">
+<section class="bg-image-style bg-[url('{{page.testimonials.background_image}}')]">
     <div class="bg-image-style">icon</div>
     <div class="testimonial-container">
         {% for item in page.testimonials %}
         <div class="testimonial-item">
-            <p>"{{item.description}}"</p>
+            <p>"{{item.testimonial}}"</p>
             <p>-- {{item.author}}</p>
         </div>
         {% endfor %}

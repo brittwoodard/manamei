@@ -7,7 +7,7 @@ layout: default
     <h2>{{page.heading.title}}</h2>
     <h3>{{page.heading.subtitle}}</h3>
     <p>{{page.heading.description}}</p>
-    <a href="{{page.heading.button.url}}">{{page.heading.button.text}}</a>
+    <a href="{{page.heading.button-enroll.url}}">{{page.heading.button-enroll.text}}</a>
     {% if page.heading.button-video.show == true %}
     <a href="{{page.heading.button-video.url}}">{{page.heading.button-video.text}}</a>
     {% endif %}
@@ -51,7 +51,7 @@ layout: default
 </section>
 
 <!-- Inside the Course -->
-<section>
+<section class="bg-image-style">
     <h2>{{page.inside-the-course.heading}}</h2>
     <p>{{page.inside-the-course.description_html}}</p>
     <ul>
@@ -68,4 +68,19 @@ layout: default
             </div>
         </li>
         {% endfor %}
+    <a href="{{page.heading.button-enroll.url}}">{{page.heading.button-enroll.text}}</a>
 </section>
+
+<!-- Testimonials -->
+{% include testimonials.html %}
+
+<!-- Meet Your Teacher -->
+{% if page.instructor.show == true %}
+<section class="grid grid-cols-3">
+    <div class="bg-image-style"></div>
+    <div class="col-span-2">
+        <h2>{{page.instructor.heading}}</h2>
+        <p>{{page.instructor.description_html}}</p>
+    </div>
+</section>
+{% endif %}
