@@ -1,0 +1,17 @@
+---
+layout: blank
+background_image: 
+logo_image: 
+---
+<section class="bg-image-style bg-[url('{{page.background_image}}')]">
+    <div class="bg-image-style bg-[url('{{page.logo_image}}')] min-h-[20vh]"></div>
+    <div>
+        <a href="#">YT</a>
+        <a href="#">FB</a>
+    </div>
+    <nav>
+        {% for item in site.data.site-settings.navigation-instagram %}
+        <a href="{{item.url}}">{{item.title}}</a>
+        {% endfor %}
+    </nav>
+</section>
