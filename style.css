@@ -23,7 +23,7 @@
 /* Default Styles to apply to the whole project */
 @layer base {
     body {
-        @apply font-sans bg-black text-white
+        @apply font-sans bg-black text-white text-xl font-light tracking-wide
     }
 
     /* Temporary styles */
