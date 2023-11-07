@@ -84,3 +84,18 @@ layout: default
     </div>
 </section>
 {% endif %}
+
+<!-- Investment -->
+<section>
+    <h2>{{page.investment.heading}}</h2>
+    <div class="grid col-span-3">
+        <div class="col-span-2">
+            <h3>{{page.investment.includes.heading}}</h3>
+            <ul>
+                {% for item in page.investment.includes %}
+                <li>{{item.list-item}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
