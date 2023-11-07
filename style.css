@@ -3,6 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'modernline';
+    src: url('/modernline-font/modernline.woff2') format('woff2'),
+        url('/modernline-font/modernline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'modernline';
+    src: url('/modernline-font/modernline\ bold.woff2') format('woff2'),
+        url('/modernline-font/modernline\ bold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
 
 /* Default Styles to apply to the whole project */
 @layer base {

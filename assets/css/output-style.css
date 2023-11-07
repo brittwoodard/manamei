@@ -588,6 +588,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-\[url\(\'\{\{item\.image_path\}\}\'\)\] {
   background-image: url('{{item.image_path}}');
 }
+.bg-\[url\(\'\{\{page\.background_image\}\}\'\)\] {
+  background-image: url('{{page.background_image}}');
+}
 .bg-\[url\(\'\{\{page\.course-description\.module\.image_path\}\}\'\)\] {
   background-image: url('{{page.course-description.module.image_path}}');
 }
@@ -597,29 +600,42 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-\[url\(\'\{\{page\.details\.featured_image\}\}\'\)\] {
   background-image: url('{{page.details.featured_image}}');
 }
+.bg-\[url\(\'\{\{page\.logo_image\}\}\'\)\] {
+  background-image: url('{{page.logo_image}}');
+}
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
 .bg-\[url\(\'\{\{page\.who-its-for\.background_image\}\}\'\)\] {
   background-image: url('{{page.who-its-for.background_image}}');
 }
-.bg-\[url\(\'\{\{page\.background_image\}\}\'\)\] {
-  background-image: url('{{page.background_image}}');
-}
-.bg-\[url\(\'\{\{page\.logo_image\}\}\'\)\] {
-  background-image: url('{{page.logo_image}}');
-}
 .text-left {
   text-align: left;
 }
 .font-serif {
-  font-family: Italiana, serif;
+  font-family: modernline, serif;
 }
 .italic {
   font-style: italic;
 }
 .outline {
   outline-style: solid;
+}
+
+@font-face {
+    font-family: 'modernline';
+    src: url('/modernline-font/modernline.woff2') format('woff2'),
+        url('/modernline-font/modernline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'modernline';
+    src: url('/modernline-font/modernline\ bold.woff2') format('woff2'),
+        url('/modernline-font/modernline\ bold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
 }
 
 
