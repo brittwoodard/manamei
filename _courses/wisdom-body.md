@@ -83,6 +83,25 @@ investment:
       show: true
       heading: Payment plan
       price: $180 x 12 months
+faq: 
+  heading: Frequently asked questions
+  questions-and-answers: 
+   - question: I have a busy schedule. Can I take my time working through each module?
+     answer: YES! Wisdom Body is designed to serve YOU in living in your radiance. Therefore the practices have been designed to give you the freedom of when, and how often you practice. That being said here is the recommendation from Mana Mei.<br>For first time, it is recommended to complete ONE module per week, spacing the 3 practices out as you desire. The practices are meant to do IN ORDER, as the 3rd practice incorporates practice 1 & 2.<br>As you have lifetime access, once you have completed all 4 modules, you will have the knowledge and freedom to revisit specific practices, choosing which will serve you best on any particular day.<br>These practices are meant to be done MORE THAN ONCE. And the more you do them, the deeper you will be able to go. Through the practices, you are retraining your ability to stay present, to access more freedom, and to evoke new feelings. 
+   - question: Are there prerequisites to take this program?
+     answer: NO. This program is open to any woman who is excited and ready to dive into the movement medicine, regardless of your previous experience. All women can benefit from this program, regardless of your age, physical capacity, dance experience, or location in the world.<br>In the case that you are still worried that you do not have enough experience for this program, Mana Mei recommends starting with the MANA Movement Program as a solid starting foundation. 
+   - question: What is the difference between Wisdom Body and MANA Movement?
+     answer: MANA Movement is a guided practice which flows through sequences of specific movement patterns that are focused on bringing non-linear movement into the physical body, otherwise known as the Feminine Pathways or circles, spirals, and waves.<br>MANA Movement is a great place to start for those who are completely new to embodied dance and want clear and specific guidance on how to move the body for more freedom.<br>Wisdom Body will offer you the next level of freedom in that there is no specific guided movements, but rather invitations for you to discover your unique movement style through intentional prompts, imagery, and somatic cues.<br>Wisdom Body is perfect for any woman ready to deepen her movement practice and gain new inspiration for increased freedom.
+   - question: Will I receive a certificate at the end?
+     answer: Wisdom Body is purely a personal deep dive experience so there is no certification at completion. If you are interested in Mana Mei’s Level 1 Leadership and Facilitator Training, check out the Liberation Through Movement Mentorship Program!
+   - question: I don’t have a credit card. Is there any other way I can pay?
+     answer: Yes! We accept PayPal and Bank Transfers. Please contact Mana Mei to request a new payment option.
+cta: 
+  heading: Something greater
+  description_html: There is something much greater than you or me, or our physical bodies and minds, that exists in the unseen world and is the source of what we call magic, and which is always working to bring us back into alignment with our divine path and purpose - that something is your Wisdom Body.<br>This immersion will provide you with the tools & experiences to help you reconnect with your own Wisdom Body and step into your full power.
+  button: 
+    text: Enroll now
+    url: 
 
 seo: 
   title: 

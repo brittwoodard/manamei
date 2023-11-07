@@ -541,6 +541,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .w-full {
   width: 100%;
 }
+.list-none {
+  list-style-type: none;
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -571,6 +574,10 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-transparent {
   background-color: transparent;
