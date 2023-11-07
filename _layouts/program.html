@@ -93,18 +93,18 @@ layout: default
         <div class="col-span-2">
             <h3>{{page.investment.includes.heading}}</h3>
             <ul>
-                {% for item in page.investment.includes %}
+                {% for item in page.investment.includes.list %}
                 <li>{{item.list-item}}</li>
                 {% endfor %}
             </ul>
         </div>
         <!-- Pricing Options -->
         <div>
-            <h3>{{page.investment.pay-in-full.heading}}</h3>
-            <span>{{page.investment.pay-in-full.price}}</span>
-            {% if page.investment.payment-plan.show == true %}
-            <h3>{{page.investment.payment-plan.heading}}</h3>
-            <span>{{page.investment.payment-plan.price}}</span>
+            <h3>{{page.investment.pricing.pay-in-full.heading}}</h3>
+            <span>{{page.investment.pricing.pay-in-full.price}}</span>
+            {% if page.investment.pricing.payment-plan.show == true %}
+            <h3>{{page.investment.pricing.payment-plan.heading}}</h3>
+            <span>{{page.investment.pricing.payment-plan.price}}</span>
             {% endif %}
         </div>
     </div>

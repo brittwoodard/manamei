@@ -69,19 +69,20 @@ investment:
   heading: Investment
   includes: 
     heading: What's included
-    list-item: 
-     - 12 guided audio and video practices
-     - Written theory and journaling prompts
-     - Lifetime access to program materials
-     - Access to the private wisdom body Facebook group
-     - 2-months free membership to the liberation through movement online community 
-  pay-in-full:
-    heading: Pay in full
-    price: $300
-  payment-plan: 
-    show: true
-    heading: Payment plan
-    price: $180 x 12 months
+    list: 
+     - list-item: 12 guided audio and video practices
+     - list-item: Written theory and journaling prompts
+     - list-item: Lifetime access to program materials
+     - list-item: Access to the private wisdom body Facebook group
+     - list-item: 2-months free membership to the liberation through movement online community 
+  pricing:
+    pay-in-full:
+      heading: Pay in full
+      price: $300
+    payment-plan: 
+      show: true
+      heading: Payment plan
+      price: $180 x 12 months
 
 seo: 
   title: 
