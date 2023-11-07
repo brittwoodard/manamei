@@ -47,15 +47,15 @@ who-its-for:
 inside-the-course:
   heading: Inside the Wisdom Body Immersion
   description_html: In Wisdom Body, each module brings a new dimension of understanding. Our program is structured in four modules, each offering a comprehensive approach to embodied awareness and expression.
-faq:
- - question: This is a question.
-   answer_html: This is a lengthy answer.
- - question: This is another question.
-   answer_html: This is a lengthy answer.
- - question: This is yet another question.
-   answer_html: This is a lengthy answer.
- - question: Omg, so many questions.
-   answer_html: This is a lengthy answer.
+  module:
+  - title: Module 1
+    description_html: This is a lengthy answer.
+  - title: Module 2
+    description_html: This is a lengthy answer.
+  - title: Module 3
+    description_html: This is a lengthy answer.
+  - title: Module 4
+    description_html: This is a lengthy answer.
 testimonials: 
  - testimonial: This is a testimonial
    author: Regina Philange
