@@ -26,6 +26,14 @@
         @apply font-sans bg-black text-white text-xl font-light tracking-wide
     }
 
+    header nav a {
+        @apply uppercase tracking-wider mx-4
+    }
+
+    header nav a:hover {
+        @apply text-feature
+    }
+
     /* Temporary styles */
     section, div, h1, h2, h3, h4, h5, h6, p, span {
         @apply border border-white/40

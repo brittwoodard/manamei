@@ -329,6 +329,16 @@ body {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+header nav a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+header nav a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(237 213 135 / var(--tw-text-opacity));
+}
 /* Temporary styles */
 section, div, h1, h2, h3, h4, h5, h6, p, span {
   border-width: 1px;
@@ -505,6 +515,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.m-4 {
+  margin: 1rem;
+}
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -529,6 +542,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 }
 .list-item {
   display: list-item;
+}
+.h-\[3rem\] {
+  height: 3rem;
 }
 .min-h-90 {
   min-height: 90vh;
@@ -556,6 +572,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 }
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+.items-center {
+  align-items: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -612,6 +631,10 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 }
 .bg-\[url\(\'\{\{page\.who-its-for\.background_image\}\}\'\)\] {
   background-image: url('{{page.who-its-for.background_image}}');
+}
+.px-\[5\%\] {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .text-left {
   text-align: left;
