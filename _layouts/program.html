@@ -89,6 +89,7 @@ layout: default
 <section>
     <h2>{{page.investment.heading}}</h2>
     <div class="grid col-span-3">
+        <!-- Includes -->
         <div class="col-span-2">
             <h3>{{page.investment.includes.heading}}</h3>
             <ul>
@@ -96,6 +97,15 @@ layout: default
                 <li>{{item.list-item}}</li>
                 {% endfor %}
             </ul>
+        </div>
+        <!-- Pricing Options -->
+        <div>
+            <h3>{{page.investment.pay-in-full.heading}}</h3>
+            <span>{{page.investment.pay-in-full.price}}</span>
+            {% if page.investment.payment-plan.show == true %}
+            <h3>{{page.investment.payment-plan.heading}}</h3>
+            <span>{{page.investment.payment-plan.price}}</span>
+            {% endif %}
         </div>
     </div>
 </section>
