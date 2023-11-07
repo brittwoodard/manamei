@@ -7,11 +7,17 @@ layout: default
     </section>
 
     <!-- Details -->
-    <section>
-        <h1>{{page.details.title}}</h1>
-        <h2>{{page.details.subtitle}}</h2>
-        <p>{{page.details.description_html}}</p>
-        <span>{{page.details.time}} {{page.details.time-zone}}</span>
-        <span>{{page.details.day-of-the-week}}, {{page.details.date}}</span>
-        <a href="#">{{page.deatils.button.text}}</a>
+    <section class="grid grid-cols-3">
+        <div class="col-span-2">
+            <h1>{{page.details.title}}</h1>
+            <h2>{{page.details.subtitle}}</h2>
+            <p>{{page.details.description_html}}</p>
+            <span>{{page.details.time}} {{page.details.time-zone}}</span>
+            <span>{{page.details.day-of-the-week}}, {{page.details.date}}</span>
+            <a href="#">{{page.deatils.button.text}}</a>
+        </div>
+        <div class="bg-image-style bg-[url('{{page.details.featured_image}}')]"></div>
     </section>
+
+    <!-- Your Instructor -->
+    {% include about-mana-course.html %}

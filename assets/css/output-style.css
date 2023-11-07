@@ -597,6 +597,9 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .bg-\[url\(\'\{\{page\.who-its-for\.background_image\}\}\'\)\] {
   background-image: url('{{page.who-its-for.background_image}}');
 }
+.bg-\[url\(\'\{\{page\.details\.featured_image\}\}\'\)\] {
+  background-image: url('{{page.details.featured_image}}');
+}
 .text-left {
   text-align: left;
 }
