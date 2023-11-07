@@ -1,0 +1,9 @@
+{% if page.instructor.show == true %}
+<section class="grid grid-cols-3">
+    <div class="bg-image-style"></div>
+    <div class="col-span-2">
+        <h2>{{page.instructor.heading}}</h2>
+        <p>{{page.instructor.description_html}}</p>
+    </div>
+</section>
+{% endif %}

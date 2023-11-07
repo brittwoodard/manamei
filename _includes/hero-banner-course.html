@@ -1,0 +1,9 @@
+<section class="bg-image-style">
+    <h2>{{page.heading.title}}</h2>
+    <h3>{{page.heading.subtitle}}</h3>
+    <p>{{page.heading.description}}</p>
+    <a href="{{page.heading.button-enroll.url}}">{{page.heading.button-enroll.text}}</a>
+    {% if page.heading.button-video.show == true %}
+    <a href="{{page.heading.button-video.url}}">{{page.heading.button-video.text}}</a>
+    {% endif %}
+</section>

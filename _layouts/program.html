@@ -3,135 +3,36 @@ layout: default
 ---
 
 <!-- Course Heading -->
-<section class="bg-image-style">
-    <h2>{{page.heading.title}}</h2>
-    <h3>{{page.heading.subtitle}}</h3>
-    <p>{{page.heading.description}}</p>
-    <a href="{{page.heading.button-enroll.url}}">{{page.heading.button-enroll.text}}</a>
-    {% if page.heading.button-video.show == true %}
-    <a href="{{page.heading.button-video.url}}">{{page.heading.button-video.text}}</a>
-    {% endif %}
-</section>
+{% include hero-banner-course.html %}
 
 <!-- Banner -->
-<section class="flex justify-around">
-    <div>
-        {% for item in page.banner %}
-        <div class="bg-image bg-[url('{{item.image_path}}')]"></div>
-        <span>{{item.title}}</span>
-        <p>{{item.benefit}}</p>
-        {% endfor %}
-    </div>
-</section>
+{% include banner-course.html %}
 
 <!-- Video -->
 {% if page.video.show == true %}
-<section class="min-h-70vh"></section>
+{% include video.html %}
 {% endif %}
 
 <!-- Course Description -->
-<section>
-    <h2>{{page.course-description.heading}}</h2>
-    <p>{{page.course-description.description}}</p>
-    <div class="grid grid-cols-5">
-        {% for item in page.course-description.module %}
-        <div class="bg-image-style bg-[url('{{page.course-description.module.image_path}}')]"></div>
-        <div class="col-span-4">
-            <h3>{{item.title}}</h3>
-            <p>{{item.description_html}}</p>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+{% include description-course.html %}
 
 <!-- Who It's For -->
-<section class="bg-image-style">
-    <h2>{{page.heading.title}} is for</h2>
-    <p>{{page.who-its-for.description_html}}</p>
-</section>
+{% include who-its-for.html %}
 
 <!-- Inside the Course -->
-<section class="bg-image-style">
-    <h2>{{page.inside-the-course.heading}}</h2>
-    <p>{{page.inside-the-course.description_html}}</p>
-    <ul>
-        {% for item in page.inside-the-course.module %}
-        <li x-data="{ open: false }" class="border-b border-white my-8">
-            <button @click="open = ! open" class="flex justify-between w-full">
-                <h3 class="text-left mb-8 mr-8">{{item.title}}</h3>
-
-                <span x-show="!open">→</span>
-                <span x-show="open">&nbsp;&nbsp;↓</span>
-            </button>
-            <div x-show="open" @click.outside="open = false">
-                <p class="mb-8 mr-8 italic">{{item.description_html}}</p>
-            </div>
-        </li>
-        {% endfor %}
-    <a href="{{page.heading.button-enroll.url}}">{{page.heading.button-enroll.text}}</a>
-</section>
+{% include inside-the-course.html %}
 
 <!-- Testimonials -->
 {% include testimonials.html %}
 
 <!-- Meet Your Teacher -->
-{% if page.instructor.show == true %}
-<section class="grid grid-cols-3">
-    <div class="bg-image-style"></div>
-    <div class="col-span-2">
-        <h2>{{page.instructor.heading}}</h2>
-        <p>{{page.instructor.description_html}}</p>
-    </div>
-</section>
-{% endif %}
+{% include about-mana-course.html %}
 
 <!-- Investment -->
-<section>
-    <h2>{{page.investment.heading}}</h2>
-    <div class="grid col-span-3">
-        <!-- Includes -->
-        <div class="col-span-2">
-            <h3>{{page.investment.includes.heading}}</h3>
-            <ul>
-                {% for item in page.investment.includes.list %}
-                <li>{{item.list-item}}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <!-- Pricing Options -->
-        <div>
-            <h3>{{page.investment.pricing.pay-in-full.heading}}</h3>
-            <span>{{page.investment.pricing.pay-in-full.price}}</span>
-            {% if page.investment.pricing.payment-plan.show == true %}
-            <h3>{{page.investment.pricing.payment-plan.heading}}</h3>
-            <span>{{page.investment.pricing.payment-plan.price}}</span>
-            {% endif %}
-        </div>
-    </div>
-</section>
+{% include investment.html %}
 
 <!-- FAQ -->
-<section>
-    <h2>{{page.faq.heading}}</h2>
-    <ul class="list-none">
-        {% for item in page.faq.questions-and-answers %}
-        <li x-data="{ open: false }" class="border-b border-dark my-8">
-            <button @click="open = ! open" class="flex justify-between w-full">
-                <h3 class="text-left mb-8 mr-8">{{item.question}}</h3>
-
-                <span x-show="!open">→</span>
-                <span x-show="open">&nbsp;&nbsp;↓</span>
-            </button>
-            <div x-show="open" @click.outside="open = false">
-                <p class="mb-8 mr-8 italic">{{item.answer_html}}</p>
-            </div>
-        </li>
-        {% endfor %}
-</section>
+{% include faq.html %}
 
 <!-- CTA -->
-<section>
-    <h2>{{page.cta.heading}}</h2>
-    <p>{{page.cta.description_html}}</p>
-    <a href="{{page.cta.button.url}}">{{page.cta.button.text}}</a>
-</section>
+{% include cta-course.html %}

@@ -1,0 +1,9 @@
+<section class="flex justify-around">
+    <div>
+        {% for item in page.banner %}
+        <div class="bg-image bg-[url('{{item.image_path}}')]"></div>
+        <span>{{item.title}}</span>
+        <p>{{item.benefit}}</p>
+        {% endfor %}
+    </div>
+</section>
