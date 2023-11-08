@@ -46,6 +46,10 @@
         transition: 0.5s;
     }
 
+    p {
+        @apply mb-4
+    }
+
     /* Temporary styles */
     section,
     div,
@@ -72,6 +76,10 @@
 
     .text-lg-serif {
         @apply text-5xl font-extralight leading-[1.8em] font-serif
+    }
+
+    .text-md-serif {
+        @apply text-3xl font-extralight leading-[1.8em] font-serif
     }
 
     .text-banner {
@@ -106,6 +114,24 @@
     .gallery-item {
         min-height: 50vh;
     }
+
+    .bg-overlay {
+        position: relative;
+      }
+      
+      .bg-overlay::before {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.7);
+      }
+      
+      .bg-overlay > * {
+        position: relative;
+      }
 
     /* Video */
     .youtube-container {

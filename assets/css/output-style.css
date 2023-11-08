@@ -343,6 +343,9 @@ header nav a:hover {
         color: var(--featured);
         transition: 0.5s;
     }
+p {
+  margin-bottom: 1rem;
+}
 /* Temporary styles */
 section,
     div,
@@ -498,6 +501,13 @@ section,
   font-weight: 200;
   line-height: 1.8em;
 }
+.text-md-serif {
+  font-family: modernline, serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 200;
+  line-height: 1.8em;
+}
 .text-banner {
   text-align: center;
   font-size: 1.25rem;
@@ -522,6 +532,21 @@ section,
 .gallery-item {
         min-height: 50vh;
     }
+.bg-overlay {
+        position: relative;
+      }
+.bg-overlay::before {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.7);
+      }
+.bg-overlay > * {
+        position: relative;
+      }
 /* Video */
 .embed-container {
         position: relative;
