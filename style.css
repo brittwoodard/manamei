@@ -186,6 +186,13 @@
     }
 
     /* Slick Container */
+    .slick-dots li {
+        margin: 0 7px;
+    }
 
+    .slick-dots li button::before {
+        opacity: .9;
+        color: #EDD587;
+    }
 
 }
