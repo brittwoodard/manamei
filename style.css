@@ -59,6 +59,10 @@
     }
 
     input::placeholder, textarea::placeholder {
+        @apply text-white font-sans text-base
+    }
+
+    footer input::placeholder, textarea::placeholder {
         @apply text-white font-serif lowercase
     }
 
@@ -128,11 +132,15 @@
         letter-spacing: 0.1em;
     }
 
-    .button:hover {
+    .button:hover, .button-form:hover {
         background-color: rgb(237, 213, 135, 0.5);
         border: 1px solid rgb(237, 213, 135, 0.5);
         color: white;
         transition: 0.5s;
+    }
+
+    .button-form {
+        @apply uppercase text-base border border-light 
     }
 
     .link {
