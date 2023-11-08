@@ -1,7 +1,7 @@
 <section class="gallery-item grid grid-cols-9 gap-2" id="lightgallery">
 
     {% for item in page.gallery %}
-    <a href="{{item.image_path}}">
+    <a href="{{item.image_path}}" src="{{item.seo-description}}">
         <div class="bg-image-style bg-[url('{{item.image_path}}')] gallery-item"></div>
     </a>
     {% endfor %}
