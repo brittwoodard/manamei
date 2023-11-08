@@ -860,6 +860,51 @@ ul {
 .bg-\[url\(\'\{\{page\.who-its-for\.background_image\}\}\'\)\] {
   background-image: url('{{page.who-its-for.background_image}}');
 }
+.bg-\[url\(\'\/uploads\/images\/manamei-46\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-46.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-33\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-33.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-42\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-42.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-45\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-45.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-6\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-6.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-40\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-40.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-43\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-43.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-38\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-38.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-41\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-41.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-26\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-26.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-34\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-34.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-36\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-36.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-37\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-37.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-26\.png\'\)\] {
+  background-image: url('/uploads/images/manamei-26.png');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-34\.png\'\)\] {
+  background-image: url('/uploads/images/manamei-34.png');
+}
 .p-10 {
   padding: 2.5rem;
 }
