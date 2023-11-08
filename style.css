@@ -63,7 +63,7 @@
     }
 
     :focus-visible {
-        @apply focus:outline-none focus:border-b-2 focus:border-feature
+        @apply focus:outline-none focus:border-b focus:border-feature
     }
 
     p {
@@ -142,6 +142,15 @@
     .link:hover {
         color: var(--featured);
         border-bottom: 1px solid var(--featured);
+        transition: 0.5s;
+    }
+
+    .social-icon {
+        @apply h-8 mx-4 inline-block opacity-80
+    }
+
+    .social-icon:hover {
+        opacity: 1;
         transition: 0.5s;
     }
 

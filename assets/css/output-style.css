@@ -374,7 +374,7 @@ input::placeholder, textarea::placeholder {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 :focus-visible:focus {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(237 213 135 / var(--tw-border-opacity));
   outline: 2px solid transparent;
@@ -602,6 +602,17 @@ ul {
         border-bottom: 1px solid var(--featured);
         transition: 0.5s;
     }
+.social-icon {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+  height: 2rem;
+  opacity: 0.8;
+}
+.social-icon:hover {
+        opacity: 1;
+        transition: 0.5s;
+    }
 /* Images */
 .bg-image-style {
   background-size: cover;
@@ -763,6 +774,9 @@ ul {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .border {
   border-width: 1px;
