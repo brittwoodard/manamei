@@ -557,8 +557,7 @@ section,
 .gallery-item {
         min-height: 50vh;
     }
-.bg-overlay,
-    .bg-overlay-light {
+.bg-overlay {
         position: relative;
     }
 .bg-overlay::before {
@@ -570,17 +569,7 @@ section,
         right: 0;
         background-color: rgba(0, 0, 0, 0.7);
     }
-.bg-overlay-light::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-.bg-overlay,
-    .bg-overlay-light>* {
+.bg-overlay>* {
         position: relative;
     }
 .icon {
@@ -607,9 +596,6 @@ section,
         height: 100%;
     }
 /* Slick Container */
-#slick-slide-control00 {
-        border-radius: 10px;
-    }
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
