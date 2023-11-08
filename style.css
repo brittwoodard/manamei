@@ -74,6 +74,10 @@
         @apply text-5xl font-extralight leading-[1.8em] font-serif
     }
 
+    .text-banner {
+        @apply text-xl text-center
+    }
+
     /* Images */
     .bg-image-style {
         @apply bg-feature/50 bg-no-repeat bg-center bg-cover

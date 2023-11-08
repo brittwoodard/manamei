@@ -498,6 +498,11 @@ section,
   font-weight: 200;
   line-height: 1.8em;
 }
+.text-banner {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 /* Images */
 .bg-image-style {
   background-color: rgb(237 213 135 / 0.5);
@@ -664,6 +669,9 @@ section,
 }
 .bg-\[url\(\'\{\{page\.who-its-for\.background_image\}\}\'\)\] {
   background-image: url('{{page.who-its-for.background_image}}');
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .p-10p {
   padding: 10%;
