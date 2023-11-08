@@ -778,6 +778,9 @@ ul {
 .gap-8 {
   gap: 2rem;
 }
+.self-end {
+  align-self: flex-end;
+}
 .border {
   border-width: 1px;
 }
