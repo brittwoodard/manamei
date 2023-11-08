@@ -322,12 +322,16 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   font-family: Josefin Sans, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 300;
   letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+header img {
+  margin: 0.5rem;
+  height: 3rem;
 }
 header nav a {
   margin-left: 1rem;
@@ -336,11 +340,20 @@ header nav a {
   letter-spacing: 0.05em;
 }
 header nav a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(237 213 135 / var(--tw-text-opacity));
-}
+        color: var(--featured);
+        transition: 0.5s;
+    }
 /* Temporary styles */
-section, div, h1, h2, h3, h4, h5, h6, p, span {
+section,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
   border-width: 1px;
   border-color: rgb(255 255 255 / 0.4);
 }
@@ -470,6 +483,21 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
     max-width: 1536px;
   }
 }
+/* Typography */
+.heading-lg-sans {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1.1em;
+}
+.text-lg-serif {
+  font-family: modernline, serif;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 200;
+  line-height: 1.8em;
+}
 /* Images */
 .bg-image-style {
   background-color: rgb(237 213 135 / 0.5);
@@ -515,16 +543,13 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.m-4 {
-  margin: 1rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 .my-auto {
   margin-top: auto;
@@ -551,14 +576,8 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .list-item {
   display: list-item;
 }
-.h-\[3rem\] {
-  height: 3rem;
-}
 .h-\[10rem\] {
   height: 10rem;
-}
-.min-h-90 {
-  min-height: 90vh;
 }
 .min-h-\[20vh\] {
   min-height: 20vh;
@@ -665,11 +684,12 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
 .font-serif {
   font-family: modernline, serif;
 }
-.text-\[10rem\] {
-  font-size: 10rem;
-}
 .italic {
   font-style: italic;
+}
+.text-feature {
+  --tw-text-opacity: 1;
+  color: rgb(237 213 135 / var(--tw-text-opacity));
 }
 .outline {
   outline-style: solid;
@@ -690,6 +710,13 @@ section, div, h1, h2, h3, h4, h5, h6, p, span {
     font-weight: bold;
     font-style: bold;
 }
+
+:root {
+    --featured: #EDD587;
+    --dark: black;
+    --light: white;
+}
+
 
 
 /* Default Styles to apply to the whole project */

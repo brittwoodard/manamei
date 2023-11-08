@@ -19,11 +19,22 @@
     font-style: bold;
 }
 
+:root {
+    --featured: #EDD587;
+    --dark: black;
+    --light: white;
+}
+
+
 
 /* Default Styles to apply to the whole project */
 @layer base {
     body {
-        @apply font-sans bg-black text-white text-xl font-light tracking-wide
+        @apply font-sans bg-black text-white text-lg font-light tracking-wide
+    }
+
+    header img {
+        @apply m-2 h-[3rem]
     }
 
     header nav a {
@@ -31,11 +42,21 @@
     }
 
     header nav a:hover {
-        @apply text-feature
+        color: var(--featured);
+        transition: 0.5s;
     }
 
     /* Temporary styles */
-    section, div, h1, h2, h3, h4, h5, h6, p, span {
+    section,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
         @apply border border-white/40
     }
 }
@@ -43,6 +64,15 @@
 
 /* ADDITIONAL COMPONENTS */
 @layer components {
+
+    /* Typography */
+    .heading-lg-sans {
+        @apply uppercase text-5xl leading-[1.1em] font-extralight
+    }
+
+    .text-lg-serif {
+        @apply text-5xl font-extralight leading-[1.8em] font-serif
+    }
 
     /* Images */
     .bg-image-style {
