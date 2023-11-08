@@ -1,5 +1,5 @@
 <footer class="p-5p">
-    <div class="grid grid-cols-3">
+    <div class="grid grid-cols-3 gap-4">
         <div>
             <span class="text-sm-serif block text-feature">Mana Mei</span>
             <h2>Offerings</h2>
@@ -13,27 +13,28 @@
             <h2 class="text-right">Contact</h2>
             <form>
                 <div class="mb-4">
-                    <input type="text" id="first-name" name="first-name" class="block border-b border-white w-full">
+                    <input type="text" id="first-name" name="first-name">
                     <label for="first-name">First Name:</label>
                 </div>
 
                 <div class="mb-4">
-                    <input type="text" id="last-name" name="last-name" class="block border-b border-white w-full">
+                    <input type="text" id="last-name" name="last-name">
                     <label for="last-name">Last Name:</label>
                 </div>
 
                 <div class="mb-4">
-                    <input type="email" id="email" name="email" class="block border-b border-white w-full">
+                    <input type="email" id="email" name="email">
                     <label for="email">Email:</label>
                 </div>
 
                 <div>
-                    <label for="message" class="block">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..."
-                        class="w-full border border-white bg-transparent box"></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Message"
+                        class="border border-light"></textarea>
                 </div>
 
-                <button type="submit" class="button">Send</button>
+                <div class="flex justify-end">
+                    <button type="submit" class="link mt-4">Send</button>
+                </div>
             </form>
         </div>
     </div>

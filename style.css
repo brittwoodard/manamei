@@ -50,6 +50,22 @@
         @apply uppercase mb-4
     }
 
+    footer form label {
+        @apply font-serif lowercase mt-2 block
+    }
+
+    footer form input, footer form textarea {
+        @apply block border-b border-white bg-transparent w-full
+    }
+
+    input::placeholder, textarea::placeholder {
+        @apply text-white font-serif lowercase
+    }
+
+    :focus-visible {
+        @apply focus:outline-none focus:border-b-2 focus:border-feature
+    }
+
     p {
         @apply mb-4
     }
@@ -59,7 +75,7 @@
     }
 
     /* Temporary styles */
-    section,
+    /* section,
     div,
     h1,
     h2,
@@ -70,7 +86,7 @@
     p,
     span {
         @apply border border-white/40
-    }
+    } */
 }
 
 
@@ -116,6 +132,16 @@
         background-color: rgb(237, 213, 135, 0.5);
         border: 1px solid rgb(237, 213, 135, 0.5);
         color: white;
+        transition: 0.5s;
+    }
+
+    .link {
+        @apply font-serif border-b border-light mb-2 lowercase text-2xl
+    }
+
+    .link:hover {
+        color: var(--featured);
+        border-bottom: 1px solid var(--featured);
         transition: 0.5s;
     }
 
