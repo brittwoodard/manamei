@@ -50,6 +50,10 @@
         @apply mb-4
     }
 
+    ul {
+        @apply list-disc ml-4
+    }
+
     /* Temporary styles */
     section,
     div,
@@ -72,6 +76,10 @@
     /* Typography */
     .heading-lg-sans {
         @apply uppercase text-5xl leading-[1.1em] font-extralight
+    }
+
+    .heading-md-sans {
+        @apply uppercase text-3xl leading-[1.1em] font-extralight
     }
 
     .text-lg-serif {

@@ -346,6 +346,10 @@ header nav a:hover {
 p {
   margin-bottom: 1rem;
 }
+ul {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
 /* Temporary styles */
 section,
     div,
@@ -490,6 +494,13 @@ section,
 .heading-lg-sans {
   font-size: 3rem;
   line-height: 1;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1.1em;
+}
+.heading-md-sans {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 200;
   text-transform: uppercase;
   line-height: 1.1em;
