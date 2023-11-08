@@ -4,5 +4,6 @@
     <p>{{page.cta.description}}</p>
     {% if page.type == e-book %}
     {% include form-ebook.html %}
+    {% elsif page.type == workshop-reply %}
     {% endif %}
 </section>

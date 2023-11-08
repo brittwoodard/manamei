@@ -187,8 +187,9 @@
         padding-bottom: 56%;
     }
 
-    .gallery-item {
-        min-height: 50vh;
+    .gallery {
+        overflow-x: auto;
+        flex-wrap: nowrap;
     }
 
     .bg-overlay {

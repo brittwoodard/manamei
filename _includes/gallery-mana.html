@@ -1,8 +1,8 @@
-<section class="gallery-item grid grid-cols-9 gap-2" id="lightgallery">
+<section class=" grid grid-cols-9 gap-2 gallery" id="lightgallery">
 
     {% for item in page.gallery %}
     <a href="{{item.image_path}}" src="{{item.seo-description}}">
-        <div class="bg-image-style bg-[url('{{item.image_path}}')] gallery-item"></div>
+        <div class="bg-image-style bg-[url('{{item.image_path}}')] min-h-[50vh]"></div>
     </a>
     {% endfor %}
 
