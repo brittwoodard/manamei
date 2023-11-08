@@ -1,8 +1,8 @@
-<section class="bg-image-style p-10p text-center" style="background-image: url('/uploads/backgrounds/manamei-2.jpg'); background-position: bottom;">
-    <h2 class="heading-lg-sans text-feature">Liberation Through Movement<br>Free E-Book</h2>
-    <h3 class="text-feature mb-4">A guide to transmuting stagnant energy into activated feminine power</h3>
-    <p>A new experiential guide on how to reclaim freedom in the body, cultivate peace and wholeness, and show up in the
-        world as a fully expressed woman.</p>
+<section class="bg-image-style p-10p text-center" style="background-image: url('{{page.cta.background.background_image}}'); background-position: {{page.cta.background.background_position}};">
+    <h2 class="heading-lg-sans text-feature">{{page.cta.heading_html}}</h2>
+    <h3 class="text-feature mb-4">{{page.cta.subtitle}}</h3>
+    <p>{{page.cta.description}}</p>
+    {% if page.type == e-book %}
     <form>
         <div class="grid grid-cols-7 gap-2">
             <div class="col-span-2">
@@ -20,4 +20,5 @@
             <button type="submit" class="button-form">Submit</button>
         </div>
     </form>
+    {% endif %}
 </section>
