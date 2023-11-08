@@ -86,6 +86,23 @@
         @apply text-xl text-center
     }
 
+    /* Buttons */
+    .button {
+        text-transform: uppercase;
+        border: 1px solid white;
+        border-radius: 4rem;
+        padding: 0.5rem 2.5rem;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+    }
+
+    .button:hover {
+        background-color: rgb(237, 213, 135, 0.5);
+        border: 1px solid rgb(237, 213, 135, 0.5);
+        color: white;
+        transition: 0.5s;
+    }
+
     /* Images */
     .bg-image-style {
         @apply bg-no-repeat bg-center bg-cover
@@ -117,21 +134,21 @@
 
     .bg-overlay {
         position: relative;
-      }
-      
-      .bg-overlay::before {
-        content: ""; 
+    }
+
+    .bg-overlay::before {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.7);
-      }
-      
-      .bg-overlay > * {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .bg-overlay>* {
         position: relative;
-      }
+    }
 
     /* Video */
     .youtube-container {
