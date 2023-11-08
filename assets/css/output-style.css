@@ -515,7 +515,6 @@ section,
 }
 /* Images */
 .bg-image-style {
-  background-color: rgb(237 213 135 / 0.5);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -609,11 +608,17 @@ section,
 .h-\[10rem\] {
   height: 10rem;
 }
+.h-\[10vh\] {
+  height: 10vh;
+}
 .min-h-\[20vh\] {
   min-height: 20vh;
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
+}
+.w-\[10vh\] {
+  width: 10vh;
 }
 .w-full {
   width: 100%;
@@ -701,9 +706,17 @@ section,
 .p-10p {
   padding: 10%;
 }
+.px-20p {
+  padding-left: 20%;
+  padding-right: 20%;
+}
 .px-\[5\%\] {
   padding-left: 5%;
   padding-right: 5%;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .text-left {
   text-align: left;

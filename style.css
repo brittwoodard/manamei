@@ -88,7 +88,7 @@
 
     /* Images */
     .bg-image-style {
-        @apply bg-feature/50 bg-no-repeat bg-center bg-cover
+        @apply bg-no-repeat bg-center bg-cover
     }
 
     .portrait-tall {
