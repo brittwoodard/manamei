@@ -41,9 +41,13 @@
         @apply uppercase tracking-wider mx-4
     }
 
-    header nav a:hover {
+    header nav a:hover, footer nav a:hover {
         color: var(--featured);
         transition: 0.5s;
+    }
+
+    footer h2 {
+        @apply uppercase mb-4
     }
 
     p {
@@ -75,19 +79,23 @@
 
     /* Typography */
     .heading-lg-sans {
-        @apply uppercase text-5xl leading-[1.1em] font-extralight
+        @apply uppercase text-5xl leading-[1.1em] font-extralight mb-4
     }
 
     .heading-md-sans {
-        @apply uppercase text-3xl leading-[1.1em] font-extralight
+        @apply uppercase text-3xl leading-[1.1em] font-extralight mb-4
     }
 
     .text-lg-serif {
-        @apply text-5xl font-extralight leading-[1.8em] font-serif
+        @apply text-5xl font-extralight leading-[1.8em] font-serif mb-4
     }
 
     .text-md-serif {
-        @apply text-3xl font-extralight leading-[1.8em] font-serif
+        @apply text-3xl font-extralight leading-[1.8em] font-serif mb-4
+    }
+
+    .text-sm-serif {
+        @apply text-xl font-extralight leading-[1.8em] font-serif mb-4
     }
 
     .text-banner {
