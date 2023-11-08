@@ -140,7 +140,8 @@
         min-height: 50vh;
     }
 
-    .bg-overlay {
+    .bg-overlay,
+    .bg-overlay-light {
         position: relative;
     }
 
@@ -154,8 +155,23 @@
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    .bg-overlay>* {
+    .bg-overlay-light::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .bg-overlay,
+    .bg-overlay-light>* {
         position: relative;
+    }
+
+    .icon {
+        @apply flex justify-center items-center mb-8
     }
 
     /* Video */
@@ -180,4 +196,27 @@
         width: 100%;
         height: 100%;
     }
+
+    /* Slick Container */
+    .slick-dots li.slick-active button::before {
+        color: #EDD587;
+    }
+
+    .slick-dots li {
+        margin: 0 10px;
+    }
+
+    .slick-dots li button::before {
+        font-size: 10px;
+        color: transparent;
+    }
+
+    .slick-dots li button {
+        outline: 1px solid #EDD587;
+    }
+
+    #slick-slide-control00 {
+        border-radius: 10px;
+    }
+
 }

@@ -1,10 +1,12 @@
-<section class="bg-image-style bg-[url('{{page.testimonials.background_image}}')]">
-    <div class="bg-image-style">icon</div>
+<section class="bg-image-style bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light">
+    <div class="icon">
+        <img src="{{page.testimonials.icon_image}}" class="h-12">
+    </div>
     <div class="testimonial-container">
-        {% for item in page.testimonials %}
+        {% for item in page.testimonials.testimonials %}
         <div class="testimonial-item">
-            <p>"{{item.testimonial}}"</p>
-            <p>-- {{item.author}}</p>
+            <p class="text-center"><em>"{{item.testimonial}}"</em></p>
+            <p class="text-right">— {{item.author}}</p>
         </div>
         {% endfor %}
     </div>

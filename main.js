@@ -1,14 +1,14 @@
 // Slick
 $('.testimonial-container').slick({
 	autoplay: true, 
-	autoplaySpeed: 900, 
+	autoplaySpeed: 3000, 
 	speed: 500, 
 	arrows: false, 
 	accessibility: true, 
-	dots: false, 
+	dots: true, 
 	fade: true, 
 	infinite: true, 
-	pauseOnHover: false, 
+	pauseOnHover: true, 
 });
 
 $('.text-container').slick({
