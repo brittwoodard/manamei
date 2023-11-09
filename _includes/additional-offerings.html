@@ -1,14 +1,16 @@
-<section>
-    <h2>{{page.additional-offerings.heading}}</h2>
-    <span>{{page.additional-offerings.subheading}}</span>
-    <p>{{page.additional-offerings.description}}</p>
+<section class="p-10p">
+    <div class="text-center">
+        <h2 class="heading-lg-sans">{{page.additional-offerings.heading}}</h2>
+        <span class="text-md-serif text-feature block">{{page.additional-offerings.subheading}}</span>
+        <p>{{page.additional-offerings.description}}</p>
+    </div>
     <div>
         {% for item in page.additional-offerings.offering %}
-        <div>
-            <h3>{{item.title}}</h3>
-            <span>{{item.type}}</span>
+        <div class="mt-12">
+            <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
+            <span class="lowercase text-feature">{{item.type}}</span>
             <p>{{item.description}}</p>
-            <a href="{{item.url}}">Learn more</a>
+            <a href="{{item.url}}" class="link">Learn more</a>
         </div>
         {% endfor %}
     </div>

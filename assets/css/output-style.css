@@ -401,19 +401,6 @@ ul {
   margin-left: 1rem;
   list-style-type: disc;
 }
-/* Temporary styles */
-/* section,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    span {
-        @apply border border-white/40
-    } */
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -611,6 +598,7 @@ ul {
 }
 .link {
   margin-bottom: 0.5rem;
+  display: inline-block;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -732,6 +720,15 @@ ul {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
 .block {
   display: block;
 }
@@ -747,17 +744,14 @@ ul {
 .h-12 {
   height: 3rem;
 }
+.h-28 {
+  height: 7rem;
+}
 .h-\[10rem\] {
   height: 10rem;
 }
 .h-\[10vh\] {
   height: 10vh;
-}
-.h-\[90vh\] {
-  height: 90vh;
-}
-.h-28 {
-  height: 7rem;
 }
 .min-h-\[20vh\] {
   min-height: 20vh;
@@ -780,6 +774,12 @@ ul {
 .list-none {
   list-style-type: none;
 }
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -794,12 +794,6 @@ ul {
 }
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
@@ -825,20 +819,6 @@ ul {
 .gap-8 {
   gap: 2rem;
 }
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
-.divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(2px * var(--tw-divide-x-reverse));
-  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-}
-.divide-feature > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(237 213 135 / var(--tw-divide-opacity));
-}
 .border {
   border-width: 1px;
 }
@@ -859,10 +839,6 @@ ul {
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\'\)\] {
   background-image: url('');

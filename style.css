@@ -77,20 +77,6 @@
     ul {
         @apply list-disc ml-4
     }
-
-    /* Temporary styles */
-    /* section,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    span {
-        @apply border border-white/40
-    } */
 }
 
 
@@ -144,7 +130,7 @@
     }
 
     .link {
-        @apply font-serif border-b border-light mb-2 lowercase text-2xl
+        @apply font-serif border-b border-light mb-2 lowercase text-2xl inline-block
     }
 
     .link:hover {
