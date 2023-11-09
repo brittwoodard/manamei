@@ -13,8 +13,7 @@ $('.testimonial-container').slick({
 
 $('.text-container').slick({
 	autoplay: true, 
-	autoplaySpeed: 900, 
-	speed: 500, 
+	speed: 1000, 
 	arrows: false, 
 	accessibility: true, 
 	dots: false, 
