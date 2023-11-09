@@ -1,15 +1,16 @@
 <section class="p-10p">
     <h2 class="text-md-serif text-feature text-center">{{page.map.heading}}</h2>
     <p class="text-center">{{page.map.description}}</p>
-    <div class="grid grid-cols-2 divide-x-2 divide-feature">
+    <div class="grid grid-cols-12">
         {% for item in page.map.offering %}
-        <div class="p-5p 
+        <div class="col-span-5 p-5p 
         {% cycle 'text-right', 'text-left', 'text-right', text-left %}">
             <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
             <span class="lowercase text-feature">{{item.type}}</span>
             <p>{{item.description}}</p>
-            <a href="{{item.url}}">Learn more</a>
+            <a href="{{item.url}}" class="link">Learn more</a>
         </div>
+        <div class="col-span-2"><img src={{item.image_path}} class="h-28"></div>
+        <div class="col-span-5"></div>
         {% endfor %}
-    </div>
 </section>
