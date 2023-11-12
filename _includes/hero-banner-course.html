@@ -1,9 +1,11 @@
-<section class="bg-image-style">
-    <h2>{{page.heading.title}}</h2>
-    <h3>{{page.heading.subtitle}}</h3>
-    <p>{{page.heading.description}}</p>
-    <a href="{{page.heading.button-enroll.url}}">{{page.heading.button-enroll.text}}</a>
-    {% if page.heading.button-video.show == true %}
-    <a href="{{page.heading.button-video.url}}">{{page.heading.button-video.text}}</a>
-    {% endif %}
+<section class="p-10p bg-image-style bg-overlay min-h-[90vh] flex align-middle items-center text-center justify-center" style="background-image: url('{{page.heading.background_image}}')">
+    <div>
+        <h2 class="heading-lg-sans">{{page.heading.title}}</h2>
+        <h3 class="text-lg-serif">{{page.heading.subtitle}}</h3>
+        <p class="lowercase">{{page.heading.description}}</p>
+        <a href="{{page.heading.button-enroll.url}}" class="button m-4">{{page.heading.button-enroll.text}}</a>
+        {% if page.heading.button-video.show == true %}
+        <a href="{{page.heading.button-video.url}}" class="button">{{page.heading.button-video.text}}</a>
+        {% endif %}
+    </div>
 </section>

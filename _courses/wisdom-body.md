@@ -15,6 +15,7 @@ heading:
     show: true
     text: Watch the video
     url: 
+  background_image: /uploads/images/manamei-14.jpg
 banner: 
  - image_path: 
    title: Ritual

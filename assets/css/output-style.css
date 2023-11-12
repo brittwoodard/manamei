@@ -693,6 +693,9 @@ ul {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
+.m-4 {
+  margin: 1rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -788,12 +791,6 @@ ul {
 }
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-.flex-row {
-  flex-direction: row;
-}
-.flex-row-reverse {
-  flex-direction: row-reverse;
 }
 .items-center {
   align-items: center;
