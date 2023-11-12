@@ -17,13 +17,13 @@ heading:
     url: 
   background_image: /uploads/images/manamei-14.jpg
 banner: 
- - image_path: 
+ - image_path: /uploads/icons/manamei-19.png
    title: Ritual
    benefit: A loving relationship with your body
- - image_path: 
+ - image_path: /uploads/icons/manamei-20.png
    title: Expression
    benefit: Radical & lasting self acceptance
- - image_path: 
+ - image_path: /uploads/icons/manamei-21.png
    title: Awaken
    benefit: Your feminine passion and creativity
 video:

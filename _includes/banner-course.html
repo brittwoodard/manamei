@@ -1,9 +1,11 @@
-<section class="flex justify-around">
-    <div>
-        {% for item in page.banner %}
-        <div class="bg-image bg-[url('{{item.image_path}}')]"></div>
-        <span>{{item.title}}</span>
-        <p>{{item.benefit}}</p>
-        {% endfor %}
+<section class="flex justify-around p-5p">
+    {% for item in page.banner %}
+    <div class="flex m-8">
+        <img src="{{item.image_path}}" class="h-28">
+        <div>
+            <span class="font-serif text-feature">{{item.title}}</span>
+            <p class="uppercase">{{item.benefit}}</p>
+        </div>
     </div>
+    {% endfor %}
 </section>
