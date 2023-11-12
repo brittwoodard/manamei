@@ -529,7 +529,7 @@ ul {
 }
 /* Typography */
 .heading-lg-sans {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
   font-size: 3rem;
   line-height: 1;
   font-weight: 200;
@@ -537,7 +537,7 @@ ul {
   line-height: 1.1em;
 }
 .heading-md-sans {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 200;
@@ -545,7 +545,7 @@ ul {
   line-height: 1.1em;
 }
 .text-lg-serif {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
   font-family: modernline, serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -553,7 +553,7 @@ ul {
   line-height: 1.8em;
 }
 .text-md-serif {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
   font-family: modernline, serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -561,7 +561,7 @@ ul {
   line-height: 1.8em;
 }
 .text-sm-serif {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
   font-family: modernline, serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -711,6 +711,9 @@ ul {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -720,6 +723,9 @@ ul {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mr-4 {
+  margin-right: 1rem;
+}
 .mr-8 {
   margin-right: 2rem;
 }
@@ -728,12 +734,6 @@ ul {
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.mb-12 {
-  margin-bottom: 3rem;
-}
-.mr-4 {
-  margin-right: 1rem;
 }
 .block {
   display: block;
@@ -750,6 +750,9 @@ ul {
 .h-12 {
   height: 3rem;
 }
+.h-16 {
+  height: 4rem;
+}
 .h-28 {
   height: 7rem;
 }
@@ -759,23 +762,17 @@ ul {
 .h-\[10vh\] {
   height: 10vh;
 }
-.h-8 {
-  height: 2rem;
-}
-.h-16 {
-  height: 4rem;
-}
 .min-h-\[20vh\] {
   min-height: 20vh;
 }
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
-.min-h-\[90vh\] {
-  min-height: 90vh;
-}
 .min-h-\[70vh\] {
   min-height: 70vh;
+}
+.min-h-\[90vh\] {
+  min-height: 90vh;
 }
 .w-\[10vh\] {
   width: 10vh;
@@ -833,9 +830,6 @@ ul {
 }
 .gap-8 {
   gap: 2rem;
-}
-.justify-self-end {
-  justify-self: end;
 }
 .border {
   border-width: 1px;
@@ -906,9 +900,6 @@ ul {
 .bg-\[url\(\'\{\{page\.background_image\}\}\'\)\] {
   background-image: url('{{page.background_image}}');
 }
-.bg-\[url\(\'\{\{page\.course-description\.module\.image_path\}\}\'\)\] {
-  background-image: url('{{page.course-description.module.image_path}}');
-}
 .bg-\[url\(\'\{\{page\.cta\.background_image\}\}\'\)\] {
   background-image: url('{{page.cta.background_image}}');
 }
@@ -920,18 +911,6 @@ ul {
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
-}
-.bg-\[url\(\'\{\{page\.who-its-for\.background_image\}\}\'\)\] {
-  background-image: url('{{page.who-its-for.background_image}}');
-}
-.bg-\[url\(\'\/uploads\/icons\/manamei-19\.png\'\)\] {
-  background-image: url('/uploads/icons/manamei-19.png');
-}
-.bg-\[url\(\'\/uploads\/icons\/manamei-20\.png\'\)\] {
-  background-image: url('/uploads/icons/manamei-20.png');
-}
-.bg-\[url\(\'\/uploads\/icons\/manamei-21\.png\'\)\] {
-  background-image: url('/uploads/icons/manamei-21.png');
 }
 .p-10 {
   padding: 2.5rem;

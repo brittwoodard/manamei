@@ -85,23 +85,23 @@
 
     /* Typography */
     .heading-lg-sans {
-        @apply uppercase text-5xl leading-[1.1em] font-extralight mb-4
+        @apply uppercase text-5xl leading-[1.1em] font-extralight mb-[0.5em]
     }
 
     .heading-md-sans {
-        @apply uppercase text-3xl leading-[1.1em] font-extralight mb-4
+        @apply uppercase text-3xl leading-[1.1em] font-extralight mb-[0.5em]
     }
 
     .text-lg-serif {
-        @apply text-4xl font-extralight leading-[1.8em] font-serif mb-4
+        @apply text-4xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
     }
 
     .text-md-serif {
-        @apply text-3xl font-extralight leading-[1.8em] font-serif mb-4
+        @apply text-3xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
     }
 
     .text-sm-serif {
-        @apply text-xl font-extralight leading-[1.8em] font-serif mb-4
+        @apply text-xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
     }
 
     .text-banner {

@@ -43,9 +43,11 @@ course-description:
      title: Liberation
      description_html: <p>Explore, unlock, and celebrate ALL of your Feminine expressions.</p><p>Harness the power of all of your emotions and transmute this energy into movement for manifestation and creation.</p><p>Learn how to use movement as a prayer and devotional practice to yourself, weaving together your dreams with your reality.</p><p>Become the creatrix of your life and empower yourself to take inspired action, the feminine way, with fluidity and grace.</P
 who-its-for: 
-  heading: Who the Wisdom Body Immersion is For
-  description_html: Anyone who wants to go deeper, who may already have some experience in embodied movement, or whose already playing with using dance and movement as part of their personal development and healing modality, but wants more options, tools, guidance, and inspiration.<br>People that are new to embodied dance, that are interested in diving into this level of freedom through movement, exploring authenticity and personal expression.
-  background_image: 
+  heading: Who the Wisdom Body Immersion is for
+  description_html: <p>Anyone who wants to go deeper, who may already have some experience in embodied movement, or whose already playing with using dance and movement as part of their personal development and healing modality, but wants more options, tools, guidance, and inspiration.</p><p>People that are new to embodied dance, that are interested in diving into this level of freedom through movement, exploring authenticity and personal expression.</p>
+  background-image: 
+    background_image: /uploads/images/manamei-17.jpg
+    image_focus: center
 inside-the-course:
   heading: Inside the Wisdom Body Immersion
   description_html: In Wisdom Body, each module brings a new dimension of understanding. Our program is structured in four modules, each offering a comprehensive approach to embodied awareness and expression.
