@@ -33,15 +33,15 @@ course-description:
   heading: Discover the essence of Wisdom Body
   description: This program is a personal deep dive into 12 powerful embodied movement and somatic dance practices - broken down into 4 themed-modules including 3 practices each, Movement Meditation, Somatic Activation, Embodied Liberation
   module: 
-   - image_path: 
+   - image_path: /uploads/icons/manamei-7.png
      title: Meditation
-     description_html: Learn to relax the mind and surrender into full awareness & acceptance of the feeling body.<br>Gain the tools to come into an embodied presence at every moment of your life.<br>Move through your daily life with ease, while never losing connection to your internal wisdom.
-   - image_path: 
+     description_html: <p>Learn to relax the mind and surrender into full awareness & acceptance of the feeling body.</p><p>Gain the tools to come into an embodied presence at every moment of your life.<br>Move through your daily life with ease, while never losing connection to your internal wisdom.</p>
+   - image_path: /uploads/icons/manamei-5.png
      title: Activation
-     description_html: Increase your movement vocabulary, expanding your capacity to express yourself through dance.<br>Activate your whole-body awareness, fluidity, and kinesthetic body intelligence.<br>Learn new somatic movement practices, exploring the infinite movement pathways, and expanding your skill set for how to effectively express through your body.
-   - image_path: 
+     description_html: <p>Increase your movement vocabulary, expanding your capacity to express yourself through dance.<br>Activate your whole-body awareness, fluidity, and kinesthetic body intelligence.</p><p>Learn new somatic movement practices, exploring the infinite movement pathways, and expanding your skill set for how to effectively express through your body.</p>
+   - image_path: /uploads/icons/manamei-6.png
      title: Liberation
-     description_html: Explore, unlock, and celebrate ALL of your Feminine expressions.<br>Harness the power of all of your emotions and transmute this energy into movement for manifestation and creation.<br>Learn how to use movement as a prayer and devotional practice to yourself, weaving together your dreams with your reality.<br>Become the creatrix of your life and empower yourself to take inspired action, the feminine way, with fluidity and grace.
+     description_html: <p>Explore, unlock, and celebrate ALL of your Feminine expressions.</p><p>Harness the power of all of your emotions and transmute this energy into movement for manifestation and creation.</p><p>Learn how to use movement as a prayer and devotional practice to yourself, weaving together your dreams with your reality.</p><p>Become the creatrix of your life and empower yourself to take inspired action, the feminine way, with fluidity and grace.</P
 who-its-for: 
   heading: Who the Wisdom Body Immersion is For
   description_html: Anyone who wants to go deeper, who may already have some experience in embodied movement, or whose already playing with using dance and movement as part of their personal development and healing modality, but wants more options, tools, guidance, and inspiration.<br>People that are new to embodied dance, that are interested in diving into this level of freedom through movement, exploring authenticity and personal expression.

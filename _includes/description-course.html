@@ -1,13 +1,15 @@
-<section>
-    <h2>{{page.course-description.heading}}</h2>
-    <p>{{page.course-description.description}}</p>
-    <div class="grid grid-cols-5">
-        {% for item in page.course-description.module %}
-        <div class="bg-image-style bg-[url('{{page.course-description.module.image_path}}')]"></div>
+<section class="p-10p">
+    <div class="text-center mb-12">
+        <h2 class="heading-md-sans text-feature">{{page.course-description.heading}}</h2>
+        <p>{{page.course-description.description}}</p>
+    </div>
+    {% for item in page.course-description.module %}
+    <div class="flex mb-12">
+        <img src="{{item.image_path}}" class="h-16 mr-4">
         <div class="col-span-4">
-            <h3>{{item.title}}</h3>
+            <h3 class="text-md-serif text-feature">{{item.title}}</h3>
             <p>{{item.description_html}}</p>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
 </section>
