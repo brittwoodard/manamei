@@ -54,23 +54,38 @@ inside-the-course:
   module:
   - title: Module 1
     description_html: This is a lengthy answer.
-    time: 15 minutes
+    time: 
+      show: true
+      hours: 1
+      minutes: 16
   - title: Module 2
     description_html: This is a lengthy answer.
+    time: 
+      show: true
+      hours: 1
+      minutes: 16
   - title: Module 3
     description_html: This is a lengthy answer.
-    time: 15 minutes
+    time: 
+      show: true
+      hours: 1
+      minutes: 16
   - title: Module 4
     description_html: This is a lengthy answer.
-    time: 15 minutes
+    time: 
+      show: true
+      hours: 1
+      minutes: 16
   background-image: 
     background_image: /uploads/backgrounds/manamei-4.jpg
     image_focus: bottom
 testimonials: 
- - testimonial: This is a testimonial
-   author: Regina Philange
- - testimonial: This is a testimonial
-   author: Ken Adams
+  background_image: /uploads/images/manamei-20.jpg
+  testimonials: 
+   - testimonial: This is a testimonial
+     author: Regina Philange
+   - testimonial: This is a testimonial
+     author: Ken Adams
 instructor: 
   show: true
   heading: Your Facilitator, Mana Mei

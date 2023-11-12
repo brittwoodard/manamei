@@ -15,7 +15,9 @@
             </button>
             <div x-show="open" @click.outside="open = false" class="flex justify-between">
                 <p class="mb-8 mr-8 italic justify-start">{{item.description_html}}</p>
-                <span class="justify-end">({{item.time}})</span>
+                {% if page.inside-the-course.module.time.show == true %}
+                <span class="justify-end">({{item.time.hours}}:{{item.time.minutes}})</span>
+                {% endif %}
             </div>
         </li>
         {% endfor %}

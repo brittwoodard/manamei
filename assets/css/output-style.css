@@ -738,9 +738,6 @@ ul {
 .block {
   display: block;
 }
-.inline-block {
-  display: inline-block;
-}
 .flex {
   display: flex;
 }
@@ -917,6 +914,9 @@ ul {
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-20\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-20.jpg');
 }
 .p-10 {
   padding: 2.5rem;
