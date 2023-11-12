@@ -54,12 +54,18 @@ inside-the-course:
   module:
   - title: Module 1
     description_html: This is a lengthy answer.
+    time: 15 minutes
   - title: Module 2
     description_html: This is a lengthy answer.
   - title: Module 3
     description_html: This is a lengthy answer.
+    time: 15 minutes
   - title: Module 4
     description_html: This is a lengthy answer.
+    time: 15 minutes
+  background-image: 
+    background_image: /uploads/backgrounds/manamei-4.jpg
+    image_focus: bottom
 testimonials: 
  - testimonial: This is a testimonial
    author: Regina Philange
