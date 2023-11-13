@@ -202,11 +202,11 @@
 
     /* Dropdown Menu */
     .dropdown-menu {
-        @apply list-none border border-light
+        @apply border border-light
     }
 
     .dropdown-item {
-        @apply border-b border-light my-2 p-2
+        @apply list-none border-b border-light my-2 p-2
     }
 
     .dropdown-item.last-item {
