@@ -26,7 +26,9 @@ layout: default
 {% include testimonials.html %}
 
 <!-- Meet Your Teacher -->
+{% if page.video.show == true %}
 {% include about-mana-course.html %}
+{% endif %}
 
 <!-- Investment -->
 {% include investment.html %}

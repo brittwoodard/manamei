@@ -200,6 +200,23 @@
         @apply flex justify-center items-center mb-8
     }
 
+    /* Dropdown Menu */
+    .dropdown-menu {
+        @apply list-none border border-light
+    }
+
+    .dropdown-item {
+        @apply border-b border-light my-2 p-2
+    }
+
+    .dropdown-item.last-item {
+        border-bottom: none;
+    }
+
+    .last-paragraph {
+        @apply mb-0
+    }
+
     /* Video */
     .youtube-container {
         max-width: 50%;
