@@ -13,9 +13,7 @@ navigation:
   - url: "/about.html"
     title: "Meet Mana"
   - url: "/offerings.html"
-    title: "Offerings"    
-  - url: "/contact.html"
-    title: "Contact"
+    title: "Offerings"
 navigation-footer:
   - url: "/offerings/liberation-through-movement.html"
     title: "Liberation Through Movement"

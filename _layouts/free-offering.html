@@ -9,19 +9,23 @@
 
 <body>
     <!-- Banner -->
-    <section>
+    <section class="banner-feature">
         <span>{{page.banner.text}}</span>
     </section>
 
     <!-- Details -->
     <section class="grid grid-cols-3">
-        <div class="col-span-2">
-            <h1>{{page.details.title}}</h1>
-            <h2>{{page.details.subtitle}}</h2>
+        <div class="col-span-2 px-10p pt-10p">
+            <h1 class="heading-md-sans text-feature">{{page.details.title}}</h1>
+            <h2 class="capitalize text-feature mb-8">{{page.details.subtitle}}</h2>
             <p>{{page.details.description_html}}</p>
-            <span>{{page.details.time}} {{page.details.time-zone}}</span>
-            <span>{{page.details.day-of-the-week}}, {{page.details.date}}</span>
-            <a href="#">{{page.deatils.button.text}}</a>
+            <div class="heading-md-sans">
+                <p class="mb-2">{{page.details.time}} {{page.details.time-zone}}</p>
+                <p>
+                    {{page.details.day-of-the-week}}, {{page.details.date}}
+                </p>
+            </div>
+            <a href="#" class="button mt-4 inline-block">{{page.details.button.text}}</a>
         </div>
         <div class="bg-image-style bg-[url('{{page.details.featured_image}}')]"></div>
     </section>
@@ -30,28 +34,12 @@
     {% include about-mana-course.html %}
 
     <!-- CTA -->
-    <section class="bg-image-style bg-[url('{{page.cta.background_image}}')]">
-        <h2>{{page.cta.heading}}</h2>
-        <form>
-            <div class="mb-4">
-                <input type="text" id="first-name" name="first-name" class="block border-b border-white w-full">
-                <label for="first-name">First Name:</label>
-            </div>
+    <section class="bg-image-style bg-overlay p-10p text-center" style="background-image: url('{{page.cta.background-image.background_image}}'); background-position: {{page.cta.background-image.image_focus}};">
+        <h2 class="heading-lg-sans">{{page.cta.heading}}</h2>
+        
+        {% include form-free-offering.html %}
 
-            <div class="mb-4">
-                <input type="text" id="last-name" name="last-name" class="block border-b border-white w-full">
-                <label for="last-name">Last Name:</label>
-            </div>
-
-            <div class="mb-4">
-                <input type="email" id="email" name="email" class="block border-b border-white w-full">
-                <label for="email">Email:</label>
-            </div>
-
-            <button type="submit" class="button">Submit</button>
-        </form>
-
-        <h3>{{page.cta.share-text}}</h3>
+        <h3 class="text-feature mt-8">{{page.cta.share-text}}</h3>
         <p>FB IG MAIL</p>
     </section>
 

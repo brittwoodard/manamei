@@ -113,7 +113,7 @@
         text-transform: uppercase;
         border: 1px solid white;
         border-radius: 4rem;
-        padding: 0.5rem 2.5rem;
+        padding: 0.25rem 1.5rem;
         font-size: 1rem;
         letter-spacing: 0.1em;
     }
@@ -198,6 +198,10 @@
 
     .icon {
         @apply flex justify-center items-center mb-8
+    }
+
+    .banner-feature {
+        @apply p-2 bg-feature text-dark uppercase text-center
     }
 
     /* Dropdown Menu */
