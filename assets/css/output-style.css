@@ -934,9 +934,6 @@ ul {
 .bg-\[url\(\'\{\{page\.background_image\}\}\'\)\] {
   background-image: url('{{page.background_image}}');
 }
-.bg-\[url\(\'\{\{page\.cta\.background_image\}\}\'\)\] {
-  background-image: url('{{page.cta.background_image}}');
-}
 .bg-\[url\(\'\{\{page\.details\.featured_image\}\}\'\)\] {
   background-image: url('{{page.details.featured_image}}');
 }
