@@ -735,6 +735,12 @@ ul {
 .mt-4 {
   margin-top: 1rem;
 }
+.ml-10p {
+  margin-left: 10%;
+}
+.mr-10p {
+  margin-right: 10%;
+}
 .block {
   display: block;
 }
@@ -861,6 +867,9 @@ ul {
 .bg-\[url\(\'\/uploads\/images\/manamei-1\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-1.jpg');
 }
+.bg-\[url\(\'\/uploads\/images\/manamei-20\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-20.jpg');
+}
 .bg-\[url\(\'\/uploads\/images\/manamei-26\.png\'\)\] {
   background-image: url('/uploads/images/manamei-26.png');
 }
@@ -915,9 +924,6 @@ ul {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
-.bg-\[url\(\'\/uploads\/images\/manamei-20\.jpg\'\)\] {
-  background-image: url('/uploads/images/manamei-20.jpg');
-}
 .p-10 {
   padding: 2.5rem;
 }
@@ -959,6 +965,9 @@ ul {
 }
 .lowercase {
   text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .italic {
   font-style: italic;

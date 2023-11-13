@@ -1,9 +1,7 @@
-{% if page.instructor.show == true %}
-<section class="grid grid-cols-3">
-    <div class="bg-image-style"></div>
+<section class="grid grid-cols-3 p-10p">
+    <div class="bg-image-style mr-10p" style="background-image: url('{{site.data.course-settings.instructor.featured_image}}')"></div>
     <div class="col-span-2">
-        <h2>{{page.instructor.heading}}</h2>
-        <p>{{page.instructor.description_html}}</p>
+        <h2 class="text-md-serif text-feature capitalize">{{site.data.course-settings.instructor.heading}}</h2>
+        <p>{{site.data.course-settings.instructor.description_html}}</p>
     </div>
 </section>
-{% endif %}
