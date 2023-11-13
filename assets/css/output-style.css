@@ -741,6 +741,9 @@ ul {
 .mr-10p {
   margin-right: 10%;
 }
+.mr-20p {
+  margin-right: 20%;
+}
 .block {
   display: block;
 }
@@ -959,6 +962,14 @@ ul {
 }
 .font-serif {
   font-family: modernline, serif;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .uppercase {
   text-transform: uppercase;
