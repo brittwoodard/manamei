@@ -128,6 +128,9 @@ cta:
   button: 
     text: Enroll now
     url: 
+  background-image: 
+    background_image: /uploads/images/manamei-22.jpg
+    background-position: center
 seo: 
   title: 
   description: 
