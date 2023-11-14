@@ -634,6 +634,23 @@ ul {
   line-height: 1.5rem;
   text-transform: uppercase;
 }
+.button-menu {
+  margin: 1rem;
+  display: block;
+  border-radius: 2rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 213 135 / var(--tw-border-opacity));
+  background-color: rgb(237 213 135 / 0.8);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 /* Images */
 .bg-image-style {
   background-size: cover;
@@ -752,6 +769,18 @@ ul {
   margin-top: auto;
   margin-bottom: auto;
 }
+.my-10p {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.my-5p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -785,6 +814,12 @@ ul {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-5p {
+  margin-bottom: 5%;
+}
+.mt-10p {
+  margin-top: 10%;
+}
 .block {
   display: block;
 }
@@ -815,8 +850,14 @@ ul {
 .h-\[10vh\] {
   height: 10vh;
 }
-.min-h-\[20vh\] {
-  min-height: 20vh;
+.h-24 {
+  height: 6rem;
+}
+.h-full {
+  height: 100%;
+}
+.h-\[100vh\] {
+  height: 100vh;
 }
 .min-h-\[50vh\] {
   min-height: 50vh;
@@ -826,6 +867,9 @@ ul {
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
+}
+.min-h-\[100vh\] {
+  min-height: 100vh;
 }
 .w-\[10vh\] {
   width: 10vh;
@@ -859,6 +903,9 @@ ul {
 }
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-center {
   align-items: center;
@@ -915,9 +962,6 @@ ul {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
 .bg-\[url\(\'\/uploads\/images\/manamei-1\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-1.jpg');
 }
@@ -963,17 +1007,14 @@ ul {
 .bg-\[url\(\'\{\{item\.image_path\}\}\'\)\] {
   background-image: url('{{item.image_path}}');
 }
-.bg-\[url\(\'\{\{page\.background_image\}\}\'\)\] {
-  background-image: url('{{page.background_image}}');
-}
 .bg-\[url\(\'\{\{page\.details\.featured_image\}\}\'\)\] {
   background-image: url('{{page.details.featured_image}}');
 }
-.bg-\[url\(\'\{\{page\.logo_image\}\}\'\)\] {
-  background-image: url('{{page.logo_image}}');
-}
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
+}
+.bg-fixed {
+  background-attachment: fixed;
 }
 .p-10 {
   padding: 2.5rem;
@@ -1005,6 +1046,9 @@ ul {
 }
 .pb-0 {
   padding-bottom: 0px;
+}
+.pb-10p {
+  padding-bottom: 10%;
 }
 .pt-10p {
   padding-top: 10%;

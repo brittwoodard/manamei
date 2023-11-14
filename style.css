@@ -152,6 +152,10 @@
         @apply mx-4 px-4 py-2 text-base uppercase
     }
 
+    .button-menu {
+        @apply block border border-feature rounded-[2rem] bg-feature/80 text-dark uppercase m-4 py-2 px-4 text-center
+    }
+
     /* Images */
     .bg-image-style {
         @apply bg-no-repeat bg-center bg-cover

@@ -40,3 +40,5 @@ navigation-instagram:
     title: "Nectar Series"    
   - url: "/offerings/liberation-through-movement-membership.html"
     title: "Liberation Through Movement Membership"
+  - url: "/index.html"
+    title: "Website"

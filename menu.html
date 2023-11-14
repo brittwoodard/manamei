@@ -1,17 +1,25 @@
 ---
 layout: blank
-background_image: 
+logo_image: 
+title: Mana Mei
+background_image: /uploads/images/manamei-6.jpg
 logo_image: 
 ---
-<section class="bg-image-style bg-[url('{{page.background_image}}')]">
-    <div class="bg-image-style bg-[url('{{page.logo_image}}')] min-h-[20vh]"></div>
-    <div>
-        <a href="#">YT</a>
-        <a href="#">FB</a>
+<section class="min-h-[100vh] p-5p flex flex-col items-center justify-center bg-image-style bg-overlay bg-fixed" style="background-image: url('{{page.background_image}}');">
+    <!-- Logo -->
+    <img src="/uploads/icons/manamei-11.png" class="h-24 my-5p">
+    <h1 class="heading-md-sans text-feature">{{page.title}}</h1>
+
+    <!-- Social Buttons -->
+    <div class="mb-4">
+        <a href="https://www.facebook.com/groups/liberationthroughmovement" target="_blank"><img src="/uploads/icons/manamei-4.png" class="social-icon mx-2"></a>
+        <a href="https://www.youtube.com/@ManaMei" target="_blank"><img src="/uploads/icons/manamei-22.png" class="social-icon"></a>
     </div>
+
+    <!-- Navigation Menu -->
     <nav>
         {% for item in site.data.site-settings.navigation-instagram %}
-        <a href="{{item.url}}">{{item.title}}</a>
+        <a href="{{item.url}}" class="button-menu">{{item.title}}</a>
         {% endfor %}
     </nav>
 </section>
