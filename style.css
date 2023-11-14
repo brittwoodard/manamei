@@ -153,7 +153,7 @@
     }
 
     .button-menu {
-        @apply block border border-feature rounded-[2rem] bg-feature/80 text-dark uppercase m-4 py-2 px-4 text-center
+        @apply block border border-feature rounded-[2rem] bg-feature/70 text-dark uppercase m-4 py-2 px-4 text-center
     }
 
     /* Images */
