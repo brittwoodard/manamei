@@ -533,7 +533,6 @@ ul {
   font-size: 1.6rem;
   font-weight: 200;
   text-transform: uppercase;
-  line-height: 1.25rem;
 }
 @media (min-width: 640px) {
   .heading-lg-sans {
@@ -1098,6 +1097,9 @@ ul {
 }
 .leading-7 {
   line-height: 1.75rem;
+}
+.leading-5 {
+  line-height: 1.25rem;
 }
 .text-dark {
   --tw-text-opacity: 1;

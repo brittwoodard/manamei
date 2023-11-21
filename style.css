@@ -85,7 +85,7 @@
 
     /* Typography */
     .heading-lg-sans {
-        @apply uppercase leading-5 text-[1.6rem] sm:text-4xl md:text-5xl font-extralight mb-[0.5em]
+        @apply uppercase text-[1.6rem] sm:text-4xl md:text-5xl font-extralight mb-[0.5em]
     }
 
     .heading-md-sans {
