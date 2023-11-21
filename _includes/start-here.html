@@ -4,14 +4,14 @@
     <div>
         <p>{{page.start-here.description_html}}</p>
     </div>
-    <div class="grid grid-cols-3">
-        <div class="col-span-2">
+    <div class="grid md:grid-cols-3">
+        <div class="md:col-span-2">
             <ul class="mb-4">
                 {% for item in page.start-here.benefits %}
                 <li>{{item.benefit}}</li>
                 {% endfor %}
             </ul>
-            <a href="{{page.start-here.button.url}}" class="button">{{page.start-here.button.text}}</a>
+            <a href="{{page.start-here.button.url}}" class="button mb-12 md:mb-0">{{page.start-here.button.text}}</a>
         </div>
         <div class=”youtube-container”>
             <div class='embed-container'>
