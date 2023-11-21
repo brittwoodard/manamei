@@ -1,4 +1,7 @@
-<section class="bg-image-style bg-overlay p-10p text-center"
+<section class="bg-image-style p-10p text-center 
+{% if page.cta.background.overlay == 'yes' %} 
+bg-overlay 
+{% endif %}"
     style="background-image: url('{{page.cta.background.background_image}}'); background-position: {{page.cta.background.background_position}};">
     <h2 class="heading-lg-sans text-feature">{{page.cta.heading_html}}</h2>
     <h3 class="text-feature lowercase mb-4">{{page.cta.subtitle}}</h3>

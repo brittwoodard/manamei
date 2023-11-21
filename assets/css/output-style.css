@@ -896,6 +896,12 @@ ul {
 .w-full {
   width: 100%;
 }
+.w-28 {
+  width: 7rem;
+}
+.w-\[20\%\] {
+  width: 20%;
+}
 .cursor-pointer {
   cursor: pointer;
 }
