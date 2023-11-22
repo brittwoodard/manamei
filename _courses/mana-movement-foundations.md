@@ -2,7 +2,9 @@
 layout: program
 slug: mana-movement-foundations
 title: Mana Movement Foundations
-description_html: <p>This is a description</p>
+description_html: >-
+  <p>Mana Movement Foundations is a powerful introductory course to the
+  life-changing MANA Movement Practice.</p>
 featured-image: /uploads/images/manamei-27.jpg
 heading:
   title: MANA Movement Foundations
@@ -14,27 +16,53 @@ heading:
   button-video:
     show: true
     text: Watch the video
-    url:
+    url: https://youtu.be/5sEVM981_X0?
   background_image: /uploads/images/manamei-27.jpg
 banner:
   - image_path: /uploads/icons/manamei-19.png
-    title: Ritual
-    benefit: A loving relationship with your body
+    title: Calm
+    benefit: Quiet your Mind and Cultivate Inner Peace
   - image_path: /uploads/icons/manamei-20.png
     title: Expression
-    benefit: Radical & lasting self acceptance
+    benefit: Reconnect with your Body and Increase Fluidity
   - image_path: /uploads/icons/manamei-21.png
     title: Awaken
-    benefit: Your feminine passion and creativity
+    benefit: Awaken Your Spirit and Activate your Creativity
 video:
-  show: true
+  show: false
   url:
 course-description:
-  heading: Discover the essence of Wisdom Body
+  heading: Discover the essence of Mana Movement Foundations
   description: >-
-    This program is a personal deep dive into 12 powerful embodied movement and
-    somatic dance practices - broken down into 4 themed-modules including 3
-    practices each, Movement Meditation, Somatic Activation, Embodied Liberation
+    MANA Movement is a modality of movement that is focused on activating the
+    non-linear pathways of energy and of physical movement through the body.
+    These pathways are circles, spirals, and waves. These are also called the
+    Feminine Pathways of Movement.
+
+
+    The purpose of this practice is to bring our physical body and our energy
+    body back into balance- where we hold a harmonious balance between the
+    Masculine and the Feminine. The Masculine movement is linear, the feminine
+    movement is non-linear. Because we live in a world where we primarily move
+    and function from the Masculine, it is important for us to take the time to
+    activate the Feminine in order to come back into harmonious balance.
+
+
+    When we activate these Feminine pathways of movement through the body, we
+    allow the natural flow of life force energy to move through us without
+    restriction. This will allow us to access more creativity, more pleasure,
+    more inspiration, more joy.
+
+
+    It also allows us to meet life’s challenges with more peace and with more
+    grace. It increases our capacity to, literally, flow with life. This will
+    bring more ease into every single aspect of your life. 
+
+
+    Through this practice, by simply focusing on bringing these circles and
+    spirals and waves into every single part of your body, this will in turn
+    benefit the way you move through life and the way you meet life in every
+    single moment. 
   module:
     - image_path: /uploads/icons/manamei-7.png
       title: Meditation
