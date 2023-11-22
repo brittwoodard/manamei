@@ -64,37 +64,32 @@ course-description:
     benefit the way you move through life and the way you meet life in every
     single moment. 
   module:
-    - image_path: /uploads/icons/manamei-7.png
-      title: Meditation
-      description_html: >-
-        <p>Learn to relax the mind and surrender into full awareness &
-        acceptance of the feeling body.</p><p>Gain the tools to come into an
-        embodied presence at every moment of your life.<br>Move through your
-        daily life with ease, while never losing connection to your internal
-        wisdom.</p>
-    - image_path: /uploads/icons/manamei-5.png
-      title: Activation
-      description_html: >-
-        <p>Increase your movement vocabulary, expanding your capacity to express
-        yourself through dance.<br>Activate your whole-body awareness, fluidity,
-        and kinesthetic body intelligence.</p><p>Learn new somatic movement
-        practices, exploring the infinite movement pathways, and expanding your
-        skill set for how to effectively express through your body.</p>
-    - image_path: /uploads/icons/manamei-6.png
-      title: Liberation
-      description_html: >-
-        <p>Explore, unlock, and celebrate ALL of your Feminine
-        expressions.</p><p>Harness the power of all of your emotions and
-        transmute this energy into movement for manifestation and
-        creation.</p><p>Learn how to use movement as a prayer and devotional
-        practice to yourself, weaving together your dreams with your
-        reality.</p><p>Become the creatrix of your life and empower yourself to
-        take inspired action, the feminine way, with fluidity and grace.</P
+    - image_path: ''
+      title:
+      description_html: ''
+    - image_path: ''
+      title:
+      description_html: ''
+    - image_path: ''
+      title:
+      description_html: ''
 who-its-for:
-  heading: Who the Wisdom Body Immersion is for
-  description_html: "<p>Anyone who wants to go deeper, who may already have some experience in embodied movement, or whose already playing with using dance and movement as part of their personal development and healing modality, but wants more options, tools, guidance, and inspiration.</p><p>People that are new to embodied dance, that are interested in diving into this level of freedom through movement,\_exploring authenticity and personal expression.</p>"
+  heading: Who Mana Movement Foundations is for
+  description_html: >-
+    <p>This course is for anyone who is ready to:</p><ul><li>Unlock their full
+    creative potential by accessing the well of life force energy flowing
+    within.</li><li>Realign with a life filled with inspiration, beauty,
+    pleasure, and flow.</li><li>Establish an unwavering sense of peace and
+    safety within, no matter what is happening in the world around</li><li>Rise
+    into their full embodied power and live a life of liberated personal
+    expression.</li><li>Cultivate deeper self love, confidence, and
+    worthiness.</li><li>Become more comfortable dancing and moving their body
+    freely.</li><li>Gain more fluidity, mobility, and awareness of their body in
+    motion.</li><li>Learn a modality of practice that covers all three aspects
+    of holistic healing: mindfulness meditation, physical body activation,
+    spiritual liberation.</li></ul>
   background-image:
-    background_image: /uploads/images/manamei-17.jpg
+    background_image: /uploads/images/manamei-21.jpg
     image_focus: center
 inside-the-course:
   heading: Inside the Wisdom Body Immersion
