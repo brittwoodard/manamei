@@ -12,7 +12,8 @@ heading:
   description: A powerful introductory course to the life-changing MANA Movement Practice
   button-enroll:
     text: Enroll now
-    url: https://manamei.teachable.com/p/mana-movement-foundations
+    url: >-
+      https://sso.teachable.com/secure/487916/checkout/4871108/mana-movement-foundations
   button-video:
     show: true
     text: Watch the video
@@ -92,34 +93,49 @@ who-its-for:
     background_image: /uploads/images/manamei-21.jpg
     image_focus: center
 inside-the-course:
-  heading: Inside the Wisdom Body Immersion
+  heading: Inside Mana Movement Foundations
   description_html: >-
-    In Wisdom Body, each module brings a new dimension of understanding. Our
-    program is structured in four modules, each offering a comprehensive
-    approach to embodied awareness and expression.
+    <p>In this course, Mana Mei, founder of Liberation Through Movement- an
+    international business focused on empowering women through embodied
+    movement, will guide you through her signature life-changing movement
+    meditation practice, MANA Movement. Through this practice, you will
+    cultivate deep interoception (feeling body awareness) and learn to transmute
+    all emotions through the physical body, helping you to regain agency over
+    your life and ability to thrive.</p><p>In this Foundational MANA Movement
+    course, you will gain access to TWO full length practices which will bring
+    you into deep communion with your entire body, both physically and
+    energetically.</p><p>Through the consistent practice of MANA Movement, you
+    will strengthen your connection to self and cultivate an unwavering inner
+    sanctuary filled with a sense of peace, safety, expansion, and
+    freedom.</p><p>Each module includes a video introduction to explain the
+    structure and concept of the practice, plus the full length video guided
+    practice.&nbsp;</p>
   module:
     - title: Module 1
-      description_html: This is a lengthy answer.
+      description_html: >-
+        <p>The first practice will take you through a thorough exploration of
+        the foundational seated MANA Movement practice, focused on activating
+        the central channel of the body from root to crown, through the spine,
+        as well as opening the channels through the arms. You will be introduced
+        to the breath-body connection and conscious breathing patterns used
+        throughout the practice. You will also have moments to dive into your
+        free movement exploration, discovering your own unique way of moving in
+        circles, spirals, and waves.&nbsp;</p>
       time:
-        show: true
+        show: false
         hours: 1
         minutes: 16
     - title: Module 2
-      description_html: This is a lengthy answer.
+      description_html: >-
+        <p>The second practice is an evolution of practice one. In this
+        practice, you will travel through all four body positions, moving from
+        seated all the way to standing, and activating the Feminine Pathways
+        through all channels of the body. You will conclude the practice with a
+        full body free movement exploration to activate your authentic
+        expression and allow the transmutation and expression of your luscious
+        inner landscape.</p>
       time:
-        show: true
-        hours: 1
-        minutes: 16
-    - title: Module 3
-      description_html: This is a lengthy answer.
-      time:
-        show: true
-        hours: 1
-        minutes: 16
-    - title: Module 4
-      description_html: This is a lengthy answer.
-      time:
-        show: true
+        show: false
         hours: 1
         minutes: 16
   background-image:
@@ -128,32 +144,54 @@ inside-the-course:
 testimonials:
   background_image: /uploads/images/manamei-20.jpg
   testimonials:
-    - testimonial: This is a testimonial
-      author: Regina Philange
-    - testimonial: This is a testimonial
-      author: Ken Adams
+    - testimonial: ”I love it!! I've been searching for this movement my whole life.”
+      author:
+    - testimonial: >-
+        “I love the combo of movement, breathwork and meditation. Just what I
+        was looking for without knowing I needed it!”
+      author:
+    - testimonial: >-
+        “I’m getting to know myself better with every morning MANA practice. I’m
+        becoming more confident and believe in myself. I'm showing myself to the
+        world in a more authentic way.”
+      author:
+    - testimonial: >-
+        “I have only just begun this practice, but I feel it is opening up
+        something healing and powerful. I have realized I have not been feeling
+        or breathing properly because of trauma, and the simple act of
+        breathing, feeling and allowing my own energy to heal me is beautiful.”
+      author:
+    - testimonial: >-
+        “I love this course. It makes be feel relax all my muscles, peace and
+        calm.  It's great relaxation and exercise”
+      author:
+    - testimonial: “I feel much more energized and so much more TRULY authentic.”
+      author:
+    - testimonial: >-
+        “This practice is truly amazing. The way I feel my body, the way I
+        connect to it, the way I connect to my emotions and let them be.”
+      author:
+    - testimonial: “One class and I cant wait for a million more!”
+      author:
 instructor:
-  show: true
+  show: false
 investment:
   heading: Investment
   includes:
     heading: What's included
     list:
-      - list-item: 12 guided audio and video practices
+      - list-item: 2 guided video practices
       - list-item: Written theory and journaling prompts
       - list-item: Lifetime access to program materials
-      - list-item: Access to the private wisdom body Facebook group
-      - list-item: >-
-          2-months free membership to the liberation through movement online
-          community
+      - list-item: Access to the private Mana Movement Facebook group
   pricing:
     pay-in-full:
       heading: Pay in full
-      price: $300
+      price: $20
     payment-plan:
-      show: true
+      show: false
       heading: Payment plan
-      price: $180 x 12 months
+      price:
 faq:
   heading: Frequently asked questions
   questions-and-answers:
@@ -211,15 +249,13 @@ faq:
 cta:
   heading: Something greater
   description_html: >-
-    <p>There is something much greater than you or me, or our physical bodies
-    and minds, that exists in the unseen world and is the source of what we call
-    magic, and which is always working to bring us back into alignment with our
-    divine path and purpose - that something is your Wisdom Body.</p><p>This
-    immersion will provide you with the tools & experiences to help you
-    reconnect with your own Wisdom Body and step into your full power.</p>
+    <p>Within each of us exists a vast and wonderous landscape of beauty and
+    creative potential. By enrolling now, you can reclaim your role as the
+    master creator of your life and realign with the life you desire.</p>
   button:
     text: Enroll now
-    url:
+    url: >-
+      https://sso.teachable.com/secure/487916/checkout/4871108/mana-movement-foundations
   background-image:
     background_image: /uploads/images/manamei-22.jpg
     background-position: center
