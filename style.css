@@ -85,7 +85,7 @@
 
     /* Typography */
     .heading-lg-sans {
-        @apply uppercase text-[1.6rem] sm:text-4xl md:text-5xl font-extralight mb-[0.5em]
+        @apply uppercase text-4xl md:text-5xl font-extralight mb-[0.5em]
     }
 
     .heading-md-sans {
@@ -93,11 +93,11 @@
     }
 
     .text-lg-serif {
-        @apply text-2xl sm:text-2xl md:text-4xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
+        @apply text-3xl md:text-4xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
     }
 
     .text-md-serif {
-        @apply text-2xl sm:text-3xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
+        @apply text-3xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
     }
 
     .text-sm-serif {
