@@ -1,7 +1,7 @@
 <section class="flex gallery" id="lightgallery">
 
     {% for item in page.gallery %}
-    <a href="{{item.image_path}}" src="{{item.seo-description}}" class="w-1/4 shrink-0 h-[65vh] border border-red-600">
+    <a href="{{item.image_path}}" src="{{item.seo-description}}" class="w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[20%] shrink-0 h-[65vh] border border-red-600">
         <div class="bg-image-style"
         style="background-image: url('{{item.image_path}}');"></div>
     </a>
