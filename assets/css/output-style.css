@@ -849,6 +849,9 @@ ul {
 .mt-8 {
   margin-top: 2rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -863,6 +866,9 @@ ul {
 }
 .list-item {
   display: list-item;
+}
+.hidden {
+  display: none;
 }
 .h-12 {
   height: 3rem;
@@ -1050,6 +1056,14 @@ ul {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1166,6 +1180,12 @@ ul {
   }
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+  .md\:block {
+    display: block;
+  }
+  .md\:hidden {
+    display: none;
   }
   .md\:h-24 {
     height: 6rem;

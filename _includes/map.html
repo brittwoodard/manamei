@@ -1,11 +1,34 @@
-<section class="p-10p pb-0">
+<!-- Small Devices & Smaller -->
+<section class="md:hidden p-5p pb-0">
+    <h2 class="text-md-serif text-feature text-center">{{page.map.heading}}</h2>
+    <p class="text-center">{{page.map.description}}</p>
+    <div class="grid grid-cols-5 mt-12">
+        {% for item in page.map.offering %}
+
+        <!-- icon -->
+        <div class=col-span-1>
+            <img src={{item.image_path}} class="h-16 sm:h-20 md:h-24">
+        </div>
+    
+        <div class="col-span-4 mb-12 ml-2">
+            <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
+            <span class="lowercase text-feature">{{item.type}}</span>
+            <p>{{item.description}}</p>
+            <a href="{{item.url}}" class="link">Learn more</a>
+        </div>
+
+        {% endfor %}
+</section>
+
+<!-- Medium Devices & Larger -->
+<section class="hidden md:block p-10p pb-0">
     <h2 class="text-md-serif text-feature text-center">{{page.map.heading}}</h2>
     <p class="text-center">{{page.map.description}}</p>
     <div class="grid grid-cols-12 mt-12">
         {% for item in page.map.offering %}
         {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
         {% if thecycle == 'left' %}
-        <div class="col-span-5 p-5p mb-12 
+        <div class="col-span-5 mb-12 
         {% cycle 'text-right', 'text-left' %}">
             <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
             <span class="lowercase text-feature">{{item.type}}</span>
@@ -14,7 +37,7 @@
         </div>
 
         <!-- icon -->
-        <div class=col-span-2>
+        <div class="col-span-2 px-2 flex justify-center">
             <img src={{item.image_path}} class="h-28">
         </div>
 
@@ -22,7 +45,7 @@
         {% else %}
         <div class="col-span-5"></div>
 
-        <div class="col-span-2"><img src={{item.image_path}} class="h-28"></div>
+        <div class="col-span-2 flex justify-center"><img src={{item.image_path}} class="h-28"></div>
         <div class="col-span-5 p-5p 
         {% cycle 'text-right', 'text-left' %}">
             <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
