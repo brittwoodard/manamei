@@ -89,7 +89,7 @@
     }
 
     .heading-md-sans {
-        @apply uppercase   text-2xl sm:text-3xl leading-[1.1em] font-extralight mb-[0.5em]
+        @apply uppercase text-2xl sm:text-3xl leading-[1.1em] font-extralight mb-[0.5em]
     }
 
     .text-lg-serif {
@@ -119,7 +119,8 @@
         display: inline-block
     }
 
-    .button:hover, .button-form:hover {
+    .button:hover,
+    .button-form:hover {
         background-color: rgb(237, 213, 135, 0.5);
         border: 1px solid rgb(237, 213, 135, 0.5);
         color: white;
@@ -127,7 +128,7 @@
     }
 
     .button-form {
-        @apply uppercase text-base border border-light 
+        @apply uppercase text-base border border-light
     }
 
     .link {
@@ -184,7 +185,7 @@
 
     .gallery {
         overflow-x: auto;
-        flex-wrap: nowrap;
+        white-space: nowrap;
     }
 
     .bg-overlay {
