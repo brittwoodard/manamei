@@ -793,6 +793,7 @@ p {
         bottom: -02px;
     }
 .mobile-button.active .mobile-top {
+        border-color: var(--featured);
         position: absolute;
         top: 8px;
         transform: rotateZ(45deg);
@@ -803,6 +804,7 @@ p {
         background-color: rgba(0, 0, 0, 0);
     }
 .mobile-button.active .mobile-bottom {
+        border-color: var(--featured);
         position: absolute;
         bottom: 8px;
         transform: rotateZ(-45deg);
