@@ -675,6 +675,17 @@ p {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 /* Structure */
+.section-padding {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 10%;
+  }
+}
 /* Images */
 .bg-image-style {
   background-size: cover;
@@ -844,6 +855,9 @@ p {
 .mobile-menu a:hover {
         color: white;
     }
+.invisible {
+  visibility: hidden;
+}
 .fixed {
   position: fixed;
 }
@@ -942,6 +956,12 @@ p {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
+.mr-10p {
+  margin-right: 10%;
+}
 .block {
   display: block;
 }
@@ -1007,6 +1027,9 @@ p {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.grow {
+  flex-grow: 1;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -1090,6 +1113,9 @@ p {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-\[url\(\'\/uploads\/backgrounds\/manamei-4\.jpg\'\)\] {
+  background-image: url('/uploads/backgrounds/manamei-4.jpg');
 }
 .bg-\[url\(\'\/uploads\/images\/manamei-1\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-1.jpg');
@@ -1303,6 +1329,9 @@ p {
   .md\:mb-0 {
     margin-bottom: 0px;
   }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
   .md\:block {
     display: block;
   }
@@ -1333,11 +1362,17 @@ p {
   .md\:gap-2 {
     gap: 0.5rem;
   }
+  .md\:gap-8 {
+    gap: 2rem;
+  }
   .md\:border-none {
     border-style: none;
   }
   .md\:p-10p {
     padding: 10%;
+  }
+  .md\:p-5p {
+    padding: 5%;
   }
   .md\:px-10p {
     padding-left: 10%;

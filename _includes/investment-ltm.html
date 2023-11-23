@@ -1,0 +1,31 @@
+<section class="bg-image-style bg-overlay bg-fixed py-10p px-5p md:p-10p" style="background-image: url('{{page.investment.background_image}}');">
+    <h2 class="heading-lg-sans text-feature text-center">{{page.investment.heading}}</h2>
+    <div class="grid md:grid-cols-3 md:gap-8">
+        <!-- Includes -->
+        <div class="md:col-span-2 text-left">
+            <h3 class="uppercase text-2xl">{{page.investment.includes.heading}}</h3>
+            <ul>
+                {% for item in page.investment.includes.list %}
+                <li class="list-none sm:list-disc sm:ml-4">{{item.list-item}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- Pricing Options -->
+        <div class="text-left mt-8 md:mt-0">
+            <div class="mb-8">
+                <h3 class="uppercase text-2xl">{{page.investment.pricing.pay-in-full.heading}}</h3>
+                <span>{{page.investment.pricing.pay-in-full.price}}</span>
+                {% if page.investment.pricing.payment-plan.show == true %}
+            </div>
+            <div>
+                <h3 class="uppercase text-2xl">{{page.investment.pricing.payment-plan.heading}}</h3>
+                <span>{{page.investment.pricing.payment-plan.price}}</span>
+            </div>
+            {% endif %}
+        </div>
+        <!-- CTA -->
+    <div class="mt-8">
+        <a href="#" class="button">Join Now</a>
+    </div>
+    </div>
+</section>
