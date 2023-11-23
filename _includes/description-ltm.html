@@ -1,0 +1,18 @@
+<section class="pt-10p p-5p md:p-10p">
+    <div class="text-center mb-12">
+        <h2 class="heading-lg-sans text-feature">{{page.course-description.heading}}</h2>
+        <p>{{page.course-description.description_html}}</p>
+    </div>
+    {% for item in page.course-description.module %}
+    <div class="flex mb-12">
+        <img src="{{item.image_path}}" class="h-16 mr-4">
+        <div class="col-span-4">
+            <h3 class="text-md-serif text-feature">{{item.title}}</h3>
+            <p>{{item.description_html}}</p>
+            <div class="p-5p border border-feature">
+                <p>{{item.structure_html}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>

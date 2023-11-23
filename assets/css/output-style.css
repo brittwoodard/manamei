@@ -400,9 +400,6 @@ footer input::placeholder, textarea::placeholder {
 p {
   margin-bottom: 1rem;
 }
-/* ul {
-        @apply list-disc ml-4
-    } */
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -592,6 +589,13 @@ p {
   line-height: 1.75rem;
 }
 /* Buttons */
+.description-container {
+        max-height: 60vh; 
+        transition: max-height 0.3s ease-out;
+    }
+.read-more-btn {
+        display: none;
+    }
 .button {
         text-transform: uppercase;
         border: 1px solid white;
@@ -947,6 +951,9 @@ p {
 .mr-8 {
   margin-right: 2rem;
 }
+.mt-10p {
+  margin-top: 10%;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -955,12 +962,6 @@ p {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mb-0 {
-  margin-bottom: 0px;
-}
-.mr-10p {
-  margin-right: 10%;
 }
 .block {
   display: block;
@@ -1016,12 +1017,6 @@ p {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
-.min-h-\[40vh\] {
-  min-height: 40vh;
-}
-.min-h-\[50vh\] {
-  min-height: 50vh;
-}
 .w-\[10vh\] {
   width: 10vh;
 }
@@ -1040,11 +1035,11 @@ p {
 .cursor-pointer {
   cursor: pointer;
 }
-.list-none {
-  list-style-type: none;
-}
 .list-disc {
   list-style-type: disc;
+}
+.list-none {
+  list-style-type: none;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1084,6 +1079,9 @@ p {
 }
 .gap-8 {
   gap: 2rem;
+}
+.overflow-hidden {
+  overflow: hidden;
 }
 .border {
   border-width: 1px;
@@ -1338,11 +1336,11 @@ p {
   .md\:mb-0 {
     margin-bottom: 0px;
   }
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
   .md\:mr-10p {
     margin-right: 10%;
+  }
+  .md\:mt-0 {
+    margin-top: 0px;
   }
   .md\:block {
     display: block;
@@ -1380,14 +1378,14 @@ p {
   .md\:border-none {
     border-style: none;
   }
+  .md\:p-0 {
+    padding: 0px;
+  }
   .md\:p-10p {
     padding: 10%;
   }
   .md\:p-5p {
     padding: 5%;
-  }
-  .md\:p-0 {
-    padding: 0px;
   }
   .md\:px-10p {
     padding-left: 10%;

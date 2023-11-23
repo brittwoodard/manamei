@@ -38,3 +38,23 @@ $( document ).ready(function() {
         });
      });
 });
+
+// Read More
+document.addEventListener('DOMContentLoaded', function () {
+    var descriptionContainer = document.getElementById('aboutDescription');
+    var readMoreBtn = document.getElementById('readMoreBtn');
+
+    if (descriptionContainer.scrollHeight > descriptionContainer.clientHeight) {
+        readMoreBtn.style.display = 'block';
+    }
+
+    readMoreBtn.addEventListener('click', function () {
+        if (descriptionContainer.style.maxHeight) {
+            descriptionContainer.style.maxHeight = null;
+            readMoreBtn.textContent = 'Read More';
+        } else {
+            descriptionContainer.style.maxHeight = descriptionContainer.scrollHeight + 'px';
+            readMoreBtn.textContent = 'Read Less';
+        }
+    });
+});

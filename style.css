@@ -78,9 +78,8 @@
         @apply mb-4
     }
 
-    /* ul {
-        @apply list-disc ml-4
-    } */
+
+
 }
 
 
@@ -113,6 +112,16 @@
     }
 
     /* Buttons */
+    .description-container {
+        max-height: 60vh; 
+        transition: max-height 0.3s ease-out;
+    }
+    
+    .read-more-btn {
+        display: none;
+    }
+    
+
     .button {
         text-transform: uppercase;
         border: 1px solid white;
