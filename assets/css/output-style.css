@@ -397,10 +397,9 @@ footer input::placeholder, textarea::placeholder {
 p {
   margin-bottom: 1rem;
 }
-ul {
-  margin-left: 1rem;
-  list-style-type: disc;
-}
+/* ul {
+        @apply list-disc ml-4
+    } */
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -772,8 +771,9 @@ ul {
 .m-4 {
   margin: 1rem;
 }
-.m-8 {
-  margin: 2rem;
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .mx-2 {
   margin-left: 0.5rem;
@@ -782,6 +782,10 @@ ul {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -794,14 +798,6 @@ ul {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -902,6 +898,9 @@ ul {
 .cursor-pointer {
   cursor: pointer;
 }
+.list-none {
+  list-style-type: none;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -937,15 +936,6 @@ ul {
 }
 .justify-around {
   justify-content: space-around;
-}
-.justify-items-start {
-  justify-items: start;
-}
-.justify-items-end {
-  justify-items: end;
-}
-.justify-items-center {
-  justify-items: center;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -1033,6 +1023,14 @@ ul {
 .py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-10p {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1139,6 +1137,9 @@ ul {
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -1148,11 +1149,23 @@ ul {
   .sm\:w-\[60\%\] {
     width: 60%;
   }
+  .sm\:list-disc {
+    list-style-type: disc;
+  }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .sm\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+  .sm\:text-left {
+    text-align: left;
   }
 }
 @media (min-width: 768px) {
@@ -1188,6 +1201,10 @@ ul {
   }
   .md\:p-10p {
     padding: 10%;
+  }
+  .md\:px-10p {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .md\:px-20p {
     padding-left: 20%;

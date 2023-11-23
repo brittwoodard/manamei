@@ -1,17 +1,17 @@
-<section class="bg-image-style bg-overlay p-10p" style="background-image: url('/uploads/backgrounds/manamei-1.png');">
+<section class="bg-image-style bg-overlay py-10p px-5p md:p-10p" style="background-image: url('/uploads/backgrounds/manamei-1.png');">
     <h2 class="heading-lg-sans text-feature text-center">{{page.investment.heading}}</h2>
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid sm:grid-cols-3 sm:gap-8">
         <!-- Includes -->
-        <div class="col-span-2">
+        <div class="sm:col-span-2 text-center sm:text-left">
             <h3 class="uppercase text-2xl">{{page.investment.includes.heading}}</h3>
             <ul>
                 {% for item in page.investment.includes.list %}
-                <li>{{item.list-item}}</li>
+                <li class="list-none sm:list-disc sm:ml-4">{{item.list-item}}</li>
                 {% endfor %}
             </ul>
         </div>
         <!-- Pricing Options -->
-        <div>
+        <div class="text-center sm:text-left">
             <div class="mb-8">
                 <h3 class="uppercase text-2xl">{{page.investment.pricing.pay-in-full.heading}}</h3>
                 <span>{{page.investment.pricing.pay-in-full.price}}</span>
@@ -23,5 +23,10 @@
             </div>
             {% endif %}
         </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="flex justify-center mt-8">
+        <a href="#" class="button">Enroll Now</a>
     </div>
 </section>

@@ -1,11 +1,11 @@
-<section class="p-10p bg-image-style"
+<section class="py-10p px-5p md:p-10p bg-image-style"
     style="background-image: url('{{page.faq.background-image.background_image}}'); background-position: {{page.faq.background-image.image_focus}};">
     <h2 class="heading-lg-sans text-feature text-center">{{page.faq.heading}}</h2>
     <ul class="dropdown-menu">
         {% for item in page.faq.questions-and-answers %}
         <li x-data="{ open: false }" class="dropdown-item {% if forloop.last %}last-item{% endif %}">
             <button @click="open = ! open" class="flex justify-between w-full">
-                <h3 class="mr-8">{{item.question}}</h3>
+                <h3 class="mr-8 text-left">{{item.question}}</h3>
                 <span x-show="!open">→</span>
                 <span x-show="open">&nbsp;&nbsp;↓</span>
             </button>
