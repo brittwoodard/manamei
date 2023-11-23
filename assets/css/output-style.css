@@ -863,6 +863,9 @@ p {
 .inline-block {
   display: inline-block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -1246,6 +1249,9 @@ p {
   }
   .md\:h-24 {
     height: 6rem;
+  }
+  .md\:h-8 {
+    height: 2rem;
   }
   .md\:w-\[40\%\] {
     width: 40%;
