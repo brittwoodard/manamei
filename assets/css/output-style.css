@@ -674,6 +674,7 @@ p {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+/* Structure */
 /* Images */
 .bg-image-style {
   background-size: cover;
@@ -1147,10 +1148,6 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-5p {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1345,10 +1342,6 @@ p {
   .md\:px-10p {
     padding-left: 10%;
     padding-right: 10%;
-  }
-  .md\:px-20p {
-    padding-left: 20%;
-    padding-right: 20%;
   }
   .md\:text-right {
     text-align: right;

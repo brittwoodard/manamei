@@ -162,6 +162,11 @@
         @apply block border border-feature rounded-[2rem] bg-feature/70 text-dark uppercase m-4 py-2 px-4 text-center
     }
 
+    /* Structure */
+    .section-padding {
+        @apply py-10p px-5p md:p-10p
+    }
+
     /* Images */
     .bg-image-style {
         @apply bg-no-repeat bg-center bg-cover
