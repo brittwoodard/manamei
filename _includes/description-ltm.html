@@ -1,18 +1,25 @@
-<section class="pt-10p p-5p md:p-10p">
-    <div class="text-center mb-12">
-        <h2 class="heading-lg-sans text-feature">{{page.course-description.heading}}</h2>
-        <p>{{page.course-description.description_html}}</p>
-    </div>
-    {% for item in page.course-description.module %}
-    <div class="flex mb-12">
-        <img src="{{item.image_path}}" class="h-16 mr-4">
-        <div class="col-span-4">
-            <h3 class="text-md-serif text-feature">{{item.title}}</h3>
-            <p>{{item.description_html}}</p>
-            <div class="p-5p border border-feature">
-                <p>{{item.structure_html}}</p>
+<section class="section-padding">
+    <h2 class="heading-lg-sans text-feature text-center">{{page.course-description.heading}}</h2>
+    <div class="grid md:grid-cols-2 md:gap-8">
+        <div class="flex items-center justify-center">
+            <div>
+                <p>Liberation through movement is an <span class="text-sm-serif">online global tribe for women</span> who are ready to:</p>
+                <ul class="list-disc ml-4 mb-2">
+                    <li class="mb-2">Let go of the need to push to find their place and worth in the world.</li>
+                    <li class="mb-2">Gain the knowledge needed to realign with their feminine way of expansion.</li>
+                    <li class="mb-2">Learn new embodiment practices and participate in unique life-changing experiences.</li>
+                    <li class="mb-2">Awaken and celebrate their feminine expressions - finding safety and pleasure in feeling.</li>
+                    <li class="mb-2">Be supported by women all over the world, held in a container of safety and permission.</li>
+                </ul>
+                <div class="text-center mb-8 md:mb-0">
+                    <a href="https://liberationthroughmovement.mn.co/" class="link">Join the tribe</a>
+                </div>
             </div>
         </div>
+        <div class="p-10p border border-feature">
+            <p>As a member of this tribe, you will have exclusive access to weekly embodiment events & workshops curated by world class facilitators. You will connect with hundreds of women around the globe through these powerful shared experiences, and remember at every moment that you  are not alone. We are here for you, dancing beside you, celebrating you along your journey.</p>
+            <p>So are you ready to spread your wings?<br>Are you ready for your next evolution of embodied liberation?</p>
+            <p>THIS IS YOUR TRIBE, LADIES. <span class="text-sm-serif">Welcome Home.</span>
+        </div>
     </div>
-    {% endfor %}
 </section>
