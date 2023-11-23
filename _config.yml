@@ -1,7 +1,4 @@
 collections:
-  courses:
-    output: true
-    permalink: /:slug
   free-offerings: 
     output: true
     permalink: /:slug

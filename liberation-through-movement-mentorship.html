@@ -1,5 +1,5 @@
 ---
-layout: program
+layout: default
 slug: wisdom-body
 title: Wisdom Body
 description_html: 
@@ -138,3 +138,40 @@ seo:
   social_image: 
   hide-from-google: false
 ---
+
+<!-- Course Heading -->
+{% include hero-banner-course.html %}
+
+<!-- Banner -->
+{% include banner-course.html %}
+
+<!-- Video -->
+{% if page.video.show == true %}
+{% include video.html %}
+{% endif %}
+
+<!-- Course Description -->
+{% include description-course.html %}
+
+<!-- Who It's For -->
+{% include who-its-for.html %}
+
+<!-- Inside the Course -->
+{% include inside-the-course.html %}
+
+<!-- Testimonials -->
+{% include testimonials.html %}
+
+<!-- Meet Your Teacher -->
+{% if page.video.show == true %}
+{% include about-mana-course.html %}
+{% endif %}
+
+<!-- Investment -->
+{% include investment.html %}
+
+<!-- FAQ -->
+{% include faq.html %}
+
+<!-- CTA -->
+{% include cta-course.html %}

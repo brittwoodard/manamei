@@ -558,8 +558,7 @@ ul {
 .text-lg-serif {
   margin-bottom: 0.5em;
   font-family: modernline, serif;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.375rem;
   font-weight: 200;
   line-height: 1.8em;
 }
@@ -796,6 +795,14 @@ ul {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -931,6 +938,15 @@ ul {
 .justify-around {
   justify-content: space-around;
 }
+.justify-items-start {
+  justify-items: start;
+}
+.justify-items-end {
+  justify-items: end;
+}
+.justify-items-center {
+  justify-items: center;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1009,10 +1025,6 @@ ul {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-.px-20p {
-  padding-left: 20%;
-  padding-right: 20%;
 }
 .px-\[5\%\] {
   padding-left: 5%;
@@ -1107,19 +1119,6 @@ ul {
 
 /* ADDITIONAL COMPONENTS */
 @media (min-width: 768px) {
-    .md\:heading-lg-sans {
-    margin-bottom: 0.5em;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 200;
-    text-transform: uppercase;
-  }
-    @media (min-width: 768px) {
-    .md\:heading-lg-sans {
-      font-size: 3rem;
-      line-height: 1;
-    }
-  }
 
     .md\:text-md-serif {
     margin-bottom: 0.5em;
@@ -1199,8 +1198,22 @@ ul {
   }
 }
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .lg\:flex {
+    display: flex;
+  }
   .lg\:w-\[30\%\] {
     width: 30%;
+  }
+  .lg\:p-0 {
+    padding: 0px;
   }
 }
 @media (min-width: 1280px) {
