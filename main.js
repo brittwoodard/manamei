@@ -27,3 +27,14 @@ lightGallery(document.getElementById('lightgallery'), {
     speed: 500,
     download: false
 });
+
+// Mobile Menu
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    $( document ).ready(function() {
+        $(".mobile-button").click(function(){
+          $(".mobile-button").toggleClass("active");
+          $(".mobile-menu").toggleClass("active");
+        });
+     });
+});

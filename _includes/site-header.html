@@ -1,6 +1,11 @@
 <header class="flex justify-between items-center px-[5%]">
     <img src="/uploads/icons/manamei-11.png" alt="Mana Mei">
-    <nav>
+    
+    <!-- Mobile Menu (Small Devices & Smaller) -->
+    {% include mobile-nav.html %}
+
+    <!-- Medium Devices & Larger -->
+    <nav class="hidden md:block">
         {% for item in site.data.site-settings.navigation %}
         <a href="{{item.url}}">{{item.title}}</a>
         {% endfor %}
