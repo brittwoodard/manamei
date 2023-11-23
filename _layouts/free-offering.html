@@ -14,8 +14,8 @@
     </section>
 
     <!-- Details -->
-    <section class="grid grid-cols-3">
-        <div class="col-span-2 px-10p pt-10p">
+    <section class="grid md:grid-cols-3">
+        <div class="md:col-span-2 px-10p pt-10p">
             <h1 class="heading-md-sans text-feature">{{page.details.title}}</h1>
             <h2 class="capitalize text-feature mb-8">{{page.details.subtitle}}</h2>
             <p>{{page.details.description_html}}</p>
@@ -25,9 +25,9 @@
                     {{page.details.day-of-the-week}}, {{page.details.date}}
                 </p>
             </div>
-            <a href="#" class="button mt-4 inline-block">{{page.details.button.text}}</a>
+            <a href="#" class="button mt-4 mb-10p md:mb-0 inline-block">{{page.details.button.text}}</a>
         </div>
-        <div class="bg-image-style bg-[url('{{page.details.featured_image}}')]"></div>
+        <div class="bg-image-style min-h-[60vh] bg-[url('{{page.details.featured_image}}')]"></div>
     </section>
 
     <!-- Your Instructor -->
