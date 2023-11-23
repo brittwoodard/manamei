@@ -29,6 +29,10 @@
 
 /* Default Styles to apply to the whole project */
 @layer base {
+    html {
+        @apply scroll-smooth
+    }
+
     body {
         @apply font-sans bg-black text-white text-lg font-light tracking-wide
     }
