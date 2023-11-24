@@ -1124,6 +1124,10 @@ p {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'\/uploads\/backgrounds\/manamei-4\.jpg\'\)\] {
   background-image: url('/uploads/backgrounds/manamei-4.jpg');
 }
