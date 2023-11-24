@@ -1,11 +1,11 @@
 <section class="pt-10p p-5p md:p-10p">
     <h2 class="heading-lg-sans text-feature text-center">{{page.course-description.heading}}</h2>
     <div class="grid grid-cols-2">
-        <div>
-            <p>{{page.course-description.description_html}}</p>
+        <div class="col-span-1">
+            <p class="text-left">{{page.course-description.description_html}}</p>
         </div>
-        <div class="p-10p border border-feature">
-            <p>{{page.course-description.benefits_html}}</p>
+        <div class="col-span-1 p-10p border border-feature">
+            <p class="text-left">{{page.course-description.benefits_html}}</p>
         </div>
     </div>
     {% for item in page.course-description.module %}
