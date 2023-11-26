@@ -2,8 +2,12 @@ collections:
   free-offerings: 
     output: true
     permalink: /:slug
-_select_data:
+overlay_style: none
+_inputs:
   overlay_style:
-    - none
-    - light
-    - dark
+    type: select
+    options:
+      values:
+        - none
+        - light
+        - dark
