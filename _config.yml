@@ -2,3 +2,8 @@ collections:
   free-offerings: 
     output: true
     permalink: /:slug
+_select_data:
+  overlay_style:
+    - none
+    - light
+    - dark

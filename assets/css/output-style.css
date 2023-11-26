@@ -719,10 +719,17 @@ p {
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.7);
     }
 .bg-overlay>* {
         position: relative;
+    }
+.bg-overlay.dark::before {
+        background-color: rgba(0, 0, 0, 0.7);
+
+    }
+.bg-overlay.light::before {
+        background-color: rgba(0, 0, 0, 0.3);
+
     }
 .icon {
   margin-bottom: 2rem;
@@ -1001,6 +1008,9 @@ p {
 .h-\[65vh\] {
   height: 65vh;
 }
+.h-full {
+  height: 100%;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -1109,6 +1119,14 @@ p {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-r-feature {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(237 213 135 / var(--tw-border-opacity));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-dark\/50 {
   background-color: rgb(0 0 0 / 0.5);
