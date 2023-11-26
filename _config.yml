@@ -10,4 +10,5 @@ _inputs:
       values:
         - none
         - light
+        - medium
         - dark

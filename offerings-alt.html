@@ -1,0 +1,102 @@
+---
+layout: default
+title: Offerings
+map: 
+  heading: A lifechanging journey
+  description: The following is an outline of the path you will be guided through if you feel called to choose Mana Mei and Liberation Through Movement as your guiding light for this next thread in the weaving of your life journey. If you take this journey, IT WILL CHANGE YOUR LIFE.
+  offering:
+    - title: Mana Movement Foundations
+      type: Online Program
+      description: Begin your Embodiment journey by learning this simple yet powerful practice, designed for all women. This is the perfect place to begin, or deepen your practice of using movement as a daily ritual for awakening and connecting to your Feminine Power and returning to inner balance and clarity.
+      url: /mana-movement-foundations.html
+      image_path: /uploads/icons/manamei-14.png
+    - title: Mana Movement Full Course
+      type: Online Program
+      description: Take the next step to deepen your MANA Movement Practice in this 10 module full course which will take you through the detailed breakdown and practice of all elements of the MANA Movement Practice. This expanded course will teach you new exercise and movement not included in the Foundations Course.
+      url: /mana-movement.html
+      image_path: /uploads/icons/manamei-15.png
+    - title: Wisdom Body
+      type: Online Program
+      description: Through intentionally designed Movement Meditations, Somatic Dance Exercises, and Embodied Dance Journeys, you will touch deeper layers of your self-connection, expand your movement vocabulary, and explore vast realms of your authentic self expression.
+      url: /wisdom-body.html
+      image_path: /uploads/icons/manamei-16.png
+    - title: Liberation Through Movement Mentorship
+      type: Online Program
+      description: Mana Mei’s Keystone Offering! A 4-month deep dive into every facet of your personal embodiment, all Liberation Through Movement Practices, plus Level 1 Facilitation Training, birthing through the other side of this intimate and powerful container as an empowered woman and Embodied Feminine Leader.
+      url: /liberation-through-movement-mentorship.html
+      image_path: /uploads/icons/manamei-13.png
+additional-offerings: 
+  heading: Additional Offerings
+  subheading: You are not alone!
+  description: Become a shining pillar of light in the Liberation Through Movement Community and connect with women around the world also on the Path of Embodied Healing.
+  offering: 
+   - title: Liberation Through Movement
+     type: Membership Community
+     description: Connect with like-minded embodied women all over the world in shared experience through monthly live online embodiment workshops and masterclasses. Receive unlimited access to the full Workshop Library of all past events. Feel seen and supported in your journey back home to yourself.
+     url: /liberation-through-movement.html
+   - title: Nectar Series
+     type: 12 Masterclass Package
+     description: Embark on an enchanting odyssey within your being, discovering all the flavors of the sweetest elixir- your own essence. This symphony of Masterclasses, Rituals, and Workshops created by Mana Mei for the Liberation Through Movement Community will provide you will expansive inspiration in your journey of Feminine Expression.
+     url: nectar-series.html
+cta: 
+  type: masterclass-reply
+  heading_html: Liberation Through Movement<br>
+  subtitle: Free Masterclass Replay
+  description_html: <p>This is the perfect resource for anyone interested to learn more about the HOW and WHY the Liberation Through Movement Modality for Healing works.</p><p>In this experiential movement Masterclass where you will be introduced to the Liberation Through Movement Model- a 3-pillar process for taking the leap from feeling disconnected to arriving in life as a liberated and embodied woman.</p><p>I cover in depth the elements needed for you to take the journey back home to your True Self and arrive in a more satisfying experience of life, one in which you feel able to navigate the ups and downs of life from a place of grounded presence and safety.</p><p>You will also have the opportunity to be guided through an LTM Movement process to experience it yourself!</p>
+  background: 
+    background_image: /uploads/images/manamei-30.jpg
+    background_position: top
+    overlay: true
+---
+
+<!-- Hero Banner -->
+{% include hero-banner-offerings.html %}
+
+<!-- Map -->
+<!-- Medium Devices & Larger -->
+<section class="hidden md:block p-10p pb-0">
+  <h1>Practice Section</h1>
+  <h2 class="text-md-serif text-feature text-center">{{page.map.heading}}</h2>
+  <p class="text-center">{{page.map.description}}</p>
+  <div class="grid grid-cols-12 mt-12">
+      {% for item in page.map.offering %}
+      {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
+      {% if thecycle == 'left' %}
+      <div class="col-span-5 mb-12 
+      {% cycle 'text-right', 'text-left' %}">
+          <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
+          <span class="lowercase text-feature">{{item.type}}</span>
+          <p>{{item.description}}</p>
+          <a href="{{item.url}}" class="link">Learn more</a>
+      </div>
+
+      <!-- icon -->
+      <div class="col-span-2 px-2">
+          <img src={{item.image_path}} class="h-28 bg-black">
+          <div class="grid grid-cols-2 h-full">
+              <div class="border-r-feature border h-full"></div>
+              <div></div>
+          </div>
+      </div>
+
+      <div class="col-span-5"></div>
+      {% else %}
+      <div class="col-span-5"></div>
+
+      <div class="col-span-2 flex justify-center"><img src={{item.image_path}} class="h-28"></div>
+      <div class="col-span-5 p-5p 
+      {% cycle 'text-right', 'text-left' %}">
+          <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
+          <span class="lowercase text-feature">{{item.type}}</span>
+          <p>{{item.description}}</p>
+          <a href="{{item.url}}" class="link">Learn more</a>
+      </div>
+      {% endif %}
+      {% endfor %}
+</section>
+
+<!-- Additional Offerings -->
+{% include additional-offerings.html %}
+
+<!-- Masterclass Reply -->
+{% include optin.html %}

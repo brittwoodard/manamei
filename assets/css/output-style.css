@@ -400,6 +400,16 @@ footer input::placeholder, textarea::placeholder {
 p {
   margin-bottom: 1rem;
 }
+ul {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+li:last-child {
+  margin-bottom: 0px;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -723,12 +733,16 @@ p {
 .bg-overlay>* {
         position: relative;
     }
-.bg-overlay.dark::before {
-        background-color: rgba(0, 0, 0, 0.7);
-
-    }
 .bg-overlay.light::before {
         background-color: rgba(0, 0, 0, 0.3);
+
+    }
+.bg-overlay.medium::before {
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+.bg-overlay.dark::before {
+        background-color: rgba(0, 0, 0, 0.7);
 
     }
 .icon {
@@ -745,6 +759,10 @@ p {
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.list {
+  margin-left: 1rem;
+  list-style-type: disc;
 }
 /* Dropdown Menu */
 .dropdown-menu {
@@ -923,6 +941,10 @@ p {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .mb-10p {
   margin-bottom: 10%;

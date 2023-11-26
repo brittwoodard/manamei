@@ -78,6 +78,18 @@
         @apply mb-4
     }
 
+    ul {
+        @apply list-disc ml-4
+    }
+
+    li {
+        @apply mb-2
+    }
+
+    li:last-child {
+        @apply mb-0
+    }
+
 
 
 }
@@ -223,13 +235,18 @@
         position: relative;
     }
 
-    .bg-overlay.dark::before {
-        background-color: rgba(0, 0, 0, 0.7);
+    .bg-overlay.light::before {
+        background-color: rgba(0, 0, 0, 0.3);
 
     }
 
-    .bg-overlay.light::before {
-        background-color: rgba(0, 0, 0, 0.3);
+    .bg-overlay.medium::before {
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .bg-overlay.dark::before {
+        background-color: rgba(0, 0, 0, 0.7);
 
     }
 
@@ -239,6 +256,10 @@
 
     .banner-feature {
         @apply p-2 bg-feature text-dark uppercase text-center
+    }
+
+    .list {
+        @apply list-disc ml-4
     }
 
     /* Dropdown Menu */
