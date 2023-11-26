@@ -22,7 +22,9 @@
                     {% endif %}
                 {% endfor %}
                 </div>
-                <div class="justify-end">({{page.inside-the-course.module.time.hours}}:{{page.inside-the-course.module.time.hours}})</div>
+                {% if item.time.show == true %}
+                <div class="justify-end">({{item.time.hours}}:{{item.time.minutes}})</div>
+                {% endif %}
             </div>
         </li>
         {% endfor %}
