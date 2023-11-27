@@ -1,8 +1,26 @@
-<section class="p-5p md:p-10p min-h-[90vh] text-center flex justify-center align-middle items-center" style="background-image: url('{{page.header.image_path}}');">
+<!-- <section class="p-5p md:p-10p min-h-[90vh] text-center flex justify-center align-middle items-center"
+    style="background-image: url('{{page.header.image_path}}');">
     <div>
         <img src="{{page.header.logo}}" alt="Mana Mei" class="h-[10rem] mx-auto my-auto mb-8">
         <h1 class="heading-lg-sans text-feature mb-4">{{page.header.title}}</h1>
         <h2 class="heading-lg-sans mb-4">{{page.header.subtitle}}</h2>
         <h2 class="text-lg-serif">{{page.header.subtitle-2}}</h2>
+    </div>
+</section> -->
+
+<!-- With Video -->
+<section class="section-video">
+    <video autoplay muted loop playsinline poster class="bg-video bg-overlay {{page.header.overlay_style}} min-h-[90vh]">
+        <source src="/uploads/video/clay.webm" type="video/webm">
+        <source src="/uploads/video/clay-edited.mp4" type="video/mp4">
+        <p>Sorry, your browser doesn't support embedded videos</p> 
+    </video>
+    <div class="flex justify-center align-middle items-center p-5p md:p-10p text-center">
+        <div>
+            <img src="{{page.header.logo}}" alt="Mana Mei" class="h-[10rem] mx-auto my-auto mb-8">
+            <h1 class="heading-lg-sans text-feature mb-4">{{page.header.title}}</h1>
+            <h2 class="heading-lg-sans mb-4">{{page.header.subtitle}}</h2>
+            <h2 class="text-lg-serif">{{page.header.subtitle-2}}</h2>
+        </div>
     </div>
 </section>
