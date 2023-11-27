@@ -820,6 +820,10 @@ li:last-child {
         overflow: hidden;
     }
 /* Slick Container */
+.text-item {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 /* Mobile Menu */
 .mobile-button {
         position: fixed;

@@ -330,6 +330,10 @@
         color: #EDD587;
     }
 
+    .text-item {
+        @apply text-dark
+    }
+
     /* Mobile Menu */
     .mobile-button {
         position: fixed;
