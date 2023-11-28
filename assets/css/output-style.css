@@ -932,6 +932,9 @@ li:last-child {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -1050,6 +1053,12 @@ li:last-child {
 .h-full {
   height: 100%;
 }
+.h-\[21vh\] {
+  height: 21vh;
+}
+.h-\[42vh\] {
+  height: 42vh;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -1097,6 +1106,12 @@ li:last-child {
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
