@@ -1158,6 +1158,9 @@ li:last-child {
 .border-t {
   border-top-width: 1px;
 }
+.border-r-\[0\.5px\] {
+  border-right-width: 0.5px;
+}
 .border-feature {
   --tw-border-opacity: 1;
   border-color: rgb(237 213 135 / var(--tw-border-opacity));
