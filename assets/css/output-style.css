@@ -1470,6 +1470,10 @@ li:last-child {
     padding-left: 10%;
     padding-right: 10%;
   }
+  .md\:px-5p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .md\:text-right {
     text-align: right;
   }
@@ -1494,6 +1498,10 @@ li:last-child {
   }
   .lg\:p-10p {
     padding: 10%;
+  }
+  .lg\:px-10p {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media (min-width: 1280px) {
