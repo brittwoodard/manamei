@@ -54,7 +54,7 @@ cta:
 
 <!-- Map -->
 <!-- Medium Devices & Larger -->
-<section class="hidden md:block p-10p pb-0">
+<section class="hidden md:block md:p-5p lg:p-10p pb-0">
   <h1>Practice Section</h1>
   <h2 class="text-md-serif text-feature text-center">{{page.map.heading}}</h2>
   <p class="text-center">{{page.map.description}}</p>
@@ -74,10 +74,14 @@ cta:
 
       <div class="col-span-2 px-2 text-center">
           <img src="{{item.image_path}}" class="h-28 bg-black z-20 inline-block">
-          <div class="grid grid-cols-2 h-full">
-              <div class="border-r border-feature h-full"></div>
-              <div></div>
-          </div>
+          {% if forloop.last %}
+              <!-- Omit the div structure for the last item -->
+          {% else %}
+              <div class="grid grid-cols-2 h-full">
+                  <div class="border-r border-feature h-full"></div>
+                  <div></div>
+              </div>
+          {% endif %}
       </div>
 
       <div class="col-span-5"></div>
@@ -88,13 +92,17 @@ cta:
 
       <div class="col-span-2 px-2 text-center">
           <img src="{{item.image_path}}" class="h-28 bg-black z-20 inline-block">
-          <div class="grid grid-cols-2 h-full">
-              <div class="border-r border-feature h-full"></div>
-              <div></div>
-          </div>
+          {% if forloop.last %}
+              <!-- Omit the div structure for the last item -->
+          {% else %}
+              <div class="grid grid-cols-2 h-full">
+                  <div class="border-r border-feature h-full"></div>
+                  <div></div>
+              </div>
+          {% endif %}
       </div>
 
-      <div class="col-span-5 p-5p 
+      <div class="col-span-5 p-5p mb-12
       {% cycle 'text-right', 'text-left' %}">
           <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
           <span class="lowercase text-feature">{{item.type}}</span>
@@ -103,6 +111,7 @@ cta:
       </div>
       {% endif %}
       {% endfor %}
+  </div>
 </section>
 
 <!-- Additional Offerings -->

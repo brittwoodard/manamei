@@ -1492,6 +1492,9 @@ li:last-child {
   .lg\:p-0 {
     padding: 0px;
   }
+  .lg\:p-10p {
+    padding: 10%;
+  }
 }
 @media (min-width: 1280px) {
   .xl\:w-\[20\%\] {
