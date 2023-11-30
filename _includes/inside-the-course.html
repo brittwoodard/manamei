@@ -15,12 +15,7 @@
             </button>
             <div x-show="open" @click.outside="open = false" class="flex justify-between">
                 <div class="justify-start">
-                    {% assign paragraphs = item.description_html | split: '<p>' %}
-                        {% for paragraph in paragraphs %}
-                        {% if paragraph != '' %}
-                    <p class="mr-8 italic {% if forloop.last %} last-paragraph{% endif %}">{{ paragraph | strip_html }}</p>
-                    {% endif %}
-                {% endfor %}
+                    <p><em>{{ item.description_html | safe }}</em></p>
                 </div>
                 {% if item.time.show == true %}
                 <div class="justify-end">({{item.time.hours}}:{{item.time.minutes}})</div>
