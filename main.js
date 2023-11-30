@@ -22,10 +22,14 @@ $('.text-container').slick({
 	pauseOnHover: false, 
 });
 
-// Light Gallery
-lightGallery(document.getElementById('lightgallery'), {
-    speed: 500,
-    download: false
+// Magnific
+$('.gallery').each(function() { 
+    $(this).find('a').magnificPopup( {
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
 });
 
 // Mobile Menu
