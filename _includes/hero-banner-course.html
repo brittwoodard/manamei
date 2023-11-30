@@ -5,7 +5,8 @@
         <p class="uppercase">{{page.heading.description}}</p>
         <a href="{{page.heading.button-enroll.url}}" class="button m-4">{{page.heading.button-enroll.text}}</a>
         {% if page.heading.button-video.show == true %}
-        <a href="{{page.heading.button-video.url}}" class="button">{{page.heading.button-video.text}}</a>
+        <div class="button open-video-btn cursor-pointer">{{page.heading.button-video.text}}</div>
         {% endif %}
     </div>
 </section>
+  
