@@ -613,7 +613,8 @@ li:last-child {
         padding: 0.25rem 1.5rem;
         font-size: 1rem;
         letter-spacing: 0.1em;
-        display: inline-block
+        display: inline-block;
+        text-align: center;
     }
 .button:hover,
     .button-form:hover {
@@ -1131,6 +1132,10 @@ li:last-child {
 .border {
   border-width: 1px;
 }
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1351,6 +1356,9 @@ li:last-child {
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
   .sm\:ml-4 {
     margin-left: 1rem;
   }
@@ -1374,6 +1382,9 @@ li:last-child {
   }
   .sm\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .sm\:justify-start {
+    justify-content: flex-start;
   }
   .sm\:gap-8 {
     gap: 2rem;
