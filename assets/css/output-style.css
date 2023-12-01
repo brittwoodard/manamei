@@ -1204,9 +1204,6 @@ li:last-child {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1307,9 +1304,6 @@ li:last-child {
 }
 .outline {
   outline-style: solid;
-}
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @font-face {

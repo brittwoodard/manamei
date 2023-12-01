@@ -52,3 +52,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// Magnific Popup
+// $('.parent-container').magnificPopup({
+//     delegate: 'a', 
+//     type: 'image',
+//     gallery: {
+//         enabled: true
+//     }
+// });
