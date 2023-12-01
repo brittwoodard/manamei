@@ -1063,6 +1063,9 @@ li:last-child {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
 .w-\[10vh\] {
   width: 10vh;
 }
@@ -1275,6 +1278,18 @@ li:last-child {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1301,6 +1316,19 @@ li:last-child {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+.text-feature\/70 {
+  color: rgb(237 213 135 / 0.7);
+}
+.text-dark\/70 {
+  color: rgb(0 0 0 / 0.7);
+}
+.text-dark\/50 {
+  color: rgb(0 0 0 / 0.5);
 }
 .outline {
   outline-style: solid;
