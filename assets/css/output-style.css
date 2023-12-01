@@ -1154,6 +1154,9 @@ li:last-child {
 .border-t {
   border-top-width: 1px;
 }
+.border-b-\[0\.5px\] {
+  border-bottom-width: 0.5px;
+}
 .border-feature {
   --tw-border-opacity: 1;
   border-color: rgb(237 213 135 / var(--tw-border-opacity));
@@ -1206,6 +1209,9 @@ li:last-child {
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
+}
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
 }
 .bg-fixed {
   background-attachment: fixed;
