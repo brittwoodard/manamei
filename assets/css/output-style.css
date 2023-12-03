@@ -1060,11 +1060,11 @@ li:last-child {
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
-.min-h-\[90vh\] {
-  min-height: 90vh;
-}
 .min-h-\[70vh\] {
   min-height: 70vh;
+}
+.min-h-\[90vh\] {
+  min-height: 90vh;
 }
 .w-\[10vh\] {
   width: 10vh;
@@ -1154,8 +1154,8 @@ li:last-child {
 .border-t {
   border-top-width: 1px;
 }
-.border-b-\[0\.5px\] {
-  border-bottom-width: 0.5px;
+.border-t-\[0\.5px\] {
+  border-top-width: 0.5px;
 }
 .border-feature {
   --tw-border-opacity: 1;
@@ -1210,9 +1210,6 @@ li:last-child {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1258,8 +1255,14 @@ li:last-child {
 .pb-0 {
   padding-bottom: 0px;
 }
+.pb-\[2\.5\%\] {
+  padding-bottom: 2.5%;
+}
 .pt-10p {
   padding-top: 10%;
+}
+.pt-5p {
+  padding-top: 5%;
 }
 .text-left {
   text-align: left;
@@ -1280,21 +1283,16 @@ li:last-child {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+.text-\[0\.9rem\] {
+  font-size: 0.9rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1315,6 +1313,9 @@ li:last-child {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+.text-dark\/70 {
+  color: rgb(0 0 0 / 0.7);
+}
 .text-feature {
   --tw-text-opacity: 1;
   color: rgb(237 213 135 / var(--tw-text-opacity));
@@ -1322,19 +1323,6 @@ li:last-child {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-.text-feature\/70 {
-  color: rgb(237 213 135 / 0.7);
-}
-.text-dark\/70 {
-  color: rgb(0 0 0 / 0.7);
-}
-.text-dark\/50 {
-  color: rgb(0 0 0 / 0.5);
 }
 .outline {
   outline-style: solid;
