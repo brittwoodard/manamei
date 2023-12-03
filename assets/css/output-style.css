@@ -1069,14 +1069,14 @@ li:last-child {
 .w-\[10vh\] {
   width: 10vh;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
 .w-\[90\%\] {
   width: 90%;
 }
 .w-full {
   width: 100%;
-}
-.w-\[80\%\] {
-  width: 80%;
 }
 .shrink-0 {
   flex-shrink: 0;

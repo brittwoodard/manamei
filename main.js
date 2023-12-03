@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 // Magnific Popup
 $('.parent-container').magnificPopup({
-    delegate: 'a', 
+    delegate: 'a',
     type: 'image',
     gallery: {
         enabled: true
