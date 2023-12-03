@@ -1858,3 +1858,5 @@ $.magnificPopup.registerModule(RETINA_NS, {
 
 /*>>retina*/
  _checkInstance(); }));
+
+ console.log("codeworked")

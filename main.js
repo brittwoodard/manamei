@@ -33,6 +33,15 @@ $(document).ready(function () {
     });
 });
 
+// Magnific Popup
+$('.parent-container').magnificPopup({
+    delegate: 'a', 
+    type: 'image',
+    gallery: {
+        enabled: true
+    }
+});
+
 // Read More
 document.addEventListener('DOMContentLoaded', function () {
     var descriptionContainer = document.getElementById('aboutDescription');
@@ -52,12 +61,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-// Magnific Popup
-// $('.parent-container').magnificPopup({
-//     delegate: 'a', 
-//     type: 'image',
-//     gallery: {
-//         enabled: true
-//     }
-// });
