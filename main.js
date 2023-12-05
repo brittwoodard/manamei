@@ -42,6 +42,24 @@ $('.parent-container').magnificPopup({
     }
 });
 
+// Click to pop up video
+$(document).ready(function () {
+    // Open modal on button click
+    $("#openModalBtn").click(function () {
+        $("#videoModal").css("display", "block");
+    });
+
+    // Close modal on close button click or outside click
+    $(".close, .modal").click(function () {
+        $("#videoModal").css("display", "none");
+    });
+
+    // Prevent modal from closing when clicking inside the modal content
+    $(".modal-content").click(function (event) {
+        event.stopPropagation();
+    });
+});
+
 // Read More
 document.addEventListener('DOMContentLoaded', function () {
     var descriptionContainer = document.getElementById('aboutDescription');
