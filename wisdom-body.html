@@ -181,35 +181,3 @@ seo:
 
 <!-- CTA -->
 {% include cta-course.html %}
-
-<!-- Lightbox JS -->
-$('.video').magnificPopup({
-  type: 'iframe',
-  
-  
-  iframe: {
-    patterns: {
-      dailymotion: {
-       
-        index: 'res.cloudinary.com',
-        
-        id: function(url) {        
-            var m = url.match(/^.+cloudinary.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
-            if (m !== null) {
-                if(m[4] !== undefined) {
-                  
-                    return m[4];
-                }
-                return m[2];
-            }
-            return null;
-        },
-        
-        src: 'https://res.cloudinary.com/dnb4ey82d/video/upload/v1701101231/manamei/wisdom-body.mp4'
-        
-      }
-    }
-  }
-  
-  
-});
