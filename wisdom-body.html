@@ -53,32 +53,7 @@ who-its-for:
   overlay_style: medium
 inside-the-course:
   heading: Inside the Wisdom Body Immersion
-  description_html: In Wisdom Body, each module brings a new dimension of understanding. Our program is structured in four modules, each offering a comprehensive approach to embodied awareness and expression.
-  module:
-  - title: Module 1
-    description_html: This is a lengthy answer.
-    time: 
-      show: true
-      hours: 1
-      minutes: 16
-  - title: Module 2
-    description_html: This is a lengthy answer.
-    time: 
-      show: true
-      hours: 1
-      minutes: 16
-  - title: Module 3
-    description_html: This is a lengthy answer.
-    time: 
-      show: true
-      hours: 1
-      minutes: 16
-  - title: Module 4
-    description_html: This is a lengthy answer.
-    time: 
-      show: true
-      hours: 1
-      minutes: 16
+  description_html: Wisdom Body is structured into three main areas - Meditation, Activation, and Liberation. Each module includes guided practices in these areas. The Meditation sessions feature audio-guided embodied meditations lasting 15-30 minutes. The Activation sessions offer video-guided practices to expand dance expression and body awareness, ranging from 10-20 minutes. Lastly, the Liberation sessions include audio-guided embodied movement journeys, each lasting 30-40 minutes.
   background-image: 
     background_image: /uploads/backgrounds/manamei-4.jpg
     image_focus: bottom
@@ -101,11 +76,11 @@ investment:
   includes: 
     heading: What's included
     list: 
-     - list-item: 12 guided audio and video practices
+     - list-item: Guided audio and video practices
      - list-item: Written theory and journaling prompts
      - list-item: Lifetime access to program materials
-     - list-item: Access to the private wisdom body Facebook group
-     - list-item: 2-months free membership to the liberation through movement online community 
+     - list-item: Access to the private Wisdom Body Facebook group
+     - list-item: 2-months free membership to the Liberation Through Movement online community
   pricing:
     pay-in-full:
       heading: Pay in full
@@ -117,6 +92,7 @@ investment:
   button: 
     url: https://manamei.teachable.com/p/wisdom-body
     text: Enroll Now
+  border: border-b border-feature
 faq: 
   heading: Frequently asked questions
   questions-and-answers: 
@@ -167,7 +143,16 @@ seo:
 {% include who-its-for.html %}
 
 <!-- Inside the Course -->
-{% include inside-the-course.html %}
+<section class="py-10p px-5p md:p-10p bg-image-style"
+    style="background-image: url('{{page.inside-the-course.background-image.background_image}}'); background-position: {{page.inside-the-course.background-image.image_focus}};">
+    <div class="text-center">
+        <h2 class="heading-lg-sans text-feature">{{page.inside-the-course.heading}}</h2>
+        <p>{{page.inside-the-course.description_html}}</p>
+    </div>
+    <div class="text-center mt-8">
+        <a href="{{page.heading.button-enroll.url}}" class="button">{{page.heading.button-enroll.text}}</a>
+    </div>
+</section>
 
 <!-- Testimonials -->
 {% include testimonials.html %}
