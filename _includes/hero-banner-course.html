@@ -6,19 +6,25 @@
         <h3 class="text-lg-serif">{{page.heading.subtitle}}</h3>
         <p class="uppercase">{{page.heading.description}}</p>
         <a href="{{page.heading.button-enroll.url}}" class="button m-4">{{page.heading.button-enroll.text}}</a>
-        
+
         {% if page.heading.button-video.show == true %}
-        
+
         <button id="openModalBtnBanner" class="button cursor-pointer">{{page.heading.button-video.text}}</button>
 
         <div id="videoModalBanner" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
+                {% if page.heading.button-video.type == 'youtube' %}
+                <!-- YouTube iframe -->
+                <iframe width="560" height="315" src="{{page.heading.button-video.url}}" frameborder="0"
+                    allowfullscreen></iframe>
+                {% else %}
+                <!-- Fallback for other video types -->
                 <video controls>
-                    <source src="{{page.heading.button-video.url}}"
-                        type="video/mp4">
+                    <source src="{{page.heading.button-video.url}}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                {% endif %}
             </div>
         </div>
 
