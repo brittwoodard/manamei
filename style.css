@@ -110,7 +110,7 @@
     }
 
     .text-lg-serif {
-        @apply text-[1.375rem] md:text-4xl font-extralight leading-[1.8em] font-serif mb-[0.5em]
+        @apply text-[1.375rem] md:text-[2.25rem] font-extralight leading-[2em] font-serif mb-[0.5em]
     }
 
     .text-md-serif {

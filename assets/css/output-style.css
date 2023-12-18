@@ -572,12 +572,11 @@ li:last-child {
   font-family: modernline, serif;
   font-size: 1.375rem;
   font-weight: 200;
-  line-height: 1.8em;
+  line-height: 2em;
 }
 @media (min-width: 768px) {
   .text-lg-serif {
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 .text-md-serif {
@@ -799,9 +798,6 @@ li:last-child {
   margin-bottom: 0px;
 }
 /* Video */
-.youtube-container {
-        max-width: 50%;
-    }
 .embed-container {
         position: relative;
         padding-bottom: 56.25%;
@@ -1261,9 +1257,6 @@ video {
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
-}
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
 }
 .bg-fixed {
   background-attachment: fixed;
