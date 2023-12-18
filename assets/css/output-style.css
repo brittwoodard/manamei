@@ -847,10 +847,12 @@ li:last-child {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 95vw; /* Set a larger maximum width for the modal content in viewport units */
-        max-height: 95vh; /* Set a larger maximum height for the modal content in viewport units */
+        max-width: 95vw;
+        /* Set a larger maximum width for the modal content in viewport units */
+        max-height: 95vh;
+        /* Set a larger maximum height for the modal content in viewport units */
         width: auto;
-      }
+    }
 .close {
         color: var(--light);
         font-size: 3.5rem;
