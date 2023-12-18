@@ -601,6 +601,15 @@ li:last-child {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.hyperlink {
+  --tw-text-opacity: 1;
+  color: rgb(237 213 135 / var(--tw-text-opacity));
+}
+.hyperlink:hover {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 213 135 / var(--tw-border-opacity));
+}
 /* Buttons */
 .description-container {
         max-height: 60vh;
@@ -790,6 +799,9 @@ li:last-child {
   margin-bottom: 0px;
 }
 /* Video */
+.youtube-container {
+        max-width: 50%;
+    }
 .embed-container {
         position: relative;
         padding-bottom: 56.25%;

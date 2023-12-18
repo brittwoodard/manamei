@@ -94,8 +94,6 @@
         @apply mb-0
     }
 
-
-
 }
 
 
@@ -125,6 +123,14 @@
 
     .text-banner {
         @apply text-xl text-center
+    }
+
+    .hyperlink {
+        @apply text-feature
+    }
+
+    .hyperlink:hover {
+        @apply border-b border-feature
     }
 
     /* Buttons */
