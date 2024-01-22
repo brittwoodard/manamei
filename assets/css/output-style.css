@@ -974,6 +974,9 @@ video {
 .top-\[50\%\] {
   top: 50%;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .z-20 {
   z-index: 20;
 }
@@ -1238,6 +1241,9 @@ video {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-black\/90 {
+  background-color: rgb(0 0 0 / 0.9);
 }
 .bg-\[url\(\'\/uploads\/backgrounds\/manamei-4\.jpg\'\)\] {
   background-image: url('/uploads/backgrounds/manamei-4.jpg');
