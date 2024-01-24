@@ -1290,6 +1290,9 @@ video {
 .bg-\[url\(\'\/uploads\/images\/manamei-55\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-55.jpg');
 }
+.bg-\[url\(\'\/uploads\/images\/manamei-63\.jpg\'\)\] {
+  background-image: url('/uploads/images/manamei-63.jpg');
+}
 .bg-fixed {
   background-attachment: fixed;
 }
