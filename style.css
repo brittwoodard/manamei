@@ -273,6 +273,11 @@
         @apply list-disc ml-4
     }
 
+    /* Cookie Banner */
+    .cookie-banner {
+        @apply p-8 border-t border-feature bg-black/90 fixed bottom-0 z-20 w-full
+    }
+
     /* Dropdown Menu */
     .dropdown-menu {
         @apply border border-light
