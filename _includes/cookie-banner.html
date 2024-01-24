@@ -1,4 +1,4 @@
-<div id="cookie-notice" class="cookie-banner">
+<div id="cookieConsentBanner" class="cookie-banner hidden">
     <div class="flex justify-between">
         <div class="text-center">
             <span>I value your privacy, and to provide the best possible experience, my website uses cookies. By
@@ -9,67 +9,73 @@
         </div>
     </div>
     <div class="flex justify-center mt-4">
-        <a id="cookie-notice-accept"
+        <a id="acceptCookies"
             class="border border-feature bg-feature text-dark button-cookies cursor-pointer">Accept</a>
-        <a href="/cookie-policy.html" class="border border-light mx-4 button-cookies">Cookie Policy</a>
+        <a id="declineCookies" class="border border-light mx-4 button-cookies cursor-pointer">Decline</a>
     </div>
 </div>
 
 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CRCY02QTGY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CRCY02QTGY');
+</script>
 
 <!-- JS -->
 <script>
-    function createCookie(name, value, days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + value + expires + "; path=/";
-    }
-    function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-    function eraseCookie(name) {
-        createCookie(name, "", -1);
+    // Function to handle accept
+    function acceptCookies() {
+        // Set a cookie to remember the choice
+        document.cookie = "cookiesAccepted=true; path=/; max-age=31536000"; // max-age is set for 1 year
+
+        // Hide the cookie banner
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+
+        // Load Google Analytics script
+        loadGAScript();
     }
 
-    function runCookiedCodes() {
-        // Add tracking scripts here 
-        console.log("cookies ran")
+    // Function to handle decline
+    function declineCookies() {
+        // Hide the cookie banner
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+    }
+
+    // Event listeners for the Accept and Decline buttons
+    document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
+    document.getElementById('declineCookies').addEventListener('click', declineCookies);
+
+    // Function to close the cookie banner (added for the 'X' button)
+    function closeCookieBanner() {
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+    }
+
+    // Event listener for the 'X' button
+    document.getElementById('close-cookie-banner').addEventListener('click', closeCookieBanner);
+
+    // Function to load Google Analytics Script
+    function loadGAScript() {
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
-        gtag('config', 'G-8NMVDSZJD4');
-        // End tracking scripts 
+        gtag('config', 'G-F5PMXNHH7K');
     }
 
-    if (readCookie('cookie-notice-accepted') == 'true') {
-
-        runCookiedCodes()
-        //removes cookies while testing 
-        //eraseCookie('cookie-notice-accepted')
-    } else {
-        document.getElementById('cookie-notice').style.display = 'block';
+    // Function to check cookie consent
+    function checkCookieConsent() {
+        if (document.cookie.indexOf("cookiesAccepted=true") !== -1) {
+            loadGAScript();
+        } else {
+            // Show the cookie banner if not yet accepted
+            document.getElementById('cookieConsentBanner').style.display = 'block';
+        }
     }
-    document.getElementById('cookie-notice-accept').addEventListener("click", function () {
-        createCookie('cookie-notice-accepted', 'true', 31);
-        document.getElementById('cookie-notice').style.display = 'none';
-        runCookiedCodes()
-    });
 
-    document.querySelector("#close-cookie-banner").addEventListener("click", (e) => {
-
-        document.querySelector("#cookie-notice").style.display = 'none';
-    });
+    // Check the cookie consent on page load
+    document.addEventListener('DOMContentLoaded', checkCookieConsent);
 
 </script>

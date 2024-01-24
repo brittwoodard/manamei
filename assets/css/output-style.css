@@ -1257,41 +1257,26 @@ video {
 .bg-\[url\(\'\/uploads\/images\/manamei-1\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-1.jpg');
 }
-.bg-\[url\(\'\/uploads\/images\/manamei-11\.jpg\'\)\] {
-  background-image: url('/uploads/images/manamei-11.jpg');
-}
 .bg-\[url\(\'\/uploads\/images\/manamei-18\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-18.jpg');
-}
-.bg-\[url\(\'\/uploads\/images\/manamei-2\.jpg\'\)\] {
-  background-image: url('/uploads/images/manamei-2.jpg');
-}
-.bg-\[url\(\'\/uploads\/images\/manamei-20\.jpg\'\)\] {
-  background-image: url('/uploads/images/manamei-20.jpg');
 }
 .bg-\[url\(\'\/uploads\/images\/manamei-41\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-41.jpg');
 }
-.bg-\[url\(\'\{\{page\.details\.featured_image\}\}\'\)\] {
-  background-image: url('{{page.details.featured_image}}');
-}
-.bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
-  background-image: url('{{page.testimonials.background_image}}');
-}
-.bg-\[url\(\'\/uploads\/images\/manamei-51\.jpg\'\)\] {
-  background-image: url('/uploads/images/manamei-51.jpg');
-}
 .bg-\[url\(\'\/uploads\/images\/manamei-52\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-52.jpg');
-}
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
 }
 .bg-\[url\(\'\/uploads\/images\/manamei-55\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-55.jpg');
 }
 .bg-\[url\(\'\/uploads\/images\/manamei-63\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-63.jpg');
+}
+.bg-\[url\(\'\{\{page\.details\.featured_image\}\}\'\)\] {
+  background-image: url('{{page.details.featured_image}}');
+}
+.bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
+  background-image: url('{{page.testimonials.background_image}}');
 }
 .bg-fixed {
   background-attachment: fixed;
