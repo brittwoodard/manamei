@@ -187,7 +187,7 @@
     }
 
     .button-cookies {
-        @apply mx-4 px-4 py-2 text-base uppercase flex items-center text-center
+        @apply mx-4 px-4 py-2 text-[0.8rem] uppercase flex items-center text-center
     }
 
     .button-menu {
