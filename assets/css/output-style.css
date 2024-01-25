@@ -1003,6 +1003,9 @@ video {
 .m-4 {
   margin: 1rem;
 }
+.m-5p {
+  margin: 5%;
+}
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -1072,6 +1075,9 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.ml-5p {
+  margin-left: 5%;
 }
 .block {
   display: block;
@@ -1276,6 +1282,9 @@ video {
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
+}
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -1558,6 +1567,12 @@ video {
     padding-left: 5%;
     padding-right: 5%;
   }
+  .md\:pl-5p {
+    padding-left: 5%;
+  }
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
   .md\:text-right {
     text-align: right;
   }
@@ -1577,12 +1592,21 @@ video {
   .lg\:w-\[30\%\] {
     width: 30%;
   }
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .lg\:p-0 {
     padding: 0px;
   }
   .lg\:px-10p {
     padding-left: 10%;
     padding-right: 10%;
+  }
+  .lg\:pl-5p {
+    padding-left: 5%;
+  }
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 }
 @media (min-width: 1280px) {

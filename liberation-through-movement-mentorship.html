@@ -27,21 +27,21 @@ brochure-1:
     overlay_style: 
 course-description:
   heading: Discover the essence of the LTM Mentorship
-  description_html: <p>The Liberation Through Movement Mentorship Program is a carefully crafted process by Mana Mei developed over three decades. Rooted in classical dance techniques, somatic movement, and free expressive dance, this program focuses on harmonizing Feminine and Masculine energies within. Throughout the journey, you'll explore and cultivate awareness in your physical, emotional, and transpersonal bodies, gaining tools to maintain peace, express your authentic self, and step into leadership.</p><p>It is based on the process that I have personally gone through in my own life, and continue to use on a daily basis to reach and sustain the expanded state of liberated expression that I embody today.</p><p>Whatever meaningful changes and transformations you are desiring to achieve right now, I am here to support you every step of the way by creating a safe space for you to recollect and liberate all parts of yourself and rise into empowered self expression.</p>
+  description_html: The Liberation Through Movement Model is a carefully crafted process that Mana Mei has developed through three decades of passionate exploration of classical dance techniques, somatic movement, embodiment practices, and free expressive dance.</p><p>It is based on the process that she has personally gone through in her own life, and continue to use on a daily basis to reach and sustain the expanded state of liberated expression that she embodies today.</p><p>Whatever meaningful changes and transformations you are desiring to achieve right now, the Liberation Through Movement Mentorship will support you every step of the way by creating a safe space for you to recollect and liberate all parts of yourself and rise into empowered self expression.
   background-image: 
     background_image: /uploads/images/manamei-61.jpg
     image_focus: 
     overlay_style: medium
 benefits:
-  heading: By joining the Mentorship, you will
-  description_html: <ul><li>Cultivate awareness & freedom in your physical body.</li><li>Source power from your energy body.</li><li>Maintain peace amidst life's challenges.</li><li>Awaken courage & strength for authentic expression.</li><li>Rise into leadership & create a satisfying, pleasure-filled life.</li><li>Learn to hold space authentically</li></ul>
+  heading: All of the tools within this model are designed to do the following
+  description_html: <ul><li>Cultivate Awareness & Freedom in your Physical Body.</li><li>Teach you to source power from your Energy Body.</li><li>Give you tools to maintain peace amidst the challenges of life.</li><li>Awaken the courage & strength to meet the world in authentic expression of your unique self.</li><li>Rise into leadership & begin creating the satisfying, pleasure-filled life you desire.</li></ul>
   background-image: 
     background_image: 
     image_focus: 
     overlay_style: 
 who-its-for:
-  heading: Who the LTM Mentorship is for
-  description_html: This program is for women who seek meaningful changes and transformations, desiring to reclaim freedom in their bodies and express their raw nature while anchoring themselves in stability and direction. If you're drawn to a balanced approach that honors both the Feminine and Masculine, this mentorship is crafted for you.
+  heading: The Liberation Through Movement Mentorship Is For Women Who Are...
+  description_html: Seeking meaningful changes and transformations in their every day life.</p><p>Desiring to reclaim freedom in their bodies and express themselves authentically.</p><p>Wanting to strengthen their inner anchor for more safety & security</p><p>Drawn to a balanced approach that honors both the Feminine and Masculine.</p><p>Looking for a daily practice that is a combination of Meditation, Physical Activation, and Spiritual Liberation.</p><p>Ready to step into Embodied Leadership and learn the tools necessary to facilitate this movement medicine.</p><p>Desiring to connect with other women in Sacred Sisterhood for support and inspiration.</p>
   background-image:
     background_image: /uploads/images/manamei-62.jpg
     image_focus: left
@@ -209,7 +209,13 @@ seo:
 {% include description-course.html %}
 
 <!-- Course Benefits -->
-{% include benefits-course.html %}
+<section class="section-padding grid lg:grid-cols-2">
+  <div class="border border-feature p-5p">
+      <h2 class="text-md-serif text-feature">{{page.benefits.heading}}</h2>
+      <p>{{page.benefits.description_html}}</p>
+  </div>
+  <div class="bg-image-style pt-5p lg:pt-0 lg:pl-5p flex items-center justify-center"><img src='/uploads/icons/manamei-26.jpg'></div>
+</section>
 
 <!-- Who It's For -->
 {% include who-its-for.html %}
