@@ -1124,6 +1124,9 @@ video {
 .h-full {
   height: 100%;
 }
+.max-h-16 {
+  max-height: 4rem;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
