@@ -546,11 +546,11 @@ li:last-child {
   line-height: 2.5rem;
   font-weight: 200;
   text-transform: uppercase;
+  line-height: 1.1em;
 }
 @media (min-width: 768px) {
   .heading-lg-sans {
     font-size: 3rem;
-    line-height: 1;
   }
 }
 .heading-md-sans {
@@ -1003,9 +1003,6 @@ video {
 .m-4 {
   margin: 1rem;
 }
-.m-5p {
-  margin: 5%;
-}
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -1075,9 +1072,6 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.ml-5p {
-  margin-left: 5%;
 }
 .block {
   display: block;
@@ -1285,9 +1279,6 @@ video {
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
-}
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -1569,12 +1560,6 @@ video {
   .md\:px-5p {
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .md\:pl-5p {
-    padding-left: 5%;
-  }
-  .md\:pt-0 {
-    padding-top: 0px;
   }
   .md\:text-right {
     text-align: right;

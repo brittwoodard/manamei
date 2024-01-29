@@ -102,7 +102,7 @@
 
     /* Typography */
     .heading-lg-sans {
-        @apply uppercase text-4xl md:text-5xl font-extralight mb-[0.5em]
+        @apply uppercase text-4xl md:text-[3rem] font-extralight mb-[0.5em] leading-[1.1em]
     }
 
     .heading-md-sans {
