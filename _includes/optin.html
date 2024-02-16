@@ -3,8 +3,8 @@
     <h2 class="heading-lg-sans text-feature">{{page.cta.heading_html}}</h2>
     <h3 class="text-feature lowercase mb-4">{{page.cta.subtitle}}</h3>
     <p>{{page.cta.description_html}}</p>
-    {% if page.cta.type == 'e-book' %}
-    {% include form-ebook.html %}
+    {% if page.cta.type == 'waitlist' %}
+    {% include form-waitlist.html %}
     {% elsif page.cta.type == 'masterclass-reply' %}
     {% include form-masterclass-replay.html %}
     {% endif %}
