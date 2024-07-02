@@ -153,17 +153,17 @@ layout: default
                 Tools to use on a daily basis to reconnect with my true self
             </label>
             <label class="block mb-2">
-                <input type="checkbox" name="missing_area[]" value="Other" id="otherCheckbox" class="mr-2">
+                <input type="checkbox" name="missing_area[]" value="Other" id="otherCheckbox1" class="mr-2">
                 Other (please specify)
             </label>
-            <input type="text" name="other_missing_area" id="otherText"
+            <input type="text" name="other_missing_area" id="otherText1"
                 class="w-full px-3 py-2 border rounded mt-2 hidden" placeholder="Please specify" disabled>
         </div>
     </fieldset>
 
-    <!-- <script>
-        document.getElementById('otherCheckbox').addEventListener('change', function () {
-            var otherText = document.getElementById('otherText');
+    <script>
+        document.getElementById('otherCheckbox1').addEventListener('change', function () {
+            var otherText = document.getElementById('otherText1');
             if (this.checked) {
                 otherText.classList.remove('hidden');
                 otherText.disabled = false;
@@ -172,7 +172,7 @@ layout: default
                 otherText.disabled = true;
             }
         });
-    </script> -->
+    </script>
 
     <!-- Are you ready? -->
     <p class="text-lg mb-4">Do you feel ready and inspired to fill the missing pieces and come back to wholeness?</p>
@@ -293,41 +293,41 @@ layout: default
         </legend>
         <div class="mb-4">
             <label class="block mb-2">
-                <input type="checkbox" name="missing_area[]" value="Social Media" class="mr-2">
+                <input type="checkbox" name="hearing_source[]" value="Social Media" class="mr-2">
                 Social Media
             </label>
             <label class="block mb-2">
-                <input type="checkbox" name="missing_area[]" value="Guest Appearance"
+                <input type="checkbox" name="hearing_source[]" value="Guest Appearance"
                     class="mr-2">
                 Guest Appearance
             </label>
             <label class="block mb-2">
-                <input type="checkbox" name="missing_area[]"
+                <input type="checkbox" name="hearing_source[]"
                     value="Podcast" class="mr-2">
                 Podcast
             </label>
             <label class="block mb-2">
-                <input type="checkbox" name="missing_area[]"
+                <input type="checkbox" name="hearing_source[]"
                     value="Referral" class="mr-2">
                 Referral
             </label>
             <label class="block mb-2">
-                <input type="checkbox" name="missing_area[]"
+                <input type="checkbox" name="hearing_source[]"
                     value="In-Person Event" class="mr-2">
                 In-Person Event
             </label>
             <label class="block mb-2">
-                <input type="checkbox" name="missing_area[]" value="Other" id="otherCheckbox" class="mr-2">
+                <input type="checkbox" name="hearing_source[]" value="Other" id="otherCheckbox2" class="mr-2">
                 Other (please specify)
             </label>
-            <input type="text" name="other_missing_area" id="otherText"
+            <input type="text" name="other_hearing_source" id="otherText2"
                 class="w-full px-3 py-2 border rounded mt-2 hidden" placeholder="Please specify" disabled>
         </div>
     </fieldset>
 
     <script>
-        document.getElementById('otherCheckbox').addEventListener('change', function () {
-            var otherText = document.getElementById('otherText');
+        document.getElementById('otherCheckbox2').addEventListener('change', function () {
+            var otherText = document.getElementById('otherText2');
             if (this.checked) {
                 otherText.classList.remove('hidden');
                 otherText.disabled = false;
@@ -338,10 +338,6 @@ layout: default
         });
     </script>
 
-
     <button type="submit" class="button">Submit</button>
     </form>
-
-
-
 </section>
