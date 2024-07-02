@@ -161,7 +161,7 @@ layout: default
         </div>
     </fieldset>
 
-    <script>
+    <!-- <script>
         document.getElementById('otherCheckbox').addEventListener('change', function () {
             var otherText = document.getElementById('otherText');
             if (this.checked) {
@@ -172,7 +172,7 @@ layout: default
                 otherText.disabled = true;
             }
         });
-    </script>
+    </script> -->
 
     <!-- Are you ready? -->
     <p class="text-lg mb-4">Do you feel ready and inspired to fill the missing pieces and come back to wholeness?</p>
@@ -185,6 +185,158 @@ layout: default
         </label>
     </div>
 
+    <!-- Availability -->
+    <fieldset class="mb-4">
+        <legend class="text-lg font-semibold mb-2">
+            On a scale of 1 to 10, how much time and energy do you want to devote to your journey back home to your personal power and liberation?
+            <br>(0: None at all, I don’t have enough time - 10: as much as it takes, this is my priority)
+        </legend>
+        <div class="flex justify-between items-center">
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="0" required class="mb-1">
+                <span class="block">0</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="1" required class="mb-1">
+                <span class="block">1</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="2" required class="mb-1">
+                <span class="block">2</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="3" required class="mb-1">
+                <span class="block">3</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="4" required class="mb-1">
+                <span class="block">4</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="5" required class="mb-1">
+                <span class="block">5</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="6" required class="mb-1">
+                <span class="block">6</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="7" required class="mb-1">
+                <span class="block">7</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="8" required class="mb-1">
+                <span class="block">8</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="9" required class="mb-1">
+                <span class="block">9</span>
+            </label>
+            <label class="block text-center">
+                <input type="radio" name="availability_scale" value="10" required class="mb-1">
+                <span class="block">10</span>
+            </label>
+        </div>
+    </fieldset>
+
+    <!-- Commitment -->
+    <p class="text-lg mb-4">I require a time investment of at least 8 hours per week from women to ensure positive and life-lasting shifts. Given this makes sense for you, are you able to allocate this time right now?</p>
+    <div class="mb-4">
+        <label class="block mb-2">
+            <input type="radio" name="commitment_question" value="Yes" required class="mr-2"> Yes
+        </label>
+        <label class="block">
+            <input type="radio" name="commitment_question" value="No" class="mr-2"> No
+        </label>
+    </div>
+
+    <!-- When can you start? -->
+    <p class="text-lg mb-4">If accepted into the Liberation Through Movement Mentorship, how soon would you want to get started?</p>
+    <div class="mb-4">
+        <label class="block mb-2">
+            <input type="radio" name="startdate_question" value="immediately" required class="mr-2"> Immediately
+        </label>
+        <label class="block">
+            <input type="radio" name="startdate_question" value="soon" class="mr-2"> Soon - next 30 days
+        </label>
+        <label class="block">
+            <input type="radio" name="startdate_question" value="later" class="mr-2"> Later - next 4-8 months
+        </label>
+    </div>
+
+    <!-- Budget -->
+    <p class="text-lg mb-4">Based on your current budget, if this was the perfect opportunity for you to free your body, rise into your power, and liberate your full Authentic expression, would you have a budget of 3,200 USD to make it possible? (With the option of a monthly payment plan)</p>
+    <div class="mb-4">
+        <label class="block mb-2">
+            <input type="radio" name="budget_question" value="Yes" required class="mr-2"> Yes
+        </label>
+        <label class="block">
+            <input type="radio" name="budget_question" value="No" class="mr-2"> No
+        </label>
+    </div>
+
+    <!-- Additional Information -->
+    <fieldset class="mb-4">
+        <legend class="text-lg mb-2">Is there anything else that you feel I should know before considering your application?</legend>
+        <div class="mb-4">
+            <label class="block mb-2">
+                <textarea name="additional_info" required class="w-full px-3 py-2 border rounded h-32"
+                    placeholder="Additional information"></textarea>
+            </label>
+        </div>
+    </fieldset>
+
+    <!-- How did you hear about me? -->
+    <fieldset class="mb-4">
+        <legend class="text-lg font-semibold mb-2">
+            Where did you hear about me?
+        </legend>
+        <div class="mb-4">
+            <label class="block mb-2">
+                <input type="checkbox" name="missing_area[]" value="Social Media" class="mr-2">
+                Social Media
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="missing_area[]" value="Guest Appearance"
+                    class="mr-2">
+                Guest Appearance
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="missing_area[]"
+                    value="Podcast" class="mr-2">
+                Podcast
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="missing_area[]"
+                    value="Referral" class="mr-2">
+                Referral
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="missing_area[]"
+                    value="In-Person Event" class="mr-2">
+                In-Person Event
+            </label>
+            <label class="block mb-2">
+                <input type="checkbox" name="missing_area[]" value="Other" id="otherCheckbox" class="mr-2">
+                Other (please specify)
+            </label>
+            <input type="text" name="other_missing_area" id="otherText"
+                class="w-full px-3 py-2 border rounded mt-2 hidden" placeholder="Please specify" disabled>
+        </div>
+    </fieldset>
+
+    <script>
+        document.getElementById('otherCheckbox').addEventListener('change', function () {
+            var otherText = document.getElementById('otherText');
+            if (this.checked) {
+                otherText.classList.remove('hidden');
+                otherText.disabled = false;
+            } else {
+                otherText.classList.add('hidden');
+                otherText.disabled = true;
+            }
+        });
+    </script>
 
 
     <button type="submit" class="button">Submit</button>
