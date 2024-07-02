@@ -970,6 +970,75 @@ video {
 .mobile-menu a:hover {
         color: white;
     }
+/* Forms */
+input[type="radio"] {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background: transparent;
+        margin: 0;
+        color: currentColor;
+        width: 0.65em;
+        height: 0.65em;
+        border: 1.6px solid currentColor;
+        border-radius: 50%;
+        display: inline-grid;
+        place-content: center;
+        position: relative;
+    }
+input[type="radio"]:checked {
+        background-color: currentColor;
+    }
+input[type="radio"]:focus {
+        outline: none;
+    }
+input[type="radio"]::before {
+        content: "";
+        width: 0.35em;
+        height: 0.35em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 250ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--featured);
+    }
+input[type="radio"]:checked {
+        border-color: var(--featured);
+        background-color: transparent;
+    }
+input[type="radio"]:checked::before {
+        transform: scale(1);
+    }
+/* Checkbox */
+input[type="checkbox"], input[type="radio"] {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none; 
+        background: transparent; 
+        margin: 0; 
+        color: currentColor; 
+        width: 0.85em; 
+        height: 0.85em; 
+        border: 1.6px solid currentColor; 
+        display: inline-grid;
+        place-content: center; 
+        position: relative; 
+    }
+input[type="checkbox"]::before {
+        content: "✓";
+        transform: scale(0);
+        font-size: 1.4rem;
+        position: absolute;
+        bottom: -1.2rem;
+        transition: 145ms all ease-in-out;
+        color: var(--featured);
+    }
+input[type="checkbox"]:checked {
+        border-color: rgb(255, 255, 255, 0.7);
+    }
+input[type="checkbox"]:checked::before {
+        transform: scale(1);
+        bottom: -.2rem;
+    }
 .invisible {
   visibility: hidden;
 }
@@ -1030,10 +1099,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -1221,9 +1286,6 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
-.rounded {
-  border-radius: 0.25rem;
-}
 .rounded-none {
   border-radius: 0px;
 }
@@ -1317,6 +1379,10 @@ video {
 .p-5p {
   padding: 5%;
 }
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
@@ -1324,10 +1390,6 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 .px-5p {
   padding-left: 5%;
@@ -1352,10 +1414,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1398,9 +1456,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-.font-semibold {
-  font-weight: 600;
 }
 .uppercase {
   text-transform: uppercase;
