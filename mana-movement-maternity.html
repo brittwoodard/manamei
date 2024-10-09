@@ -6,8 +6,8 @@ description_html:
 featured-image: /uploads/images/manamei-14.jpg
 heading: 
   title: Mana Movement Maternity
-  subtitle: Initiation into the Art of Feminine Embodiment
-  description: Fall in love with being a woman and the magic that we contain
+  subtitle: For Women Ready to Rise into Empowered Motherhood
+  description: Honoring the Feminine Rite of Passage through connecting with Innate Wisdom of the Body
   button-enroll: 
     text: Enroll now
     url: https://sso.teachable.com/secure/487916/checkout/5720976/mana-movement-maternity
@@ -38,11 +38,28 @@ who-its-for:
     image_focus: center
     overlay_style: medium
 inside-the-course:
-  heading: Inside Mana Movement Maternity
-  description_html: Needs a description, something that tells the visitor what they'll get or what they can expect. How many lessons? How long are they, or how much time will they need to dedicate to the program?  Is it a dip in and out whenever they feel like it?  Or was it designed to be completed over a x-week period?
-  background-image: 
-    background_image: /uploads/backgrounds/manamei-4.jpg
-    image_focus: bottom
+  heading: Inside Mana Movement
+  description_html: >-
+    <p>You have the flexibility to incorporate this program into your daily life. You may choose to engage with these modules every day or practice whenever inspiration strikes. The course is structured with 6 core modules and 4 supplementary modules. Each of the initial six modules delves into the intricacies of a segment within the Mana Movement Practice. Module 6 represents the comprehensive Mana Movement practice. The preceding five modules systematically break down each section. By progressing step by step, you can learn and embody these practices. By the time you reach Module 6, you will have already internalized all these movements, enabling a more profound exploration.</p><p>For optimal results, it is recommended to complete each module two to three times before advancing to the next one. This is your opportunity to fully embody these practices, allowing you to perform them effortlessly and immerse yourself in your unique experience. Upon completing the program, the aim is for you to autonomously practice without relying on the videos, as you will have developed a profound familiarity with the movements within your body.</p>
+  module:
+   - title: Pre-Practice
+     description_html: >-
+      <p>Introduction Document</p>
+      <p>Modifications (3:42)</p>
+      <p>Music Playlist</p>
+      <p>Important Links</p>
+     time:
+       show: false
+       hours: 00
+       minutes: 00
+   - title: MANA Movement Practice One
+     description_html: >-
+      <p>Introduction to Practice One (3:21)</p>
+      <p>Practice One - Seated Practice (30:59)</p>
+     time:
+       show: false
+       hours: 00
+       minutes: 00
 instructor: 
   featured_image: /uploads/images/manamei-66.jpg
   heading: Hi! I'm Mana Mei
@@ -105,22 +122,30 @@ seo:
 {% include hero-banner-course.html %}
 
 <!-- Course Description -->
-{% include description-course.html %}
+<section class="pt-10p px-10p pb-5p bg-image-style bg-overlay {{page.course-description.background-image.overlay_style}}" style="background-image: url('{{page.course-description.background-image.background_image}}'); background-position: {{page.course-description.background-image.image_focus}};">
+  <div class="text-center mb-12">
+      <h2 class="heading-md-sans text-feature">{{page.course-description.heading}}</h2>
+      <p class="font-serif">The journey of pregnancy and birth is an incredible Rite of Passage that, as women, we have been gifted to experience…</p>
+      <p>{{page.course-description.description_html}}</p>
+  </div>
+  {% for item in page.course-description.module %}
+  <div class="flex mb-12">
+      <img src="{{item.image_path}}" class="h-16 mr-4">
+      <div class="col-span-4">
+          <h3 class="text-md-serif text-feature">{{item.title}}</h3>
+          <div>
+              <p>{{item.description_html}}</p>
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+</section>
 
 <!-- Who It's For -->
 {% include who-its-for.html %}
 
 <!-- Inside the Course -->
-<section class="py-10p px-5p md:p-10p bg-image-style border-y border-feature"
-    style="background-image: url('{{page.inside-the-course.background-image.background_image}}'); background-position: {{page.inside-the-course.background-image.image_focus}};">
-    <div class="text-center">
-        <h2 class="heading-lg-sans text-feature">{{page.inside-the-course.heading}}</h2>
-        <p>{{page.inside-the-course.description_html}}</p>
-    </div>
-    <div class="text-center mt-8">
-        <a href="{{page.heading.button-enroll.url}}" class="button">{{page.heading.button-enroll.text}}</a>
-    </div>
-</section>
+{% include inside-the-course.html %}
 
 
 <!-- Meet Your Teacher -->

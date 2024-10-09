@@ -1361,9 +1361,6 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1421,6 +1418,9 @@ input[type="checkbox"]:checked::before {
 .pb-0 {
   padding-bottom: 0px;
 }
+.pb-5p {
+  padding-bottom: 5%;
+}
 .pb-\[2\.5\%\] {
   padding-bottom: 2.5%;
 }
@@ -1429,9 +1429,6 @@ input[type="checkbox"]:checked::before {
 }
 .pt-5p {
   padding-top: 5%;
-}
-.pb-5p {
-  padding-bottom: 5%;
 }
 .text-left {
   text-align: left;
