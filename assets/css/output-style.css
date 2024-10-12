@@ -404,7 +404,6 @@ p:last-child {
   margin-bottom: 0px;
 }
 ul {
-  margin-left: 1rem;
   list-style-type: disc;
 }
 li {
@@ -1118,6 +1117,9 @@ input[type="checkbox"]:checked::before {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.ml-0 {
+  margin-left: 0px;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -1213,9 +1215,6 @@ input[type="checkbox"]:checked::before {
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
-}
-.min-h-60 {
-  min-height: 60vh;
 }
 .w-\[10vh\] {
   width: 10vh;
@@ -1337,8 +1336,8 @@ input[type="checkbox"]:checked::before {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-\[\] {
-  background-color: ;
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
 }
 .bg-\[url\(\'\/uploads\/backgrounds\/manamei-4\.jpg\'\)\] {
   background-image: url('/uploads/backgrounds/manamei-4.jpg');
@@ -1367,14 +1366,8 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
 .bg-fixed {
   background-attachment: fixed;
-}
-.bg-\[right\] {
-  background-position: right;
 }
 .p-10 {
   padding: 2.5rem;
@@ -1678,6 +1671,9 @@ input[type="checkbox"]:checked::before {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .lg\:mr-20p {
+    margin-right: 20%;
+  }
   .lg\:flex {
     display: flex;
   }
@@ -1686,12 +1682,6 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .lg\:bg-\[bottom\] {
-    background-position: bottom;
-  }
-  .lg\:bg-\[right\] {
-    background-position: right;
   }
   .lg\:p-0 {
     padding: 0px;

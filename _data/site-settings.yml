@@ -20,7 +20,9 @@ navigation-footer:
   - url: "/mana-movement-foundations.html"
     title: "Mana Movement Foundations"
   - url: "/mana-movement.html"
-    title: "Mana Movement"    
+    title: "Mana Movement"
+  - url: "/mana-movement-maternity"
+    title: Mana Movement Maternity
   - url: "/wisdom-body.html"
     title: "Wisdom Body"    
   - url: "/liberation-through-movement-mentorship.html"
