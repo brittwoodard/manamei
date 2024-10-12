@@ -1337,6 +1337,9 @@ input[type="checkbox"]:checked::before {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-\[\] {
+  background-color: ;
+}
 .bg-\[url\(\'\/uploads\/backgrounds\/manamei-4\.jpg\'\)\] {
   background-image: url('/uploads/backgrounds/manamei-4.jpg');
 }
@@ -1363,6 +1366,9 @@ input[type="checkbox"]:checked::before {
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
+}
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
 }
 .bg-fixed {
   background-attachment: fixed;
