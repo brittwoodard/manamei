@@ -1303,6 +1303,9 @@ input[type="checkbox"]:checked::before {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -1493,6 +1496,10 @@ input[type="checkbox"]:checked::before {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .pb-0 {
   padding-bottom: 0px;

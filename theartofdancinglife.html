@@ -61,8 +61,9 @@ inside-the-course:
     background_image: /uploads/backgrounds/manamei-4.jpg
     image_focus: bottom
 testimonials:
-  background_image: /uploads/images/manamei-55.jpg
-  overlay_style: dark
+  background_image: 
+  overlay_style: 
+  border: border-y border-feature
   testimonials:
     - testimonial: ”Liberation Through Movement is life-changing! I feel much more energized.<br>I feel so much more truly AUTHENTIC.”
     - testimonial: >-
@@ -125,7 +126,12 @@ seo:
 </section>
 
 <!-- Who It's For -->
-{% include who-its-for.html %}
+<section class="bg-image-style bg-overlay py-10p px-5p p-5p md:p-10p text-center {{page.who-its-for.background-image.overlay_style}}" style="background-image: url('{{page.who-its-for.background-image.background_image}}'); background-position: {{page.who-its-for.background-image.image_focus}}">
+  <h2 class="text-lg-serif">{{page.who-its-for.heading}}</h2>
+  <div class="md:px-10p">
+      <p>{{page.who-its-for.description_html}}</p>
+  </div>
+</section>
 
 <!-- Banner -->
 <section class="p-10p">
@@ -139,10 +145,10 @@ seo:
   <h2 class="font-serif text-[3rem] text-feature relative left-[5%] top-20">What you'll experience...</h2>
   
   <!-- First Row -->
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-3">
 
     <!-- Left Column (text) -->
-    <div class="p-10p">
+    <div class="col-span-2 p-10p">
       <h3 class="uppercase text-feature mt-16 mb-4">Deepen your embodiment knowledge</h3>
       <p class="mb-0">The 3 Pillars of Connection (the Foundation of the Liberation Through Movement Modality)</p>
       <ul class="list">
@@ -167,10 +173,10 @@ seo:
   </div>
 
   <!-- Second Row -->
-   <div class="grid grid-cols-2">
+   <div class="grid grid-cols-3">
 
     <!-- Left Column (image) -->
-    <div class="bg-image-style min-h-[60vh]" style="background-image: url('/uploads/images/manamei-27.jpg');"></div>
+    <div class="col-span-2 bg-image-style min-h-[60vh]" style="background-image: url('/uploads/images/manamei-27.jpg');"></div>
 
    <!-- Right Column (text) -->
     <div class="p-10p">
