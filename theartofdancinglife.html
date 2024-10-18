@@ -21,7 +21,7 @@ heading:
   background_image: /uploads/images/manamei-27.jpg
   overlay_style: medium
 course-description:
-  heading: The Art of Dancing Life is a 2-day Masterclass for Women
+  heading: The Art of Dancing Life is a Masterclass for Women
   description_html: >-
     <p>Wouldn’t it be so cool to wake up every single day and be able to think to yourself, <em>“Damn, I’m doing this whole LIFE thing really good.”</em>?</p>
     <p>Living life to its fullest and creating a satisfying experience for yourself is an ART. The facets of your Life journey must be crafted and curated with <strong>attention & intention</strong>. This finely curated masterpiece of life can only be achieved through a deep level of AWARENESS, not only to your outer environment, but also, first and foremost to your <strong>INNER LANDSCAPE</strong>.</p>
@@ -96,17 +96,33 @@ cta:
     background-position: center
     overlay_style: dark
 seo: 
-  title: Mana Movement - An Initiation Into the Art of Feminine Embodiment
+  title: The Art of Dancing Life - 2 Day Masterclass with Mana Mei
   description: Discover the Mana Movement full course, designed to reconnect women with their innate feminine energy through feminine embodiment. Unleash your creative potential and find peace, clarity, and inspiration through this transformative dance practice.
   keywords: Mana Movement, feminine energy, intuitive dance, creative potential, embodied movement, embodied liberation
   social_image: /uploads/images/manamei-27.jpg
-  hide-from-google: false
+  hide-from-google: true
 ---
 <!-- Course Heading -->
 {% include hero-banner-course.html %}
 
 <!-- Course Description -->
-{% include description-course.html %}
+<section class="pt-10p px-10p pb-5p bg-image-style bg-overlay {{page.course-description.background-image.overlay_style}}" style="background-image: url('{{page.course-description.background-image.background_image}}'); background-position: {{page.course-description.background-image.image_focus}};">
+  <h2 class="text-lg-serif text-feature">{{page.course-description.heading}}</h2>
+  <div class="mb-12 w-[80%]">
+      <p>{{page.course-description.description_html}}</p>
+  </div>
+  {% for item in page.course-description.module %}
+  <div class="flex mb-12">
+      <img src="{{item.image_path}}" class="h-16 mr-4">
+      <div class="col-span-4">
+          <h3 class="text-md-serif text-feature">{{item.title}}</h3>
+          <div>
+              <p>{{item.description_html}}</p>
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+</section>
 
 <!-- Who It's For -->
 {% include who-its-for.html %}

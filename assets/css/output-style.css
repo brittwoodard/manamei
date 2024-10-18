@@ -1270,6 +1270,9 @@ input[type="checkbox"]:checked::before {
 .w-auto {
   width: auto;
 }
+.w-\[75\%\] {
+  width: 75%;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
