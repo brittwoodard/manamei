@@ -1065,6 +1065,12 @@ input[type="checkbox"]:checked::before {
 .z-20 {
   z-index: 20;
 }
+.order-2 {
+  order: 2;
+}
+.order-last {
+  order: 9999;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1079,6 +1085,9 @@ input[type="checkbox"]:checked::before {
 }
 .m-4 {
   margin: 1rem;
+}
+.m-10p {
+  margin: 10%;
 }
 .mx-0 {
   margin-left: 0px;
@@ -1306,6 +1315,12 @@ input[type="checkbox"]:checked::before {
 .gap-8 {
   gap: 2rem;
 }
+.gap-10p {
+  gap: 10%;
+}
+.gap-5p {
+  gap: 5%;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1507,6 +1522,9 @@ input[type="checkbox"]:checked::before {
 .leading-7 {
   line-height: 1.75rem;
 }
+.leading-\[1em\] {
+  line-height: 1em;
+}
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1617,6 +1635,9 @@ input[type="checkbox"]:checked::before {
   }
 }
 @media (min-width: 768px) {
+  .md\:order-1 {
+    order: 1;
+  }
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1628,6 +1649,9 @@ input[type="checkbox"]:checked::before {
   }
   .md\:mt-0 {
     margin-top: 0px;
+  }
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
   .md\:block {
     display: block;
@@ -1649,6 +1673,9 @@ input[type="checkbox"]:checked::before {
   }
   .md\:w-\[80\%\] {
     width: 80%;
+  }
+  .md\:w-\[60\%\] {
+    width: 60%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1690,6 +1717,18 @@ input[type="checkbox"]:checked::before {
   }
 }
 @media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+  .lg\:order-first {
+    order: -9999;
+  }
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1701,14 +1740,29 @@ input[type="checkbox"]:checked::before {
   .lg\:mr-20p {
     margin-right: 20%;
   }
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+  .lg\:block {
+    display: block;
+  }
   .lg\:flex {
     display: flex;
+  }
+  .lg\:hidden {
+    display: none;
   }
   .lg\:w-\[30\%\] {
     width: 30%;
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:border-none {
+    border-style: none;
   }
   .lg\:p-0 {
     padding: 0px;

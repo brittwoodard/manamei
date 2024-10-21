@@ -19,7 +19,8 @@ heading:
     text: Watch the video
     url: https://www.youtube.com/embed/5sEVM981_X0?si=8lwzWDFyemeUsPqJ
   background_image: /uploads/images/manamei-72.jpg
-  overlay_style: light
+  image_focus: 45% 50%
+  overlay_style: medium
 course-description:
   heading: The Art of Dancing Life is a Masterclass for Women
   description_html: >-
@@ -28,7 +29,7 @@ course-description:
     <p>Then, we use the <strong>BODY</strong> as a vessel to bridge the potential of our inner wonderland into the lived experience of our outer world- manifested through our actions,  movements, words, and moment-to-moment choices. Through meeting life in this way, choosing from felt-body awareness at every breath, life unfolds into a radiant <span class="font-serif text-[1.5rem]">dance</span>. We feel, then we move. We breathe, then we respond. Swaying and undulating to the luscious rhythm of our Heart and the melody of our awakened Spirit.</p>
 who-its-for:
   heading: This 2-day masterclass is for
-  description_html: Any woman who is ready to live her life as a beautiful masterpiece</p><p>Women looking to gain self-awareness, applicable tools, and personal rituals to align with a satisfying and beauty-filled life</p><p>Those who want to meet each day with a sense of limitless potential and the anchored feeling of “Damn, I’m doing life really good”</p>
+  description_html: Any woman who is ready to live her life as a beautiful masterpiece</p><p>Women looking to gain self-awareness, applicable tools, and personal rituals to align with a satisfying and beauty-filled life</p><p class="mb-0">Those who want to meet each day with a sense of limitless potential and the anchored feeling of “Damn, I’m doing life really good”</p>
   background-image:
     background_image: /uploads/images/manamei-77.jpg
     image_focus: center
@@ -63,7 +64,7 @@ inside-the-course:
 testimonials:
   background_image: 
   overlay_style: 
-  border: border-y border-feature
+  border: border-t border-feature
   testimonials:
     - testimonial: ”Liberation Through Movement is life-changing! I feel much more energized.<br>I feel so much more truly AUTHENTIC.”
     - testimonial: >-
@@ -95,7 +96,7 @@ cta:
   background-image:
     background_image: /uploads/images/manamei-80.jpg
     background-position: center
-    overlay_style: light
+    overlay_style: medium
 seo: 
   title: The Art of Dancing Life - 2 Day Masterclass with Mana Mei
   description: Discover the Mana Movement full course, designed to reconnect women with their innate feminine energy through feminine embodiment. Unleash your creative potential and find peace, clarity, and inspiration through this transformative dance practice.
@@ -109,7 +110,7 @@ seo:
 <!-- Course Description -->
 <section class="pt-10p px-10p pb-5p bg-image-style bg-overlay {{page.course-description.background-image.overlay_style}}" style="background-image: url('{{page.course-description.background-image.background_image}}'); background-position: {{page.course-description.background-image.image_focus}};">
   <h2 class="text-lg-serif text-feature">{{page.course-description.heading}}</h2>
-  <div class="mb-12 w-[80%]">
+  <div class="mb-12 md:w-[80%]">
       <p>{{page.course-description.description_html}}</p>
   </div>
   {% for item in page.course-description.module %}
@@ -135,75 +136,81 @@ seo:
 
 <!-- Banner -->
 <section class="p-10p">
-  <div class="w-[60%]">
+  <div class="md:w-[60%]">
     <p>Doing life really good doesn’t mean that we never meet challenges or have conflict, or that we never feel pain or disruption. Doing life really good means that we feel empowered to always bring ourself back to a sense of safety and freedom, no matter what life is throwing our way- to have agency (authority) over our own experience, inner and outer, and to stay firmly rooted in the driver’s seat of our life.</p>
   </div>
 </section>
 
 <!-- What You'll Experience -->
-<section class="">
-  <h2 class="font-serif text-[3rem] text-feature relative left-[5%] top-20">What you'll experience...</h2>
-  
-  <!-- First Row -->
-  <div class="grid grid-cols-3">
+<section>
+  <h2 class="hidden lg:block font-serif text-[3rem] leading-[1em] text-feature relative left-[5%] top-20">What you'll
+      experience...</h2>
 
-    <!-- Left Column (text) -->
-    <div class="col-span-2 p-10p">
-      <h3 class="uppercase text-feature mt-16 mb-4">Deepen your embodiment knowledge</h3>
-      <p class="mb-0">The 3 Pillars of Connection (the Foundation of the Liberation Through Movement Modality)</p>
-      <ul class="list">
-        <li>Connection to the Physical Body</li>
-        <li>Connection to the Emotional Body</li>
-        <li>Connection to the Transpersonal Body</li>
-      </ul>
-      <p class="mt-8 mb-0">The Sacred Balance</p>
-      <ul class="list">
-        <li>Safety & Freedom</li>
-        <li>The Inner River- Masculine & Feminine Harmony</li>
-      </ul>
-      <p class="mt-8 mb-0">The Feminine Way - The Beauty Way</p>
-      <ul class="list">
-        <li>Transformation through softness & opening</li>
-        <li>The Healing Cycle</li>
-      </ul>
-    </div>
+  <div class="grid lg:grid-cols-3">
 
-    <!-- Right Column (image) -->
-     <div class="bg-image-style min-h-[60vh]" style="background-image: url('/uploads/images/manamei-73.jpg');"></div>
+      <!-- Left Column (text) -->
+      <div class="lg:col-span-2 p-10p order-last lg:order-first">
+          <h2 class="lg:hidden font-serif text-[3rem] leading-[1em] text-feature">What you'll experience...</h2>
+          <h3 class="uppercase text-feature mt-8 lg:mt-16 mb-4">Deepen your embodiment knowledge</h3>
+          <p class="mb-0">The 3 Pillars of Connection (the Foundation of the Liberation Through Movement Modality)</p>
+          <ul class="list">
+              <li>Connection to the Physical Body</li>
+              <li>Connection to the Emotional Body</li>
+              <li>Connection to the Transpersonal Body</li>
+          </ul>
+          <p class="mt-8 mb-0">The Sacred Balance</p>
+          <ul class="list">
+              <li>Safety & Freedom</li>
+              <li>The Inner River- Masculine & Feminine Harmony</li>
+          </ul>
+          <p class="mt-8 mb-0">The Feminine Way - The Beauty Way</p>
+          <ul class="list">
+              <li>Transformation through softness & opening</li>
+              <li>The Healing Cycle</li>
+          </ul>
+      </div>
+
+      <!-- Right Column (image) -->
+      <div class="bg-image-style min-h-[60vh]" style="background-image: url('/uploads/images/manamei-73.jpg'); background-position: 50% 35%;"></div>
   </div>
+</section>
 
-  <!-- Second Row -->
-   <div class="grid grid-cols-3">
 
-    <!-- Left Column (image) -->
-    <div class="col-span-2 bg-image-style min-h-[60vh]" style="background-image: url('/uploads/images/manamei-7.jpg');"></div>
+<!-- What You'll Get -->
+<section>
 
-   <!-- Right Column (text) -->
-    <div class="p-10p">
-      <h2 class="uppercase text-feature">Gain invaluable embodiment tools</h2>
-      <p class="mb-4">(to use for the resot of your life!)</p>
-      <p class="mb-0">Tools for Self-Regulating the Nervous System</p>
-      <ul class="list">
-        <li>Grounding and Interoception</li>
-        <li>Kinesthetic Awareness</li>
-      </ul>
-      <p class="mt-8 mb-0">Emotional Alchemy & Energy Transmutation</p>
-      <ul class="list">
-        <li>Somatic Release & Channel Clearing</li>
-        <li>Shadow Sourcing</li>
-        <li>Pleasure Activation</li>
-      </ul>
-      <p class="mt-8 mb-0">Accessing Your Authentic Expression</p>
-      <ul class="list">
-        <li>Finding Your Unique Dance</li>
-        <li>Expanding Your Movement Vocabulary</li>
-        <li>Manifestation Through Intentional Embodiment</li>
-      </ul>
-    </div>
+  <div class="grid lg:grid-cols-2 gap-10p m-10p">
+
+      <!-- Left Column (image) -->
+      <div class="bg-image-style min-h-[60vh]" style="background-image: url('/uploads/images/manamei-7.jpg');"></div>
+
+      <!-- Right Column (text) -->
+      <div class="p-10p border border-feature">
+          <h2 class="uppercase text-feature">Gain invaluable embodiment tools</h2>
+          <p class="mb-4">(to use for the resot of your life!)</p>
+          <p class="mb-0">Tools for Self-Regulating the Nervous System</p>
+          <ul class="list">
+              <li>Grounding and Interoception</li>
+              <li>Kinesthetic Awareness</li>
+          </ul>
+          <p class="mt-8 mb-0">Emotional Alchemy & Energy Transmutation</p>
+          <ul class="list">
+              <li>Somatic Release & Channel Clearing</li>
+              <li>Shadow Sourcing</li>
+              <li>Pleasure Activation</li>
+          </ul>
+          <p class="mt-8 mb-0">Accessing Your Authentic Expression</p>
+          <ul class="list">
+              <li>Finding Your Unique Dance</li>
+              <li>Expanding Your Movement Vocabulary</li>
+              <li>Manifestation Through Intentional Embodiment</li>
+          </ul>
+      </div>
+  </div>
 </section>
 
 <!-- Inside the Course -->
-<section class="py-10p px-5p md:p-10p bg-image-style"
+<section class="py-10p px-5p md:p-10p bg-image-style border-y border-feature"
     style="background-image: url('{{page.inside-the-course.background-image.background_image}}'); background-position: {{page.inside-the-course.background-image.image_focus}};">
     <div class="text-center">
         <h2 class="text-lg-serif text-feature">{{page.inside-the-course.heading}}</h2>
