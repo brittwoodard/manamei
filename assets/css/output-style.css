@@ -1050,29 +1050,8 @@ input[type="checkbox"]:checked::before {
 .relative {
   position: relative;
 }
-.inset-0 {
-  inset: 0px;
-}
 .left-0 {
   left: 0px;
-}
-.top-\[50\%\] {
-  top: 50%;
-}
-.left-\[10\%\] {
-  left: 10%;
-}
-.left-40 {
-  left: 10rem;
-}
-.top-8 {
-  top: 2rem;
-}
-.left-20 {
-  left: 5rem;
-}
-.top-12 {
-  top: 3rem;
 }
 .left-\[5\%\] {
   left: 5%;
@@ -1080,11 +1059,11 @@ input[type="checkbox"]:checked::before {
 .top-20 {
   top: 5rem;
 }
+.top-\[50\%\] {
+  top: 50%;
+}
 .z-20 {
   z-index: 20;
-}
-.z-10 {
-  z-index: 10;
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
@@ -1128,6 +1107,9 @@ input[type="checkbox"]:checked::before {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+.mb-0 {
+  margin-bottom: 0px;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -1174,6 +1156,9 @@ input[type="checkbox"]:checked::before {
 .mt-12 {
   margin-top: 3rem;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1182,12 +1167,6 @@ input[type="checkbox"]:checked::before {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mb-0 {
-  margin-bottom: 0px;
-}
-.mt-16 {
-  margin-top: 4rem;
 }
 .block {
   display: block;
@@ -1255,6 +1234,9 @@ input[type="checkbox"]:checked::before {
 .w-\[10vh\] {
   width: 10vh;
 }
+.w-\[60\%\] {
+  width: 60%;
+}
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1264,15 +1246,6 @@ input[type="checkbox"]:checked::before {
 .w-full {
   width: 100%;
 }
-.w-\[60\%\] {
-  width: 60%;
-}
-.w-auto {
-  width: auto;
-}
-.w-\[75\%\] {
-  width: 75%;
-}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1281,9 +1254,6 @@ input[type="checkbox"]:checked::before {
 }
 .cursor-pointer {
   cursor: pointer;
-}
-.list-inside {
-  list-style-position: inside;
 }
 .list-disc {
   list-style-type: disc;
@@ -1300,11 +1270,11 @@ input[type="checkbox"]:checked::before {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -1335,9 +1305,6 @@ input[type="checkbox"]:checked::before {
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-\[10\%\] {
-  gap: 10%;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1390,16 +1357,6 @@ input[type="checkbox"]:checked::before {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-\[\/uploads\/images\/manamei-27\.jpg\] {
-  background-color: /uploads/images/manamei-27.jpg;
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
-}
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
 }
@@ -1430,14 +1387,8 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
-.bg-cover {
-  background-size: cover;
-}
 .bg-fixed {
   background-attachment: fixed;
-}
-.bg-center {
-  background-position: center;
 }
 .p-10 {
   padding: 2.5rem;
@@ -1453,9 +1404,6 @@ input[type="checkbox"]:checked::before {
 }
 .p-5p {
   padding: 5%;
-}
-.p-8 {
-  padding: 2rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -1492,14 +1440,6 @@ input[type="checkbox"]:checked::before {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.py-5p {
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1542,24 +1482,14 @@ input[type="checkbox"]:checked::before {
 .text-\[0\.9rem\] {
   font-size: 0.9rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.text-\[1\.25rem\] {
-  font-size: 1.25rem;
-}
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
 }
 .text-\[3rem\] {
   font-size: 3rem;
 }
-.text-\[2rem\] {
-  font-size: 2rem;
-}
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 .uppercase {
@@ -1687,12 +1617,6 @@ input[type="checkbox"]:checked::before {
   }
 }
 @media (min-width: 768px) {
-  .md\:static {
-    position: static;
-  }
-  .md\:relative {
-    position: relative;
-  }
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1752,9 +1676,6 @@ input[type="checkbox"]:checked::before {
   }
   .md\:p-5p {
     padding: 5%;
-  }
-  .md\:p-10 {
-    padding: 2.5rem;
   }
   .md\:px-10p {
     padding-left: 10%;
