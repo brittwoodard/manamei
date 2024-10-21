@@ -1065,9 +1065,6 @@ input[type="checkbox"]:checked::before {
 .z-20 {
   z-index: 20;
 }
-.order-2 {
-  order: 2;
-}
 .order-last {
   order: 9999;
 }
@@ -1083,11 +1080,11 @@ input[type="checkbox"]:checked::before {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
-.m-4 {
-  margin: 1rem;
-}
 .m-10p {
   margin: 10%;
+}
+.m-4 {
+  margin: 1rem;
 }
 .mx-0 {
   margin-left: 0px;
@@ -1165,9 +1162,6 @@ input[type="checkbox"]:checked::before {
 .mt-12 {
   margin-top: 3rem;
 }
-.mt-16 {
-  margin-top: 4rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1243,9 +1237,6 @@ input[type="checkbox"]:checked::before {
 .w-\[10vh\] {
   width: 10vh;
 }
-.w-\[60\%\] {
-  width: 60%;
-}
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1279,9 +1270,6 @@ input[type="checkbox"]:checked::before {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -1306,6 +1294,9 @@ input[type="checkbox"]:checked::before {
 .justify-around {
   justify-content: space-around;
 }
+.gap-10p {
+  gap: 10%;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1314,12 +1305,6 @@ input[type="checkbox"]:checked::before {
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-10p {
-  gap: 10%;
-}
-.gap-5p {
-  gap: 5%;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1635,9 +1620,6 @@ input[type="checkbox"]:checked::before {
   }
 }
 @media (min-width: 768px) {
-  .md\:order-1 {
-    order: 1;
-  }
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1649,9 +1631,6 @@ input[type="checkbox"]:checked::before {
   }
   .md\:mt-0 {
     margin-top: 0px;
-  }
-  .md\:mt-16 {
-    margin-top: 4rem;
   }
   .md\:block {
     display: block;
@@ -1671,11 +1650,11 @@ input[type="checkbox"]:checked::before {
   .md\:w-\[40\%\] {
     width: 40%;
   }
-  .md\:w-\[80\%\] {
-    width: 80%;
-  }
   .md\:w-\[60\%\] {
     width: 60%;
+  }
+  .md\:w-\[80\%\] {
+    width: 80%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1717,17 +1696,11 @@ input[type="checkbox"]:checked::before {
   }
 }
 @media (min-width: 1024px) {
-  .lg\:order-1 {
-    order: 1;
-  }
   .lg\:order-first {
     order: -9999;
   }
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-  .lg\:col-span-1 {
-    grid-column: span 1 / span 1;
   }
   .lg\:mx-0 {
     margin-left: 0px;
@@ -1763,9 +1736,6 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .lg\:border-none {
-    border-style: none;
   }
   .lg\:p-0 {
     padding: 0px;
