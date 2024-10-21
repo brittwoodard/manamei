@@ -1114,6 +1114,10 @@ input[type="checkbox"]:checked::before {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mx-10p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1170,6 +1174,9 @@ input[type="checkbox"]:checked::before {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mb-5p {
+  margin-bottom: 5%;
 }
 .block {
   display: block;
@@ -1306,6 +1313,9 @@ input[type="checkbox"]:checked::before {
 .gap-8 {
   gap: 2rem;
 }
+.gap-5p {
+  gap: 5%;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1387,8 +1397,14 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
+.bg-cover {
+  background-size: cover;
+}
 .bg-fixed {
   background-attachment: fixed;
+}
+.bg-center {
+  background-position: center;
 }
 .p-10 {
   padding: 2.5rem;
@@ -1716,6 +1732,12 @@ input[type="checkbox"]:checked::before {
   .lg\:mt-16 {
     margin-top: 4rem;
   }
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+  .lg\:mt-10p {
+    margin-top: 10%;
+  }
   .lg\:block {
     display: block;
   }
@@ -1736,6 +1758,9 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:gap-10p {
+    gap: 10%;
   }
   .lg\:p-0 {
     padding: 0px;
