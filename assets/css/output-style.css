@@ -1068,6 +1068,9 @@ input[type="checkbox"]:checked::before {
 .order-last {
   order: 9999;
 }
+.order-first {
+  order: -9999;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1121,6 +1124,10 @@ input[type="checkbox"]:checked::before {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.my-10p {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -1187,6 +1194,9 @@ input[type="checkbox"]:checked::before {
 }
 .ml-15p {
   margin-left: 15%;
+}
+.mr-10p {
+  margin-right: 10%;
 }
 .block {
   display: block;
@@ -1519,6 +1529,9 @@ input[type="checkbox"]:checked::before {
 .pr-\[20\%\] {
   padding-right: 20%;
 }
+.pb-10p {
+  padding-bottom: 10%;
+}
 .text-left {
   text-align: left;
 }
@@ -1695,6 +1708,12 @@ input[type="checkbox"]:checked::before {
   .md\:mt-0 {
     margin-top: 0px;
   }
+  .md\:ml-15p {
+    margin-left: 15%;
+  }
+  .md\:mt-10p {
+    margin-top: 10%;
+  }
   .md\:block {
     display: block;
   }
@@ -1710,6 +1729,9 @@ input[type="checkbox"]:checked::before {
   .md\:h-8 {
     height: 2rem;
   }
+  .md\:min-h-\[90vh\] {
+    min-height: 90vh;
+  }
   .md\:w-\[40\%\] {
     width: 40%;
   }
@@ -1718,6 +1740,9 @@ input[type="checkbox"]:checked::before {
   }
   .md\:w-\[80\%\] {
     width: 80%;
+  }
+  .md\:w-\[90\%\] {
+    width: 90%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1753,6 +1778,13 @@ input[type="checkbox"]:checked::before {
   .md\:px-5p {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .md\:py-10p {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .md\:pr-\[20\%\] {
+    padding-right: 20%;
   }
   .md\:text-right {
     text-align: right;
