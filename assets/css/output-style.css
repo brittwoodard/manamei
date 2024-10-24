@@ -1080,15 +1080,16 @@ input[type="checkbox"]:checked::before {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
-.m-10p {
-  margin: 10%;
-}
 .m-4 {
   margin: 1rem;
 }
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
+}
+.mx-10p {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .mx-2 {
   margin-left: 0.5rem;
@@ -1113,10 +1114,6 @@ input[type="checkbox"]:checked::before {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.mx-10p {
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -1174,9 +1171,6 @@ input[type="checkbox"]:checked::before {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mb-5p {
-  margin-bottom: 5%;
 }
 .block {
   display: block;
@@ -1241,6 +1235,9 @@ input[type="checkbox"]:checked::before {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
 .w-\[10vh\] {
   width: 10vh;
 }
@@ -1252,6 +1249,9 @@ input[type="checkbox"]:checked::before {
 }
 .w-full {
   width: 100%;
+}
+.w-\[70\%\] {
+  width: 70%;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -1301,20 +1301,20 @@ input[type="checkbox"]:checked::before {
 .justify-around {
   justify-content: space-around;
 }
-.gap-10p {
-  gap: 10%;
-}
 .gap-2 {
   gap: 0.5rem;
 }
 .gap-4 {
   gap: 1rem;
 }
+.gap-5p {
+  gap: 5%;
+}
 .gap-8 {
   gap: 2rem;
 }
-.gap-5p {
-  gap: 5%;
+.gap-10p {
+  gap: 10%;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1397,14 +1397,11 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
-.bg-cover {
-  background-size: cover;
-}
 .bg-fixed {
   background-attachment: fixed;
 }
-.bg-center {
-  background-position: center;
+.bg-\[bottom\] {
+  background-position: bottom;
 }
 .p-10 {
   padding: 2.5rem;
@@ -1457,6 +1454,10 @@ input[type="checkbox"]:checked::before {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1471,6 +1472,12 @@ input[type="checkbox"]:checked::before {
 }
 .pt-5p {
   padding-top: 5%;
+}
+.pt-12 {
+  padding-top: 3rem;
+}
+.pt-8 {
+  padding-top: 2rem;
 }
 .text-left {
   text-align: left;
@@ -1726,17 +1733,17 @@ input[type="checkbox"]:checked::before {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  .lg\:mr-20p {
-    margin-right: 20%;
-  }
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
+  .lg\:mr-20p {
+    margin-right: 20%;
+  }
   .lg\:mt-10p {
     margin-top: 10%;
+  }
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
   .lg\:block {
     display: block;
