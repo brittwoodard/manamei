@@ -1419,11 +1419,17 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
+.bg-cover {
+  background-size: cover;
+}
 .bg-fixed {
   background-attachment: fixed;
 }
 .bg-\[bottom\] {
   background-position: bottom;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .p-10 {
   padding: 2.5rem;
