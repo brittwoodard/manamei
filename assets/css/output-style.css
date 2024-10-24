@@ -1080,6 +1080,9 @@ input[type="checkbox"]:checked::before {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -1175,6 +1178,15 @@ input[type="checkbox"]:checked::before {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.ml-\[20\%\] {
+  margin-left: 20%;
+}
+.ml-10p {
+  margin-left: 10%;
+}
+.ml-15p {
+  margin-left: 15%;
 }
 .block {
   display: block;
@@ -1283,6 +1295,12 @@ input[type="checkbox"]:checked::before {
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
