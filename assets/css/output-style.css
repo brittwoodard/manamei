@@ -1115,6 +1115,10 @@ input[type="checkbox"]:checked::before {
   margin-top: auto;
   margin-bottom: auto;
 }
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1478,6 +1482,18 @@ input[type="checkbox"]:checked::before {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pl-\[20\%\] {
+  padding-left: 20%;
+}
+.pr-10p {
+  padding-right: 10%;
+}
+.pl-10p {
+  padding-left: 10%;
+}
+.pr-\[20\%\] {
+  padding-right: 20%;
 }
 .text-left {
   text-align: left;
