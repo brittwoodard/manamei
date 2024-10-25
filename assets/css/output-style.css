@@ -1198,6 +1198,9 @@ input[type="checkbox"]:checked::before {
 .mr-10p {
   margin-right: 10%;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .block {
   display: block;
 }
@@ -1568,6 +1571,9 @@ input[type="checkbox"]:checked::before {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[1\.3rem\] {
+  font-size: 1.3rem;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1585,6 +1591,27 @@ input[type="checkbox"]:checked::before {
 }
 .leading-\[1em\] {
   line-height: 1em;
+}
+.leading-4 {
+  line-height: 1rem;
+}
+.leading-6 {
+  line-height: 1.5rem;
+}
+.leading-\[2em\] {
+  line-height: 2em;
+}
+.leading-\[1\.5em\] {
+  line-height: 1.5em;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 .text-dark {
   --tw-text-opacity: 1;
@@ -1792,8 +1819,14 @@ input[type="checkbox"]:checked::before {
   .md\:pr-\[20\%\] {
     padding-right: 20%;
   }
+  .md\:text-left {
+    text-align: left;
+  }
   .md\:text-right {
     text-align: right;
+  }
+  .md\:text-\[1\.8rem\] {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 1024px) {

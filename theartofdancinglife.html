@@ -64,7 +64,7 @@ inside-the-course:
 testimonials:
   background_image: 
   overlay_style: 
-  border: border-t border-feature
+  border: border-y border-feature
   testimonials:
     - testimonial: ”Liberation Through Movement is life-changing! I feel much more energized.<br>I feel so much more truly AUTHENTIC.”
     - testimonial: >-
@@ -83,8 +83,6 @@ testimonials:
     - testimonial: “I feel like there is such a new path opening up for me. A path of being TRULY WHO I AM and finding myself and staying true to myself.”
     - testimonial: “I am more aware of how I hold my body and how I move in day to day life. I feel more present more often, in deeper communication with my Soul. Life is now more expansive, more abundant in opportunities, my creativity feels like it flipped a switch and now theres a flood of ideas and inspiration.”
     - testimonial: “This beautiful new way of moving is connecting in with me fully, all of me, and allowing me to be present with the emotions, the expressions, the senses… allowing it to move through me and for me. To actually EMBRACE wholeheartedly all that it is. Embrace every aspect of me. The light, the pain, the joy, the fear, the love.”
-instructor:
-  show: false
 cta:
   heading: Register Now for $19 
   description_html: >-
@@ -209,6 +207,11 @@ seo:
               <li>Transformation through softness & opening</li>
               <li>The Healing Cycle</li>
           </ul>
+
+          <!-- CTA -->
+          <div class="mt-8 text-center md:text-left">
+            <a href="{{page.heading.button-enroll.url}}" class="button">{{page.heading.button-enroll.text}}</a>
+        </div>
       </div>
 
       <!-- Right Column (image) -->
@@ -291,9 +294,18 @@ seo:
 {% include testimonials.html %}
 
 <!-- Meet Your Teacher -->
-{% if page.video.show == true %}
-{% include about-mana-course.html %}
-{% endif %}
+<section class="grid md:grid-cols-3 p-10p md:p-5p lg:p-10p">
+  <div class="min-h-[60vh] mb-10p md:mb-0 bg-image-style md:mr-20p" style="background-image: url('/uploads/images/manamei-86.jpg');"></div>
+  <div class="md:col-span-2">
+      <h2 class="text-[1.3rem] md:text-[1.8rem] font-serif leading-[1.5em] tracking-widest mb-6 text-feature">Hi! I’m Mana Mei. Dancer, mother, artist, entrepreneur, & Feminine Embodiment Mentor.</h2>
+      <p>Trust me sister, you are not alone. There are thousands of women around the world who are turning towards movement medicine for personal liberation, healing, and reclaiming the masterpiece of their life!</p>
+      <p>Creating a masterpiece is not easy. It takes time and practice, devotion and resilience.</p>
+      <p>It is something we get to work on and work towards for our entire life, being present with the beauty of the journey itself, and meeting every moment with grace.</p>
+      <p>And I am here to tell you that it is so much better to dance this path in connection and support of others- other women around the world doing the same!</p>
+      <p>That is why I am here to offer you this space, this community, this knowledge, and these tools to support you in beginning (or continuing) your lifelong journey of mastering the Art of Dancing Life.</p>
+      <p class="text-feature font-serif">Welcome Home!</p>
+  </div>
+</section>
 
 <!-- CTA -->
 {% include cta-course.html %}
