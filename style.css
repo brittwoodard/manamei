@@ -54,22 +54,6 @@
         @apply uppercase mb-4
     }
 
-    footer form label {
-        @apply font-serif lowercase mt-2 block
-    }
-
-    footer form input, footer form textarea {
-        @apply block border-b border-white bg-transparent w-full
-    }
-
-    input::placeholder, textarea::placeholder {
-        @apply text-white font-sans text-base
-    }
-
-    footer input::placeholder, textarea::placeholder {
-        @apply text-white font-serif lowercase
-    }
-
     :focus-visible {
         @apply focus:outline-none focus:border-b focus:border-feature
     }
