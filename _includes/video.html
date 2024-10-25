@@ -7,10 +7,20 @@
     <div id="videoModalVideo" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
+
+            {% if page.heading.button-video.type == 'youtube' %}
+
+                <!-- YouTube iframe -->
+                <iframe width="560" height="315" src="{{page.heading.button-video.url}}" frameborder="0"
+                    allowfullscreen></iframe>
+                {% else %}
+
+                <!-- Fallback for other video types -->
             <video controls>
                 <source src="{{page.heading.button-video.url}}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            {% endif %}
         </div>
     </div>
 
