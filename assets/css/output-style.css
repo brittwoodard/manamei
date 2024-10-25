@@ -1714,6 +1714,12 @@ input[type="checkbox"]:checked::before {
   .md\:mt-10p {
     margin-top: 10%;
   }
+  .md\:mr-20p {
+    margin-right: 20%;
+  }
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
   .md\:block {
     display: block;
   }
@@ -1817,6 +1823,12 @@ input[type="checkbox"]:checked::before {
   .lg\:mt-16 {
     margin-top: 4rem;
   }
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+  .lg\:mb-10p {
+    margin-bottom: 10%;
+  }
   .lg\:block {
     display: block;
   }
@@ -1844,9 +1856,16 @@ input[type="checkbox"]:checked::before {
   .lg\:p-0 {
     padding: 0px;
   }
+  .lg\:p-10p {
+    padding: 10%;
+  }
   .lg\:px-10p {
     padding-left: 10%;
     padding-right: 10%;
+  }
+  .lg\:py-10p {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
   .lg\:pl-5p {
     padding-left: 5%;
