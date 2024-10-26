@@ -103,7 +103,73 @@ seo:
   hide-from-google: true
 ---
 <!-- Course Heading -->
-{% include hero-banner-course.html %}
+<section
+    class="p-10p bg-image-style bg-overlay min-h-[90vh] flex align-middle items-center text-center justify-center {{page.heading.overlay_style}}"
+    style="background-image: url('{{page.heading.background_image}}'); background-position: {{page.heading.image_focus}};">
+    <div>
+        <h2 class="heading-lg-sans">{{page.heading.title}}</h2>
+        <h3 class="text-lg-serif">{{page.heading.subtitle}}</h3>
+        <p class="uppercase">{{page.heading.description}}</p>
+
+        <div class="grid grid-cols-2">
+
+        <!-- Enroll Button -->
+        <div class="text-center md:text-right" x-data="{ open: false }"
+            x-init="$watch('open', value => document.body.classList.toggle('overflow-hidden', value))">
+            <!-- Trigger Button -->
+            <button @click="open = true" class="button">
+                {{page.heading.button-enroll.text}}
+            </button>
+
+            <!-- Popup Overlay -->
+            <div x-show="open" x-cloak
+                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+                @click.self="open = false" @keydown.escape.window="open = false">
+                <!-- Popup Content -->
+                <div class="relative bg-white w-full max-w-3xl mx-4 rounded-lg shadow-lg">
+                    <!-- Close Button -->
+                    <button @click="open = false"
+                        class="absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">
+                        &times;
+                    </button>
+                    <!-- Iframe Container -->
+                    <div class="p-4">
+                        <iframe src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass"
+                            frameborder="0" class="w-full h-screen max-h-[80vh] rounded-md"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Button -->
+        {% if page.heading.button-video.show == true %}
+
+        <button id="openModalBtnBanner" class="button cursor-pointer">{{page.heading.button-video.text}}</button>
+
+        <div id="videoModalBanner" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                {% if page.heading.button-video.type == 'youtube' %}
+
+                <!-- YouTube iframe -->
+                <iframe width="560" height="315" src="{{page.heading.button-video.url}}" frameborder="0"
+                    allowfullscreen></iframe>
+                {% else %}
+
+                <!-- Fallback for other video types -->
+                <video controls>
+                    <source src="{{page.heading.button-video.url}}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                {% endif %}
+            </div>
+        </div>
+
+        {% endif %}
+      </div>
+    </div>
+    
+</section>
 
 <!-- Course Description -->
   <section class="pb-10p">
@@ -138,10 +204,6 @@ seo:
 
     <div class="hidden md:block bg-image-style min-h-[70vh]" style="background-image: url(/uploads/images/manamei-76.jpg);"></div>
     </div>
-
-    <!-- <div class="p-10p">
-        <p>Through meeting life in this way, choosing from felt-body awareness at every breath, life unfolds into a radiant <span class="font-serif text-[1.5rem]">dance</span>. We feel, then we move. We breathe, then we respond. Swaying and undulating to the luscious rhythm of our Heart and the melody of our awakened Spirit.</p>
-    </div> -->
 
     <!-- 2 Columns -->
      <div class="grid md:grid-cols-2 md:mt-10p">
@@ -209,13 +271,38 @@ seo:
           </ul>
 
           <!-- CTA -->
-          <div class="mt-8 text-center md:text-left">
-            <a href="{{page.heading.button-enroll.url}}" class="button">{{page.heading.button-enroll.text}}</a>
-        </div>
+          <div class="mt-8 text-center md:text-left" x-data="{ open: false }"
+              x-init="$watch('open', value => document.body.classList.toggle('overflow-hidden', value))">
+              <!-- Trigger Button -->
+              <button @click="open = true" class="button">
+                  {{page.heading.button-enroll.text}}
+              </button>
+
+              <!-- Popup Overlay -->
+              <div x-show="open" x-cloak
+                  class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+                  @click.self="open = false" @keydown.escape.window="open = false">
+                  <!-- Popup Content -->
+                  <div class="relative bg-white w-full max-w-3xl mx-4 rounded-lg shadow-lg">
+                      <!-- Close Button -->
+                      <button @click="open = false"
+                          class="absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">
+                          &times;
+                      </button>
+                      <!-- Iframe Container -->
+                      <div class="p-4">
+                          <iframe src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass"
+                              frameborder="0" class="w-full h-screen max-h-[80vh] rounded-md"></iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
       </div>
 
       <!-- Right Column (image) -->
-      <div class="bg-image-style min-h-[60vh]" style="background-image: url('/uploads/images/manamei-73.jpg'); background-position: 50% 35%;"></div>
+      <div class="bg-image-style min-h-[60vh]"
+          style="background-image: url('/uploads/images/manamei-73.jpg'); background-position: 50% 35%;"></div>
   </div>
 </section>
 
@@ -262,7 +349,7 @@ seo:
     <div class="text-center">
         <h2 class="text-lg-serif text-feature">{{page.inside-the-course.heading}}</h2>
         <div class="md:w-[80%] mx-auto mb-8">
-          <p>{{page.inside-the-course.description_html}}</p>
+            <p>{{page.inside-the-course.description_html}}</p>
         </div>
     </div>
     <ul class="dropdown-menu">
@@ -285,8 +372,32 @@ seo:
         </li>
         {% endfor %}
     </ul>
-    <div class="text-center mt-8">
-        <a href="{{page.heading.button-enroll.url}}" class="button">{{page.heading.button-enroll.text}}</a>
+    
+    <!-- CTA -->
+    <div class="mt-8 text-center" x-data="{ open: false }"
+        x-init="$watch('open', value => document.body.classList.toggle('overflow-hidden', value))">
+        <!-- Trigger Button -->
+        <button @click="open = true" class="button">
+            {{page.heading.button-enroll.text}}
+        </button>
+
+        <!-- Popup Overlay -->
+        <div x-show="open" x-cloak class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+            @click.self="open = false" @keydown.escape.window="open = false">
+            <!-- Popup Content -->
+            <div class="relative bg-white w-full max-w-3xl mx-4 rounded-lg shadow-lg">
+                <!-- Close Button -->
+                <button @click="open = false"
+                    class="absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">
+                    &times;
+                </button>
+                <!-- Iframe Container -->
+                <div class="p-4">
+                    <iframe src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass"
+                        frameborder="0" class="w-full h-screen max-h-[80vh] rounded-md"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -308,4 +419,43 @@ seo:
 </section>
 
 <!-- CTA -->
-{% include cta-course.html %}
+<section class="section-padding bg-image-style bg-overlay {{page.cta.background-image.overlay_style}}"
+    style="background-image: url('{{page.cta.background-image.background_image}}'); background-position: {{page.cta.background-image.image_focus}};">
+    <div class="text-center">
+        <h2 class="text-lg-serif">{{page.cta.heading}}</h2>
+        <div class="md:px-10p">
+            <p>{{page.cta.description_html}}</p>
+        </div>
+    </div>
+    
+    <!-- CTA -->
+    <div class="mt-8 text-center" x-data="{ open: false }"
+        x-init="$watch('open', value => document.body.classList.toggle('overflow-hidden', value))">
+
+        <!-- Trigger Button -->
+        <button @click="open = true" class="button">
+            {{page.heading.button-enroll.text}}
+        </button>
+
+        <!-- Popup Overlay -->
+        <div x-show="open" x-cloak class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+            @click.self="open = false" @keydown.escape.window="open = false">
+
+            <!-- Popup Content -->
+            <div class="relative bg-white w-full max-w-3xl mx-4 rounded-lg shadow-lg">
+
+                <!-- Close Button -->
+                <button @click="open = false"
+                    class="absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">
+                    &times;
+                </button>
+
+                <!-- Iframe Container -->
+                <div class="p-4">
+                    <iframe src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass"
+                        frameborder="0" class="w-full h-screen max-h-[80vh] rounded-md"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
