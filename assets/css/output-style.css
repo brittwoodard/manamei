@@ -1692,6 +1692,9 @@ input[type="checkbox"]:checked::before {
   .md\:block {
     display: block;
   }
+  .md\:flex {
+    display: flex;
+  }
   .md\:grid {
     display: grid;
   }

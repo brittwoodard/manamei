@@ -112,12 +112,12 @@ seo:
         <p class="uppercase">{{page.heading.description}}</p>
 
      <!-- Buttons -->
-    <div class="flex justify-center gap-4">
+    <div class="md:flex justify-center gap-4">
         
         <!-- Enroll Button -->
         <div x-data="{ open: false }" 
-     x-init="$el.classList.remove('hidden'); setTimeout(() => { open = false; }, 100)"
-     class="text-center md:text-right hidden">
+        x-init="$el.classList.remove('hidden'); setTimeout(() => { open = false; }, 100)"
+        class="text-center md:text-right hidden">
 
             <!-- Trigger Button -->
             <button @click="open = true" class="button">
@@ -147,7 +147,7 @@ seo:
         <!-- Video Button -->
         {% if page.heading.button-video.show == true %}
 
-        <button id="openModalBtnBanner" class="button cursor-pointer">{{page.heading.button-video.text}}</button>
+        <button id="openModalBtnBanner" class="button cursor-pointer mt-4 md:mt-0">{{page.heading.button-video.text}}</button>
 
         <div id="videoModalBanner" class="modal">
             <div class="modal-content">
@@ -277,7 +277,34 @@ seo:
           </ul>
 
           <!-- CTA -->
-          {% include button-enroll.html %}
+          <div x-data="{ open: false }" 
+          x-init="$el.classList.remove('hidden'); setTimeout(() => { open = false; }, 100)"
+          class="text-left mt-8 hidden">
+
+            <!-- Trigger Button -->
+            <button @click="open = true" class="button">
+                {{page.heading.button-enroll.text}}
+            </button>
+
+            <!-- Popup Overlay -->
+            <div x-show="open" x-cloak
+                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+                @click.self="open = false" @keydown.escape.window="open = false">
+                <!-- Popup Content -->
+                <div class="relative bg-white w-full max-w-3xl mx-4 rounded-lg shadow-lg">
+                    <!-- Close Button -->
+                    <button @click="open = false"
+                        class="absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">
+                        &times;
+                    </button>
+                    <!-- Iframe Container -->
+                    <div class="p-4">
+                        <iframe src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass"
+                            frameborder="0" class="w-full h-screen max-h-[80vh] rounded-md"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
       </div>
 
@@ -355,7 +382,9 @@ seo:
     </ul>
     
     <!-- CTA -->
-    {% include button-enroll.html %}
+    <div class="mt-8">
+      {% include button-enroll.html %}
+    </div>
 
 </section>
 
