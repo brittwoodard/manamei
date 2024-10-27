@@ -5,8 +5,11 @@
         <h2 class="heading-lg-sans">{{page.heading.title}}</h2>
         <h3 class="text-lg-serif">{{page.heading.subtitle}}</h3>
         <p class="uppercase">{{page.heading.description}}</p>
+
+        <!-- Enroll Button -->
         <a href="{{page.heading.button-enroll.url}}" class="button m-4">{{page.heading.button-enroll.text}}</a>
 
+        <!-- Video Button -->
         {% if page.heading.button-video.show == true %}
 
         <button id="openModalBtnBanner" class="button cursor-pointer">{{page.heading.button-video.text}}</button>
