@@ -1148,9 +1148,6 @@ input[type="checkbox"]:checked::before {
 .inline-block {
   display: inline-block;
 }
-.inline {
-  display: inline;
-}
 .flex {
   display: flex;
 }
@@ -1763,9 +1760,6 @@ input[type="checkbox"]:checked::before {
   }
   .md\:pr-\[20\%\] {
     padding-right: 20%;
-  }
-  .md\:text-left {
-    text-align: left;
   }
   .md\:text-right {
     text-align: right;

@@ -1,6 +1,6 @@
-<!-- Enroll Button -->
-<div class="text-center md:text-right" x-data="{ open: false }"
-    x-init="$watch('open', value => document.body.classList.toggle('overflow-hidden', value))">
+<div x-data="{ open: false }" 
+     x-init="$el.classList.remove('hidden'); setTimeout(() => { open = false; }, 100)"
+     class="text-center hidden">
 
     <!-- Trigger Button -->
     <button @click="open = true" class="button">
