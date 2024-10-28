@@ -1031,9 +1031,6 @@ input[type="checkbox"]:checked::before {
 .z-50 {
   z-index: 50;
 }
-.order-first {
-  order: -9999;
-}
 .order-last {
   order: 9999;
 }
@@ -1051,9 +1048,6 @@ input[type="checkbox"]:checked::before {
 }
 .m-4 {
   margin: 1rem;
-}
-.m-10p {
-  margin: 10%;
 }
 .mx-0 {
   margin-left: 0px;
@@ -1261,9 +1255,6 @@ input[type="checkbox"]:checked::before {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1677,9 +1668,6 @@ input[type="checkbox"]:checked::before {
   }
 }
 @media (min-width: 768px) {
-  .md\:order-last {
-    order: 9999;
-  }
   .md\:order-first {
     order: -9999;
   }
@@ -1727,9 +1715,6 @@ input[type="checkbox"]:checked::before {
   }
   .md\:min-h-\[90vh\] {
     min-height: 90vh;
-  }
-  .md\:min-h-\[92vh\] {
-    min-height: 92vh;
   }
   .md\:w-\[40\%\] {
     width: 40%;
