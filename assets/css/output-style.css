@@ -1013,14 +1013,32 @@ input[type="checkbox"]:checked::before {
 .inset-0 {
   inset: 0px;
 }
+.bottom-20p {
+  bottom: 20%;
+}
 .left-0 {
   left: 0px;
+}
+.left-20p {
+  left: 20%;
+}
+.right-20p {
+  right: 20%;
+}
+.right-6 {
+  right: 1.5rem;
 }
 .right-\[1\.25rem\] {
   right: 1.25rem;
 }
+.top-20p {
+  top: 20%;
+}
 .top-3 {
   top: 0.75rem;
+}
+.top-4 {
+  top: 1rem;
 }
 .top-\[50\%\] {
   top: 50%;
@@ -1488,11 +1506,11 @@ input[type="checkbox"]:checked::before {
 .align-middle {
   vertical-align: middle;
 }
-.font-serif {
-  font-family: modernline, serif;
-}
 .font-sans {
   font-family: Josefin Sans, sans-serif;
+}
+.font-serif {
+  font-family: modernline, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1510,6 +1528,9 @@ input[type="checkbox"]:checked::before {
 }
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
+}
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 .text-\[3rem\] {
   font-size: 3rem;
