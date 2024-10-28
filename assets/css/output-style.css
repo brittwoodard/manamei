@@ -1491,6 +1491,9 @@ input[type="checkbox"]:checked::before {
 .font-serif {
   font-family: modernline, serif;
 }
+.font-sans {
+  font-family: Josefin Sans, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1608,6 +1611,20 @@ input[type="checkbox"]:checked::before {
     font-weight: 200;
     line-height: 1.8em;
   }
+}
+.placeholder\:font-serif::-moz-placeholder {
+  font-family: modernline, serif;
+}
+.placeholder\:font-serif::placeholder {
+  font-family: modernline, serif;
+}
+.placeholder\:text-white::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.placeholder\:text-white::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .hover\:text-feature:hover {
   --tw-text-opacity: 1;
