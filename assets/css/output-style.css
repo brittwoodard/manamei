@@ -1878,6 +1878,12 @@ input[type="checkbox"]:checked::before {
   .lg\:w-\[30\%\] {
     width: 30%;
   }
+  .lg\:w-80 {
+    width: 20rem;
+  }
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
