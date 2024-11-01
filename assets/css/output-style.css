@@ -1529,6 +1529,9 @@ input[type="checkbox"]:checked::before {
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
 }
+.text-\[2rem\] {
+  font-size: 2rem;
+}
 .text-\[3rem\] {
   font-size: 3rem;
 }
@@ -1536,14 +1539,8 @@ input[type="checkbox"]:checked::before {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-\[2rem\] {
-  font-size: 2rem;
-}
 .font-\[100\] {
   font-weight: 100;
-}
-.font-light {
-  font-weight: 300;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1883,9 +1880,6 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:w-\[30\%\] {
     width: 30%;
-  }
-  .lg\:w-80 {
-    width: 20rem;
   }
   .lg\:w-\[80\%\] {
     width: 80%;
