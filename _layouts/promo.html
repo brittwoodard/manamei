@@ -39,74 +39,70 @@
     <!-- Javascript  -->
     <script src="/main.js" defer></script>
 
-    <!-- Click to pop up video scripts -->
-        <script>
-            {% if page.video %}
-            // Click to pop up video
-            $(document).ready(function () {
-                // Open modal on button click
-                $("#openModalBtnVideo").click(function () {
-                    $("#videoModalVideo").css("display", "block");
-                });
+    <!-- Single Modal Structure for All Buttons -->
+<div id="videoModal" class="modal" style="display: none;">
+    <div id="modalContent" class="modal-content">
+        <span class="close" style="cursor: pointer;">&times;</span>
+        <iframe 
+          id="modalIframe" 
+          frameborder="0" 
+          allowfullscreen 
+          class="w-full min-h-[80vh] rounded-none">
+        </iframe>
+    </div>
+</div>
 
-                // Close modal on close button click or outside click
-                $(".close, .modal").click(function () {
-                    $("#videoModalVideo").css("display", "none");
-                    // Stop video playback by resetting the src
-                    $("#videoModalVideo iframe").attr("src", $("#videoModalVideo iframe").attr("src"));
-                });
+<!-- JavaScript to handle modals -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const videoModal = document.getElementById('videoModal');
+        const modalContent = document.getElementById('modalContent');
+        const modalIframe = document.getElementById('modalIframe');
+        const closeBtn = videoModal.querySelector('.close');
 
-                // Prevent modal from closing when clicking inside the modal content
-                $(".modal-content").click(function (event) {
-                    event.stopPropagation();
-                });
-            });
-            {% endif %}
+        // Event delegation for all modal-trigger buttons
+        document.addEventListener('click', function (event) {
+            if (event.target.classList.contains('modal-trigger')) {
+                // Get video URL from data-src attribute
+                const videoSrc = event.target.getAttribute('data-src');
+                modalIframe.src = videoSrc;
 
-            {% if page.heading.button-video.show == true %}
-            // Click to pop up video
-            $(document).ready(function () {
-                // Open modal on button click
-                $("#openModalBtnBanner").click(function () {
-                    $("#videoModalBanner").css("display", "block");
-                });
-
-                // Close modal on close button click or outside click
-                $(".close, .modal").click(function () {
-                    $("#videoModalBanner").css("display", "none");
-                    // Stop video playback by resetting the src
-                    $("#videoModalBanner iframe").attr("src", $("#videoModalBanner iframe").attr("src"));
-                });
-
-                // Prevent modal from closing when clicking inside the modal content
-                $(".modal-content").click(function (event) {
-                    event.stopPropagation();
-                });
-            });
-            {% endif %}
-
-            {% if page.about %}
-            // Read More
-            document.addEventListener('DOMContentLoaded', function () {
-                var descriptionContainer = document.getElementById('aboutDescription');
-                var readMoreBtn = document.getElementById('readMoreBtn');
-
-                if (descriptionContainer.scrollHeight > descriptionContainer.clientHeight) {
-                    readMoreBtn.style.display = 'block';
+                // Set dimensions based on button type
+                if (event.target.classList.contains('video-button')) {
+                    // YouTube-style iframe
+                    modalContent.style.width = '560px';
+                    modalContent.style.maxHeight = '315px';
+                } else {
+                    // SamCart-style landscape rectangle
+                    modalContent.style.width = '800px';
+                    modalContent.style.maxHeight = '80vh';
                 }
 
-                readMoreBtn.addEventListener('click', function () {
-                    if (descriptionContainer.style.maxHeight) {
-                        descriptionContainer.style.maxHeight = null;
-                        readMoreBtn.textContent = 'Read More';
-                    } else {
-                        descriptionContainer.style.maxHeight = descriptionContainer.scrollHeight + 'px';
-                        readMoreBtn.textContent = 'Read Less';
-                    }
-                });
-            });
-            {% endif %}
-        </script>
+                // Show modal
+                videoModal.style.display = 'block';
+            }
+        });
+
+        // Close Modal and Clear Video
+        closeBtn.addEventListener('click', function () {
+            videoModal.style.display = 'none';
+            modalIframe.src = ''; // Clear src to stop video playback
+        });
+
+        // Optional: Close modal on outside click
+        videoModal.addEventListener('click', function (event) {
+            if (event.target === videoModal) {
+                videoModal.style.display = 'none';
+                modalIframe.src = ''; // Clear src
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+
 
 </body>
 

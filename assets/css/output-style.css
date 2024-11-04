@@ -1240,6 +1240,9 @@ input[type="checkbox"]:checked::before {
 .min-h-\[92vh\] {
   min-height: 92vh;
 }
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
 .w-\[10vh\] {
   width: 10vh;
 }

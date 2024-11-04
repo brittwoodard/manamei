@@ -111,67 +111,25 @@ seo:
         <h3 class="text-lg-serif">{{page.heading.subtitle}}</h3>
         <p class="uppercase">{{page.heading.description}}</p>
 
-     <!-- Buttons -->
-    <div class="md:flex justify-center gap-4">
-        
-        <!-- Enroll Button -->
-        <div x-data="{ open: false }" 
-        x-init="$el.classList.remove('hidden'); setTimeout(() => { open = false; }, 100)"
-        class="text-center md:text-right hidden">
-
-            <!-- Trigger Button -->
-            <button @click="open = true" class="button">
+        <!-- Buttons -->
+        <div class="md:flex justify-center gap-4">
+            
+            <!-- Updated Enroll Button with Centralized Modal Trigger -->
+            <button class="modal-trigger button" data-src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass">
                 {{page.heading.button-enroll.text}}
             </button>
 
-            <!-- Popup Overlay -->
-            <div x-show="open" x-cloak
-                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
-                @click.self="open = false" @keydown.escape.window="open = false">
-                <!-- Popup Content -->
-                <div class="relative bg-white w-full max-w-3xl mx-4 rounded-lg shadow-lg">
-                    <!-- Close Button -->
-                    <button @click="open = false"
-                        class="absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">
-                        &times;
-                    </button>
-                    <!-- Iframe Container -->
-                    <div class="border border-feature">
-                        <iframe src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass"
-                            frameborder="0" class="w-full h-screen max-h-[80vh] rounded-none"></iframe>
-                    </div>
-                </div>
-            </div>
+            <!-- Updated Video Button with Centralized Modal Trigger -->
+            {% if page.heading.button-video.show == true %}
+            <button class="modal-trigger button cursor-pointer mt-4 md:mt-0" data-src="{{page.heading.button-video.url}}">
+                {{page.heading.button-video.text}}
+            </button>
+            {% endif %}
+
         </div>
-
-        <!-- Video Button -->
-        {% if page.heading.button-video.show == true %}
-
-        <button id="openModalBtnBanner" class="button cursor-pointer mt-4 md:mt-0">{{page.heading.button-video.text}}</button>
-
-        <div id="videoModalBanner" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                {% if page.heading.button-video.type == 'youtube' %}
-                <!-- YouTube iframe -->
-                <iframe width="560" height="315" src="{{page.heading.button-video.url}}" frameborder="0"
-                    allowfullscreen></iframe>
-                {% else %}
-                <!-- Fallback for other video types -->
-                <video controls>
-                    <source src="{{page.heading.button-video.url}}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                {% endif %}
-            </div>
-        </div>
-
-        {% endif %}
-
     </div>
-    </div>
-    
 </section>
+
 
 <!-- Course Description -->
   <section class="pb-10p">
@@ -229,14 +187,16 @@ seo:
 <section
     class="bg-image-style bg-overlay min-h-[100vh] p-10p text-center {{page.who-its-for.background-image.overlay_style}} flex flex-col justify-center"
     style="background-image: url('{{page.who-its-for.background-image.background_image}}'); background-position: {{page.who-its-for.background-image.image_focus}}">
-      <div>
+    <div>
         <h2 class="text-lg-serif">{{page.who-its-for.heading}}</h2>
         <p>{{page.who-its-for.description_html}}</p>
 
-        <!-- Enroll Button -->
-        {% include button-enroll.html %} 
-
-      </div>
+        <!-- Updated Enroll Button -->
+        <button class="modal-trigger button"
+            data-src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass">
+            {{page.heading.button-enroll.text}}
+        </button>
+    </div>
 </section>
 
 
@@ -276,36 +236,13 @@ seo:
               <li>The Healing Cycle</li>
           </ul>
 
-          <!-- CTA -->
-          <div x-data="{ open: false }" 
-          x-init="$el.classList.remove('hidden'); setTimeout(() => { open = false; }, 100)"
-          class="text-left mt-8 hidden">
-
-            <!-- Trigger Button -->
-            <button @click="open = true" class="button">
+          <!-- Updated CTA Button -->
+          <div class="text-left mt-8">
+            <!-- Trigger Button with modal-trigger class and data-src -->
+            <button class="modal-trigger button" data-src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass">
                 {{page.heading.button-enroll.text}}
             </button>
-
-            <!-- Popup Overlay -->
-            <div x-show="open" x-cloak
-                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
-                @click.self="open = false" @keydown.escape.window="open = false">
-                <!-- Popup Content -->
-                <div class="relative bg-white w-full max-w-3xl mx-4 rounded-lg shadow-lg">
-                    <!-- Close Button -->
-                    <button @click="open = false"
-                        class="absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">
-                        &times;
-                    </button>
-                    <!-- Iframe Container -->
-                    <div class="p-4">
-                        <iframe src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass"
-                            frameborder="0" class="w-full h-screen max-h-[80vh] rounded-md"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+          </div>
       </div>
 
       <!-- Right Column (image) -->
@@ -354,12 +291,14 @@ seo:
 <!-- Inside the Course -->
 <section class="py-10p px-5p md:p-10p bg-image-style border-y border-feature"
     style="background-image: url('{{page.inside-the-course.background-image.background_image}}'); background-position: {{page.inside-the-course.background-image.image_focus}};">
+    
     <div class="text-center">
         <h2 class="text-lg-serif text-feature">{{page.inside-the-course.heading}}</h2>
         <div class="md:w-[80%] mx-auto mb-8">
             <p>{{page.inside-the-course.description_html}}</p>
         </div>
     </div>
+    
     <ul class="dropdown-menu">
         {% for item in page.inside-the-course.module %}
         <li x-data="{ open: false }" class="dropdown-item {% if forloop.last %}last-item {% endif %}">
@@ -381,12 +320,16 @@ seo:
         {% endfor %}
     </ul>
     
-    <!-- CTA -->
-    <div class="mt-8">
-      {% include button-enroll.html %}
+    <!-- Updated CTA Button for Enroll Now -->
+    <div class="mt-8 text-center">
+        <!-- Trigger Button with modal-trigger class and data-src -->
+        <button class="modal-trigger button" data-src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass">
+            {{page.heading.button-enroll.text}}
+        </button>
     </div>
 
 </section>
+
 
 <!-- Testimonials -->
 {% include testimonials.html %}
@@ -408,6 +351,7 @@ seo:
 <!-- CTA -->
 <section class="section-padding bg-image-style bg-overlay {{page.cta.background-image.overlay_style}}"
     style="background-image: url('{{page.cta.background-image.background_image}}'); background-position: {{page.cta.background-image.image_focus}};">
+    
     <div class="text-center">
         <h2 class="text-lg-serif">{{page.cta.heading}}</h2>
         <div class="md:px-10p">
@@ -415,7 +359,12 @@ seo:
         </div>
     </div>
     
-    <!-- CTA -->
-    {% include button-enroll.html %}
+    <!-- Updated CTA Button for Enroll Now -->
+    <div class="text-center mt-8">
+        <!-- Trigger Button with modal-trigger class and data-src -->
+        <button class="modal-trigger button" data-src="https://manamei.mysamcart.com/checkout/the-art-of-dancing-life-masterclass">
+            {{page.heading.button-enroll.text}}
+        </button>
+    </div>
 
 </section>
