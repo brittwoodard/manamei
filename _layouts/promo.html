@@ -43,7 +43,7 @@
     <div id="videoModal" class="modal" style="display: none;">
         <div class="modal-content video-modal-content">
             <span class="close video-close" style="cursor: pointer;">&times;</span>
-            <iframe id="videoIframe" frameborder="0" allowfullscreen class="w-full rounded-none">
+            <iframe id="videoIframe" frameborder="0" allowfullscreen class="rounded-none w-4/5 h-[45vh] mx-auto">
             </iframe>
         </div>
     </div>
@@ -73,7 +73,8 @@
                 if (event.target.classList.contains('modal-trigger')) {
                     const videoSrc = event.target.getAttribute('data-src');
 
-                    if (event.target.classList.contains('video-button')) {
+                    // Check if the URL is a YouTube link (for video modal)
+                    if (videoSrc.includes('youtube.com') || videoSrc.includes('youtu.be')) {
                         // Open video modal
                         videoIframe.src = videoSrc;
                         videoModal.style.display = 'block';
@@ -113,8 +114,8 @@
                 }
             });
         });
-    </script>
 
+    </script>
 
 </body>
 

@@ -363,7 +363,7 @@
 
     /* Video Modal Content (YouTube-style size) */
     .video-modal-content {
-        @apply w-[80vw] h-[45vh] mx-auto
+        @apply w-full lg:w-[80vw] lg:max-h-[45%] mx-auto
     }
 
     /* SamCart Modal Content (Larger landscape) */
@@ -374,7 +374,7 @@
 
     /* Close Button Styles */
     .video-close {
-        @apply text-white hover:text-feature hover:duration-500 text-[24px] absolute top-[10px] right-[10px] cursor-pointer
+        @apply text-white hover:text-feature hover:duration-500 text-[3rem] absolute top-[1rem] right-[12%] cursor-pointer
     }
 
     /* Slick Container */
