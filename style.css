@@ -363,7 +363,7 @@
 
     /* Video Modal Content (YouTube-style size) */
     .video-modal-content {
-        @apply w-full lg:w-[80vw] lg:max-h-[45%] mx-auto
+        @apply w-full max-h-[20vh] md:max-h-[32vh] lg:h-[60vh] mx-auto
     }
 
     /* SamCart Modal Content (Larger landscape) */
