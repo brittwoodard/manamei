@@ -453,8 +453,7 @@
     }
 
     .mobile-menu.active {
-        left: 0;
-        right: 0;
+        @apply left-0 md:left-[50%] right-0
     }
 
     .mobile-menu a {
