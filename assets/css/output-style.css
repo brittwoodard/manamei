@@ -1013,8 +1013,8 @@ input[type="checkbox"]:checked::before {
 .inset-0 {
   inset: 0px;
 }
-.bottom-10p {
-  bottom: 10%;
+.bottom-5p {
+  bottom: 5%;
 }
 .left-0 {
   left: 0px;
@@ -1031,14 +1031,14 @@ input[type="checkbox"]:checked::before {
 .right-\[1\.25rem\] {
   right: 1.25rem;
 }
-.top-10p {
-  top: 10%;
-}
 .top-3 {
   top: 0.75rem;
 }
 .top-4 {
   top: 1rem;
+}
+.top-5p {
+  top: 5%;
 }
 .top-\[50\%\] {
   top: 50%;
@@ -1659,17 +1659,11 @@ input[type="checkbox"]:checked::before {
   outline-offset: 2px;
 }
 @media (min-width: 640px) {
-  .sm\:bottom-20p {
-    bottom: 20%;
-  }
   .sm\:left-10p {
     left: 10%;
   }
   .sm\:right-10p {
     right: 10%;
-  }
-  .sm\:top-20p {
-    top: 20%;
   }
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
