@@ -39,66 +39,81 @@
     <!-- Javascript  -->
     <script src="/main.js" defer></script>
 
-    <!-- Single Modal Structure for All Buttons -->
-<div id="videoModal" class="modal" style="display: none;">
-    <div id="modalContent" class="modal-content">
-        <span class="close" style="cursor: pointer;">&times;</span>
-        <iframe 
-          id="modalIframe" 
-          frameborder="0" 
-          allowfullscreen 
-          class="w-full min-h-[80vh] rounded-none">
-        </iframe>
+    <!-- Video Modal Structure -->
+    <div id="videoModal" class="modal" style="display: none;">
+        <div class="modal-content video-modal-content">
+            <span class="close video-close" style="cursor: pointer;">&times;</span>
+            <iframe id="videoIframe" frameborder="0" allowfullscreen class="w-full rounded-none">
+            </iframe>
+        </div>
     </div>
-</div>
 
-<!-- JavaScript to handle modals -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const videoModal = document.getElementById('videoModal');
-        const modalContent = document.getElementById('modalContent');
-        const modalIframe = document.getElementById('modalIframe');
-        const closeBtn = videoModal.querySelector('.close');
+    <!-- SamCart Modal Structure -->
+    <div id="samcartModal" class="modal" style="display: none;">
+        <div class="modal-content samcart-modal-content">
+            <span
+                class="close samcart-close absolute top-3 right-[1.25rem] text-[3rem] font-[100] text-black hover:text-feature hover:duration-500 focus:outline-none">&times;</span>
+            <iframe id="samcartIframe" frameborder="0" allowfullscreen class="w-full min-h-[80vh] rounded-none">
+            </iframe>
+        </div>
+    </div>
 
-        // Event delegation for all modal-trigger buttons
-        document.addEventListener('click', function (event) {
-            if (event.target.classList.contains('modal-trigger')) {
-                // Get video URL from data-src attribute
-                const videoSrc = event.target.getAttribute('data-src');
-                modalIframe.src = videoSrc;
+    <!-- JavaScript to handle modals -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const videoModal = document.getElementById('videoModal');
+            const samcartModal = document.getElementById('samcartModal');
+            const videoIframe = document.getElementById('videoIframe');
+            const samcartIframe = document.getElementById('samcartIframe');
+            const videoCloseBtn = videoModal.querySelector('.video-close');
+            const samcartCloseBtn = samcartModal.querySelector('.samcart-close');
 
-                // Set dimensions based on button type
-                if (event.target.classList.contains('video-button')) {
-                    // YouTube-style iframe
-                    modalContent.style.width = '560px';
-                    modalContent.style.maxHeight = '315px';
-                } else {
-                    // SamCart-style landscape rectangle
-                    modalContent.style.width = '800px';
-                    modalContent.style.maxHeight = '80vh';
+            // Event delegation for all modal-trigger buttons
+            document.addEventListener('click', function (event) {
+                if (event.target.classList.contains('modal-trigger')) {
+                    const videoSrc = event.target.getAttribute('data-src');
+
+                    if (event.target.classList.contains('video-button')) {
+                        // Open video modal
+                        videoIframe.src = videoSrc;
+                        videoModal.style.display = 'block';
+                    } else {
+                        // Open SamCart modal
+                        samcartIframe.src = videoSrc;
+                        samcartModal.style.display = 'block';
+                    }
                 }
+            });
 
-                // Show modal
-                videoModal.style.display = 'block';
-            }
-        });
-
-        // Close Modal and Clear Video
-        closeBtn.addEventListener('click', function () {
-            videoModal.style.display = 'none';
-            modalIframe.src = ''; // Clear src to stop video playback
-        });
-
-        // Optional: Close modal on outside click
-        videoModal.addEventListener('click', function (event) {
-            if (event.target === videoModal) {
+            // Close Video Modal and Clear Video
+            videoCloseBtn.addEventListener('click', function () {
                 videoModal.style.display = 'none';
-                modalIframe.src = ''; // Clear src
-            }
-        });
-    });
-</script>
+                videoIframe.src = ''; // Clear src to stop video playback
+            });
 
+            // Close SamCart Modal and Clear Content
+            samcartCloseBtn.addEventListener('click', function () {
+                samcartModal.style.display = 'none';
+                samcartIframe.src = ''; // Clear src to stop loading
+            });
+
+            // Optional: Close video modal on outside click
+            videoModal.addEventListener('click', function (event) {
+                if (event.target === videoModal) {
+                    videoModal.style.display = 'none';
+                    videoIframe.src = ''; // Clear src
+                }
+            });
+
+            // Optional: Close SamCart modal on outside click
+            samcartModal.addEventListener('click', function (event) {
+                if (event.target === samcartModal) {
+                    samcartModal.style.display = 'none';
+                    samcartIframe.src = ''; // Clear src
+                }
+            });
+        });
+    </script>
 
 
 </body>
