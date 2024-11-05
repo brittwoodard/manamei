@@ -1,0 +1,45 @@
+<div id="popupOverlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50"></div>
+
+<div id="popup" class="hidden fixed inset-0 z-50 flex items-center justify-center">
+    <div class="relative max-w-[90vw] lg:max-w-[60vw]">
+        <button id="closePopup" class="absolute top-[1rem] md:top-[2rem] right-[1.5rem] md:right-[2.5rem] text-white text-[3rem] font-extralight hover:text-feature hover:duration-500">&times;</button>
+
+        <!-- Images for desktop and mobile -->
+        <img src="/uploads/images/manamei-88.jpg" alt="The Art of Dancing Life Masterclass with Mana Mei" class="hidden md:block w-full border border-feature">
+        <img src="/uploads/images/manamei-89.png" alt="The Art of Dancing Life Masterclass with Mana Mei" class="w-full border border-feature md:hidden">
+
+        <!-- Learn More Button -->
+        <button id="learnMoreButton" href="/theartofdancinglife.html" class="absolute bottom-[48%] md:bottom-[4rem] left-[50%] md:left-[38%] bg-feature/95 rounded-[4rem] hover:bg-feature/70 hover:duration-500 py-[0.25rem] px-[1.5rem]">
+            Learn More
+        </button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        if (!localStorage.getItem('popupShown')) {
+            setTimeout(function () {
+                showPopup();
+            }, 5000);
+        }
+
+        function showPopup() {
+            document.getElementById('popup').classList.remove('hidden');
+            document.getElementById('popupOverlay').classList.remove('hidden');
+            localStorage.setItem('popupShown', 'true');
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden');
+            document.getElementById('popupOverlay').classList.add('hidden');
+        }
+
+        document.getElementById('closePopup').addEventListener('click', closePopup);
+        document.getElementById('popupOverlay').addEventListener('click', closePopup);
+
+        document.getElementById('learnMoreButton').addEventListener('click', function () {
+            closePopup();
+            window.location.href = 'https://your-website.com/learn-more';
+        });
+    });
+</script>

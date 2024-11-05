@@ -1089,6 +1089,42 @@ input[type="checkbox"]:checked::before {
 .top-\[50\%\] {
   top: 50%;
 }
+.right-2 {
+  right: 0.5rem;
+}
+.top-2 {
+  top: 0.5rem;
+}
+.bottom-\[5rem\] {
+  bottom: 5rem;
+}
+.left-\[38\%\] {
+  left: 38%;
+}
+.bottom-\[4rem\] {
+  bottom: 4rem;
+}
+.right-4 {
+  right: 1rem;
+}
+.right-\[2\.5rem\] {
+  right: 2.5rem;
+}
+.top-\[2rem\] {
+  top: 2rem;
+}
+.bottom-\[48\%\] {
+  bottom: 48%;
+}
+.left-\[50\%\] {
+  left: 50%;
+}
+.right-\[1\.5rem\] {
+  right: 1.5rem;
+}
+.top-\[1rem\] {
+  top: 1rem;
+}
 .z-20 {
   z-index: 20;
 }
@@ -1305,6 +1341,12 @@ input[type="checkbox"]:checked::before {
 .max-w-3xl {
   max-width: 48rem;
 }
+.max-w-xs {
+  max-width: 20rem;
+}
+.max-w-\[90vw\] {
+  max-width: 90vw;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1380,6 +1422,9 @@ input[type="checkbox"]:checked::before {
 .rounded-none {
   border-radius: 0px;
 }
+.rounded-\[4rem\] {
+  border-radius: 4rem;
+}
 .border {
   border-width: 1px;
 }
@@ -1398,6 +1443,12 @@ input[type="checkbox"]:checked::before {
 }
 .border-t {
   border-top-width: 1px;
+}
+.border-t-4 {
+  border-top-width: 4px;
+}
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-feature {
   --tw-border-opacity: 1;
@@ -1429,8 +1480,14 @@ input[type="checkbox"]:checked::before {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-feature\/95 {
+  background-color: rgb(237 213 135 / 0.95);
+}
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
+}
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
@@ -1525,6 +1582,22 @@ input[type="checkbox"]:checked::before {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.px-\[1\.25rem\] {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.py-\[1rem\] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-\[1\.5rem\] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-\[0\.25rem\] {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1594,8 +1667,18 @@ input[type="checkbox"]:checked::before {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .font-\[100\] {
   font-weight: 100;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extralight {
+  font-weight: 200;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1639,6 +1722,10 @@ input[type="checkbox"]:checked::before {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1702,6 +1789,12 @@ input[type="checkbox"]:checked::before {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.hover\:bg-feature\/50:hover {
+  background-color: rgb(237 213 135 / 0.5);
+}
+.hover\:bg-feature\/70:hover {
+  background-color: rgb(237 213 135 / 0.7);
+}
 .hover\:text-feature:hover {
   --tw-text-opacity: 1;
   color: rgb(237 213 135 / var(--tw-text-opacity));
@@ -1744,6 +1837,9 @@ input[type="checkbox"]:checked::before {
   .sm\:w-\[60\%\] {
     width: 60%;
   }
+  .sm\:max-w-md {
+    max-width: 28rem;
+  }
   .sm\:list-disc {
     list-style-type: disc;
   }
@@ -1778,6 +1874,18 @@ input[type="checkbox"]:checked::before {
   }
   .md\:top-20p {
     top: 20%;
+  }
+  .md\:bottom-\[4rem\] {
+    bottom: 4rem;
+  }
+  .md\:left-\[38\%\] {
+    left: 38%;
+  }
+  .md\:right-\[2\.5rem\] {
+    right: 2.5rem;
+  }
+  .md\:top-\[2rem\] {
+    top: 2rem;
   }
   .md\:order-first {
     order: -9999;
@@ -1841,6 +1949,12 @@ input[type="checkbox"]:checked::before {
   }
   .md\:w-\[90\%\] {
     width: 90%;
+  }
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+  .md\:max-w-\[60vw\] {
+    max-width: 60vw;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1935,6 +2049,12 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+  .lg\:max-w-2xl {
+    max-width: 42rem;
+  }
+  .lg\:max-w-\[60vw\] {
+    max-width: 60vw;
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
