@@ -1,6 +1,6 @@
 <!-- Popup -->
 <div id="popup"
-    class="hidden fixed top-5p md:top-20p bottom-5p md:bottom-20p right-5p sm:right-10p md:right-20p left-5p sm:left-10p md:left-20p flex items-center justify-center align-center border border-feature bg-black z-20">
+    class=" fixed top-20p bottom-20p right-5p sm:right-10p md:right-20p left-5p sm:left-10p md:left-20p flex items-center justify-center align-center border border-feature bg-black z-20 bg-image-style bg-overlay dark" style="background-image: url('/uploads/images/manamei-54.jpg')">
 
     <!-- Close Button (X) in upper-right corner -->
     <button id="popupClose"
@@ -8,12 +8,11 @@
         X
     </button>
     <div class="text-center p-10p">
-        <h2 class="text-md-serif mb-4 text-feature">Step Into the Art of Dancing Life</h2>
-        <p class="uppercase">2-Day Liberation Through Movement Journey with Mana Mei</p>
-        <p>Awaken the dance of your heart and spirit. This is more than a workshop—it's an invitation to connect,
-            release, and fully embody the flow of your unique essence. Rediscover your inner rhythm, reconnect with your
-            body, and open to life’s beauty in every movement.</p>
-        <a href="/theartofdancinglife.html" id="popupAction" class="button">Learn More</a>
+        <h2 class="text-md-serif mb-4 text-feature">Are you interested in joining <span class="underline">in-person</span> retreats and workshops with Mana Mei?</h2>
+        <p>Join the retreat waitlist to be the first to know when Mana announces her next in-person offerings</p>
+        <div>
+            {% include form-retreat.html %}
+        </div>
     </div>
 </div>
 
