@@ -1,49 +1,54 @@
 <!-- Popup -->
 <div id="popup"
-    class="hidden fixed top-5p md:top-20p bottom-5p md:bottom-20p right-5p sm:right-10p md:right-20p left-5p sm:left-10p md:left-20p flex items-center justify-center align-center border border-feature bg-black z-20 bg-image-style bg-overlay dark" style="background-image: url('/uploads/images/manamei-54.jpg')">
+    class="hidden fixed top-5p md:top-20p bottom-5p md:bottom-20p right-5p sm:right-10p md:right-20p left-5p sm:left-10p md:left-20p flex items-center justify-center align-center border border-feature bg-black z-20 bg-image-style bg-overlay dark"
+    style="background-image: url('/uploads/images/manamei-54.jpg')">
 
-    <!-- Close Button (X) in upper-right corner -->
-    <button id="popupClose"
-        class="absolute top-4 right-6 text-[1.5rem] font-100 text-white hover:text-feature hover:duration-500">
-        X
-    </button>
-    <div class="text-center p-10p">
-        <h2 class="text-md-serif mb-4 text-feature">Are you interested in joining <span class="underline">in-person</span> retreats and workshops with Mana Mei?</h2>
-        <p>Join the retreat waitlist to be the first to know when Mana announces her next in-person offerings</p>
-        <div>
-            {% include form-retreat.html %}
+    <div id="popupContent" class="relative">
+        <!-- Close Button (X) in upper-right corner -->
+        <button id="popupClose"
+            class="absolute -top-4 right-6 text-[1.5rem] font-100 text-white hover:text-feature hover:duration-500">
+            X
+        </button>
+        <div class="text-center p-10p">
+            <h2 class="text-md-serif mb-4 text-feature">Are you interested in joining <span
+                    class="underline">in-person</span> retreats and workshops with Mana Mei?</h2>
+            <p>Join the retreat waitlist to be the first to know when Mana announces her next in-person
+                offerings</p>
+            <div>
+                {% include form-retreat.html %}
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Place this script at the bottom of your HTML, just before the closing </body> tag -->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const popup = document.getElementById('popup');
         const popupClose = document.getElementById('popupClose');
-    
+        const popupContent = document.getElementById('popupContent');
+
         // Show the popup after 5 seconds
-        setTimeout(function() {
+        setTimeout(function () {
             popup.classList.remove('hidden');
         }, 5000);
-    
+
         // Function to close the popup
         function closePopup() {
             popup.classList.add('hidden');
         }
-    
+
         // Close the popup when clicking the 'X' button
-        popupClose.addEventListener('click', function(e) {
+        popupClose.addEventListener('click', function (e) {
             e.stopPropagation(); // Prevent the event from bubbling up
             closePopup();
         });
-    
+
         // Close the popup when clicking outside the popup content
-        popup.addEventListener('click', function(e) {
-            if (e.target === popup) {
+        popup.addEventListener('click', function (e) {
+            if (!popupContent.contains(e.target)) {
                 closePopup();
             }
         });
     });
-    </script>
-    
+</script>
