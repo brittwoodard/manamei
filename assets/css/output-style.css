@@ -1044,6 +1044,9 @@ input[type="checkbox"]:checked::before {
         transform: scale(1);
         bottom: -.2rem;
     }
+.visible {
+  visibility: visible;
+}
 .invisible {
   visibility: hidden;
 }

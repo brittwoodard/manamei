@@ -16,21 +16,34 @@
     </div>
 </div>
 
+<!-- Place this script at the bottom of your HTML, just before the closing </body> tag -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Set a timer to show the popup after 5 seconds
-        setTimeout(function () {
-            document.getElementById("popup").classList.remove("hidden");
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('popup');
+        const popupClose = document.getElementById('popupClose');
+    
+        // Show the popup after 5 seconds
+        setTimeout(function() {
+            popup.classList.remove('hidden');
         }, 5000);
-
-        // Close the popup when "Close" button is clicked
-        document.getElementById("popupClose").addEventListener("click", function () {
-            document.getElementById("popup").classList.add("hidden");
+    
+        // Function to close the popup
+        function closePopup() {
+            popup.classList.add('hidden');
+        }
+    
+        // Close the popup when clicking the 'X' button
+        popupClose.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent the event from bubbling up
+            closePopup();
         });
-
-        // Handle the "Go to Offer" button click
-        document.getElementById("popupAction").addEventListener("click", function () {
-            document.getElementById("popup").classList.add("hidden");
+    
+        // Close the popup when clicking outside the popup content
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) {
+                closePopup();
+            }
         });
     });
-</script>
+    </script>
+    
