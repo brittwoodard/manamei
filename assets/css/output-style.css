@@ -1101,9 +1101,6 @@ input[type="checkbox"]:checked::before {
 .top-\[50\%\] {
   top: 50%;
 }
-.-top-4 {
-  top: -1rem;
-}
 .z-20 {
   z-index: 20;
 }
