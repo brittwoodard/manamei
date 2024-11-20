@@ -1626,6 +1626,9 @@ input[type="checkbox"]:checked::before {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
 .font-\[100\] {
   font-weight: 100;
 }
@@ -2003,6 +2006,9 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
   .lg\:p-0 {
     padding: 0px;
