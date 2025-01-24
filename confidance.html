@@ -28,8 +28,6 @@ heading:
     url: https://www.youtube.com/embed/fcAVH4VWBTs?si=qKDjMrL-AB_nvbAO
   background_image: /uploads/images/manamei-91.jpg
   overlay_style: medium
-banner:
-  - image_path: /uploads/icons/manamei-28.png
 video:
   video_thumbnail: /uploads/images/manamei-97.png
   image_focus: 
@@ -62,10 +60,10 @@ testimonials:
   background_image: /uploads/images/manamei-92.JPEG
   overlay_style: dark
   testimonials:
+    - testimonial: I clearly see and feel the changes in my life and in my body. I see more fluidity in every parts of the every day life, professional, personal…It’s really amazing and magical !!! I feel more present, more grounded, more feminine, more aware, more confident, more a lot of things!!! I also have more creativity.
     - testimonial: I’m getting to know myself better with every Mana Movement practice. I’m becoming more confident and believe in myself. I'm showing myself to the world in a more authentic way.
     - testimonial: My main intention when I began the Mana Movement practice was to feel more open, comfortable, confident, and at ease in my own body—ultimately to trust myself on a deeper level. I wanted to break free of worrying about how others might perceive or judge me. And wow, so far the whole experience has already been about this—and so much more.
     - testimonial: My energy is exploding! I feel so emotionally stable and safe. Life is just flowing…
-    - testimonial: I clearly see and feel the changes in my life and in my body. I see more fluidity in every parts of the every day life, professional, personal…It’s really amazing and magical !!! I feel more present, more grounded, more feminine, more aware, more confident, more a lot of things!!! I also have more creativity.
   border: border-y border-feature
 investment:
   heading: The Offering
@@ -110,7 +108,9 @@ seo:
 <section class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.heading.background_image}}');"></section>
 
 <!-- Banner -->
-{% include banner-course.html %}
+<section class="flex justify-center items-center mt-8 lg:mt-0">
+  <img src="/uploads/icons/manamei-28.png" class="h-28">
+</section>
 
 <!-- Video -->
 {% include video.html %}
@@ -139,6 +139,10 @@ seo:
 
 <!-- Inside the Course -->
 <section>
+
+  <!-- Mobile Image (hidden on desktop) -->
+  <div class="bg-image-style min-h-[60vh] mt-10p mx-10p md:hidden" style="background-image: url('/uploads/images/manamei-92.JPEG');"></div>
+
   <div class="grid lg:grid-cols-3">
       <!-- Left Column (text) -->
       <div class="lg:col-span-2 p-10p">

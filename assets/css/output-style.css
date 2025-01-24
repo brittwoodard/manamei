@@ -1953,6 +1953,12 @@ input[type="checkbox"]:checked::before {
   .md\:border-none {
     border-style: none;
   }
+  .md\:bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
+    background-image: url('{{page.testimonials.background_image}}');
+  }
+  .md\:bg-\[url\(\'\/uploads\/images\/manamei-92\.JPEG\'\)\] {
+    background-image: url('/uploads/images/manamei-92.JPEG');
+  }
   .md\:p-0 {
     padding: 0px;
   }
@@ -2007,6 +2013,9 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:mt-16 {
     margin-top: 4rem;
+  }
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
   .lg\:block {
     display: block;
