@@ -1,0 +1,40 @@
+<!-- Inside the Course -->
+<section>
+    <div class="grid lg:grid-cols-3">
+        <!-- Left Column (text) -->
+        <div class="lg:col-span-2 p-10p">
+            <div>
+                <h2 class="text-md-serif text-feature">{{page.inside-the-course.heading}}</h2>
+                <p>{{page.inside-the-course.description_html}}</p>
+            </div>
+            <ul class="dropdown-menu">
+                {% for item in page.inside-the-course.module %}
+                <li x-data="{ open: false }" class="dropdown-item {% if forloop.last %}last-item {% endif %}">
+                    <button @click="open = ! open" class="flex justify-between w-full">
+                        <h3 class="mr-8 text-left">{{item.title}}</h3>
+
+                        <span x-show="!open">→</span>
+                        <span x-show="open">&nbsp;&nbsp;↓</span>
+                    </button>
+                    <div x-show="open" @click.outside="open = false" class="flex justify-between">
+                        <div class="justify-start">
+                            <p><em>{{ item.description_html | safe }}</em></p>
+                        </div>
+                        {% if item.time.show == true %}
+                        <div class="justify-end">({{item.time.hours}}:{{item.time.minutes}})</div>
+                        {% endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="mt-8">
+                <a href="{{page.heading.button-enroll.url}}" class="button">{{page.heading.button-enroll.text}}</a>
+            </div>
+        </div>
+
+        <!-- Right Column (image) -->
+        <div class="bg-image-style min-h-[60vh]"
+            style="background-image: url('{{page.inside-the-course.background-image.background_image}}'); background-position: {{page.inside-the-course.background-image.image_focus}};">
+        </div>
+    </div>
+</section>

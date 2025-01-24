@@ -29,15 +29,7 @@ heading:
   background_image: /uploads/images/manamei-91.jpg
   overlay_style: medium
 banner:
-  - image_path: /uploads/icons/manamei-19.png
-    title: Need
-    benefit: Feel safe, energised and inspired
-  - image_path: /uploads/icons/manamei-20.png
-    title: Tribe
-    benefit: Realign with the feminine flow
-  - image_path: /uploads/icons/manamei-21.png
-    title: Offering
-    benefit: Become open to receive abundance
+  - image_path: /uploads/icons/manamei-28.png
 video:
   video_thumbnail: /uploads/images/manamei-97.png
   image_focus: 
@@ -45,13 +37,13 @@ video:
 course-description:
   heading: Discover Confidance
   description_html: >-
-    confiDance is a step-by-step Mana Movement Program where you will be guided into activating the Feminine Pathways through every part of the body in order to bring you into deep connection with your authentic movement, building your unique free flow dance that is sourced from the internal impulses of your body, your inner voice of embodied wisdom, your unique radiant Spirit, and the pleasure of fully inhabiting your authentic expression, both on and off the dance floor!</p><p>Mana Movement is a movement meditation method created by Mana Mei that has already supported thousands of women around the world along their healing and personal transformation journeys. It is a Mind-Body-Spirit Embodiment practice that will support you in cultivating more safety and freedom in your body, and in your capacity to express your true self through the way you move, both in your dance and in your life.
+    confi<em>Dance</em> is a step-by-step Mana Movement Program where you will be guided into activating the Feminine Pathways through every part of the body in order to bring you into deep connection with your authentic movement, building your unique free flow dance that is sourced from the internal impulses of your body, your inner voice of embodied wisdom, your unique radiant Spirit, and the pleasure of fully inhabiting your authentic expression, both on and off the dance floor!</p><p>Mana Movement is a movement meditation method created by Mana Mei that has already supported thousands of women around the world along their healing and personal transformation journeys. It is a Mind-Body-Spirit Embodiment practice that will support you in cultivating more safety and freedom in your body, and in your capacity to express your true self through the way you move, both in your dance and in your life.
 who-its-for:
   heading: Who is confiDance is for?
   description_html: >-
-    This program has been designed to support ANY WOMAN who is ready to feel more confidence in her day to day life, as well as to connect deeply with her creativity, sense of inspiration and pleasure in life- to fall in love with the beauty of her body, her spirit, and her life.</p><p>This is for women who have a desire to connect with their love and passion for dance, and to use intentional movement as a healing modality and a pathway to personal transformation and liberation.
+    <p>This program has been designed to support ANY WOMAN who is ready to feel more confidence in her day to day life, as well as to connect deeply with her creativity, sense of inspiration and pleasure in life- to fall in love with the beauty of her body, her spirit, and her life.</p><p>This is for women who have a desire to connect with their love and passion for dance, and to use intentional movement as a healing modality and a pathway to personal transformation and liberation.</p>
   background-image:
-    background_image: /uploads/images/manamei-58.jpg
+    background_image: /uploads/images/manamei-94.JPEG
     image_focus: center
     overlay_style: dark
 inside-the-course:
@@ -67,7 +59,7 @@ inside-the-course:
     background_image: /uploads/backgrounds/manamei-4.jpg
     image_focus: bottom
 testimonials:
-  background_image: /uploads/backgrounds/manamei-4.jpg
+  background_image: /uploads/images/manamei-95.JPEG
   testimonials:
     - testimonial: I’m getting to know myself better with every Mana Movement practice. I’m becoming more confident and believe in myself. I'm showing myself to the world in a more authentic way.
     - testimonial: My main intention when I began the Mana Movement practice was to feel more open, comfortable, confident, and at ease in my own body—ultimately to trust myself on a deeper level. I wanted to break free of worrying about how others might perceive or judge me. And wow, so far the whole experience has already been about this—and so much more.
@@ -126,10 +118,65 @@ seo:
 {% include description-course.html %}
 
 <!-- Who It's For -->
-{% include who-its-for.html %}
+<section>
+  <!-- 2 Columns -->
+  <div class="grid md:grid-cols-2 md:mt-10p">
+
+    <!-- Left Column (image) -->
+    <div class="mb-10p md:mb-0 bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('{{page.who-its-for.background-image.background_image}}');"></div>
+
+    <!-- Right Column (text) -->
+    <div class="flex items-center justify-center">
+      <div class="md:py-10p pl-10p pr-10p md:pr-[20%]">
+        <h2 class="text-lg-serif text-feature">{{page.who-its-for.heading}}</h2>
+        <div>{{page.who-its-for.description_html}}</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 <!-- Inside the Course -->
-{% include inside-the-course.html %}
+<section>
+  <div class="grid lg:grid-cols-3">
+      <!-- Left Column (text) -->
+      <div class="lg:col-span-2 p-10p">
+          <div>
+              <h2 class="text-md-serif text-feature">{{page.inside-the-course.heading}}</h2>
+              <p>{{page.inside-the-course.description_html}}</p>
+          </div>
+          <ul class="dropdown-menu">
+              {% for item in page.inside-the-course.module %}
+              <li x-data="{ open: false }" class="dropdown-item {% if forloop.last %}last-item {% endif %}">
+                  <button @click="open = ! open" class="flex justify-between w-full">
+                      <h3 class="mr-8 text-left">{{item.title}}</h3>
+
+                      <span x-show="!open">→</span>
+                      <span x-show="open">&nbsp;&nbsp;↓</span>
+                  </button>
+                  <div x-show="open" @click.outside="open = false" class="flex justify-between">
+                      <div class="justify-start">
+                          <p><em>{{ item.description_html | safe }}</em></p>
+                      </div>
+                      {% if item.time.show == true %}
+                      <div class="justify-end">({{item.time.hours}}:{{item.time.minutes}})</div>
+                      {% endif %}
+                  </div>
+              </li>
+              {% endfor %}
+          </ul>
+          <div class="mt-8">
+              <a href="{{page.heading.button-enroll.url}}" class="button">{{page.heading.button-enroll.text}}</a>
+          </div>
+      </div>
+
+      <!-- Right Column (image) -->
+      <div class="bg-image-style min-h-[60vh]"
+          style="background-image: url('uploads/images/manamei-95.JPEG'); background-position: {{page.inside-the-course.background-image.image_focus}};">
+      </div>
+  </div>
+</section>
 
 <!-- Investment -->
 {% include investment-ltm.html %}
