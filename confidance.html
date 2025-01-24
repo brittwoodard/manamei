@@ -55,7 +55,7 @@ inside-the-course:
     - title: Step 4 - Activate your FULL BODY Free Dance
   background-image:
     background_image: /uploads/backgrounds/manamei-4.jpg
-    image_focus: bottom
+    image_focus: center
 testimonials:
   background_image: /uploads/images/manamei-92.JPEG
   overlay_style: dark
@@ -116,7 +116,23 @@ seo:
 {% include video.html %}
 
 <!-- Course Description -->
-{% include description-course.html %}
+<section class="pt-10p px-10p pb-5p bg-image-style bg-overlay {{page.course-description.background-image.overlay_style}}" style="background-image: url('{{page.course-description.background-image.background_image}}'); background-position: {{page.course-description.background-image.image_focus}};">
+  <div class="text-center mb-12">
+      <h2 class="text-lg-serif text-feature">{{page.course-description.heading}}</h2>
+      <p>{{page.course-description.description_html}}</p>
+  </div>
+  {% for item in page.course-description.module %}
+  <div class="flex mb-12">
+      <img src="{{item.image_path}}" class="h-16 mr-4">
+      <div class="col-span-4">
+          <h3 class="text-md-serif text-feature">{{item.title}}</h3>
+          <div>
+              <p>{{item.description_html}}</p>
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+</section>
 
 <!-- Who It's For -->
 <section>
@@ -147,7 +163,7 @@ seo:
       <!-- Left Column (text) -->
       <div class="lg:col-span-2 p-10p">
           <div>
-              <h2 class="text-md-serif text-feature">{{page.inside-the-course.heading}}</h2>
+              <h2 class="text-lg-serif text-feature">{{page.inside-the-course.heading}}</h2>
               <p>{{page.inside-the-course.description_html}}</p>
           </div>
           <ul class="dropdown-menu">
@@ -176,14 +192,44 @@ seo:
       </div>
 
       <!-- Right Column (image) -->
-      <div class="bg-image-style min-h-[60vh]"
-          style="background-image: url('uploads/images/manamei-95.JPEG'); background-position: {{page.inside-the-course.background-image.image_focus}};">
+      <div class="bg-image-style min-h-[60vh] lg:bg-[bottom]"
+          style="background-image: url('uploads/images/manamei-95.JPEG');">
       </div>
   </div>
 </section>
 
 <!-- Investment -->
-{% include investment-ltm.html %}
+<section class="bg-image-style bg-overlay {{page.investment.overlay_style}} p-10p" style="background-image: url('{{page.investment.background_image}}');">
+  <h2 class="text-lg-serif mb-8 text-feature md:text-center">{{page.investment.heading}}</h2>
+  <div class="grid md:grid-cols-3 md:gap-8">
+      <!-- Includes -->
+      <div class="md:col-span-2 text-left">
+          <h3 class="uppercase text-2xl">{{page.investment.includes.heading}}</h3>
+          <ul>
+              {% for item in page.investment.includes.list %}
+              <li class="list-disc ml-4 mb-2">{{item.list-item}}</li>
+              {% endfor %}
+          </ul>
+      </div>
+      <!-- Pricing Options -->
+      <div class="text-left mt-8 md:mt-0">
+          <div class="mb-8">
+              <h3 class="uppercase text-2xl">{{page.investment.pricing.pay-in-full.heading}}</h3>
+              <span>{{page.investment.pricing.pay-in-full.price}}</span>
+              {% if page.investment.pricing.payment-plan.show == true %}
+          </div>
+          <div>
+              <h3 class="uppercase text-2xl">{{page.investment.pricing.payment-plan.heading}}</h3>
+              <span>{{page.investment.pricing.payment-plan.price}}</span>
+          </div>
+          {% endif %}
+      </div>
+      <!-- CTA -->
+  <div class="mt-8">
+      <a href="#" class="button">Join Now</a>
+  </div>
+  </div>
+</section>
 
 <!-- Testimonials -->
 <section class="bg-image-style bg-overlay 
@@ -207,11 +253,11 @@ seo:
   <div class="grid md:grid-cols-2">
 
     <!-- Left Column (image) -->
-    <div class="m-10p bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('/uploads/images/manamei-93.JPEG');"></div>
+    <div class="order-last md:order-first m-10p bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('/uploads/images/manamei-93.JPEG');"></div>
 
     <!-- Right Column (text) -->
     <div class="flex items-center justify-center">
-      <div class="md:py-10p pr-10p md:pr-[20%]">
+      <div class="md:py-10p pr-10p md:pr-[20%] pl-10p md:pl-0">
         <div>
           <h2>Are you ready to meet every moment from a place of feeling <span class="font-serif">open, courageous,</span> and <span class="font-serif">full of creative inspiration</span>?</h2>
           <div>

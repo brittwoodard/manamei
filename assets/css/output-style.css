@@ -1983,6 +1983,12 @@ input[type="checkbox"]:checked::before {
   .md\:pr-\[20\%\] {
     padding-right: 20%;
   }
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+  .md\:text-center {
+    text-align: center;
+  }
   .md\:text-\[1\.8rem\] {
     font-size: 1.8rem;
   }
@@ -2055,6 +2061,9 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .lg\:bg-\[bottom\] {
+    background-position: bottom;
   }
   .lg\:p-0 {
     padding: 0px;
