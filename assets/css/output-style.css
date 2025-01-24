@@ -1131,6 +1131,9 @@ input[type="checkbox"]:checked::before {
 .m-4 {
   margin: 1rem;
 }
+.m-10p {
+  margin: 10%;
+}
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -1323,6 +1326,9 @@ input[type="checkbox"]:checked::before {
 .w-full {
   width: 100%;
 }
+.w-\[60\%\] {
+  width: 60%;
+}
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1358,6 +1364,9 @@ input[type="checkbox"]:checked::before {
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -1500,6 +1509,9 @@ input[type="checkbox"]:checked::before {
 }
 .bg-\[url\(\'\/uploads\/images\/manamei-95\.JPEG\'\)\] {
   background-image: url('/uploads/images/manamei-95.JPEG');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-92\.JPEG\'\)\] {
+  background-image: url('/uploads/images/manamei-92.JPEG');
 }
 .bg-cover {
   background-size: cover;

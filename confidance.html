@@ -59,7 +59,8 @@ inside-the-course:
     background_image: /uploads/backgrounds/manamei-4.jpg
     image_focus: bottom
 testimonials:
-  background_image: /uploads/images/manamei-95.JPEG
+  background_image: /uploads/images/manamei-92.JPEG
+  overlay_style: dark
   testimonials:
     - testimonial: I’m getting to know myself better with every Mana Movement practice. I’m becoming more confident and believe in myself. I'm showing myself to the world in a more authentic way.
     - testimonial: My main intention when I began the Mana Movement practice was to feel more open, comfortable, confident, and at ease in my own body—ultimately to trust myself on a deeper level. I wanted to break free of worrying about how others might perceive or judge me. And wow, so far the whole experience has already been about this—and so much more.
@@ -85,19 +86,19 @@ investment:
       show: true
       heading: 2-Month Payment Plan
       price: $50/month
-  background_image: /uploads/images/manamei-60.jpg
-  overlay_style: dark
+  background_image: 
+  overlay_style: 
 cta:
   heading: Are you ready to meet every moment from a place of feeling open, courageous, and full of creative inspiration?
   description_html: >-
-    <p>Are you ready to move through life feeling deeply safe and expansively free?</p><p>AconfiDance will help you reclaim your radiant expression!​</p><p>To meet every moment of life with a sense of EXPANSION, softness, and openness, while also being ANCHORED, grounded, and centered.</p><p>To cultivate more safety and freedom in your body, and in your capacity to express your true self through the way you move, both in your dance and in every moment of your life!</p>
+    <p>Are you ready to move through life feeling deeply safe and expansively free?</p><p>confi<em>Dance</em> will help you reclaim your radiant expression!​</p><p>To meet every moment of life with a sense of EXPANSION, softness, and openness, while also being ANCHORED, grounded, and centered.</p><p>To cultivate more safety and freedom in your body, and in your capacity to express your true self through the way you move, both in your dance and in every moment of your life!</p>
   button:
     text: Enroll Now
     url: https://manamei.teachable.com/p/confidance
   background-image:
-    background_image: /uploads/images/manamei-47.jpg
-    background-position: center
-    overlay_style: medium
+    background_image: /uploads/images/manamei-93.JPEG
+    background-position: 
+    overlay_style: dark
 seo: 
   title: Liberation Through Movement - A Global Women's Embodiment Tribe
   description: Join the Liberation Through Movement tribe, a global community for women to explore feminine embodiment through dance and movement. Dive into a journey of self-discovery, empowerment, and connection, guided by Mana Mei. Embrace the transformative power of sisterhood and creative expression.
@@ -120,7 +121,7 @@ seo:
 <!-- Who It's For -->
 <section>
   <!-- 2 Columns -->
-  <div class="grid md:grid-cols-2 md:mt-10p">
+  <div class="grid md:grid-cols-2">
 
     <!-- Left Column (image) -->
     <div class="mb-10p md:mb-0 bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('{{page.who-its-for.background-image.background_image}}');"></div>
@@ -128,7 +129,6 @@ seo:
     <!-- Right Column (text) -->
     <div class="flex items-center justify-center">
       <div class="md:py-10p pl-10p pr-10p md:pr-[20%]">
-        <h2 class="text-lg-serif text-feature">{{page.who-its-for.heading}}</h2>
         <div>{{page.who-its-for.description_html}}</div>
       </div>
     </div>
@@ -183,17 +183,45 @@ seo:
 
 <!-- Testimonials -->
 <section class="bg-image-style bg-overlay 
-{{ page.testimonials.overlay_style }} bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light {{page.testimonials.border}} {{page.testimonials.border}}">
-    <p class="text-feature">Thousands of women around the world are using Mana Movement as a <span class="font-serif">life-changing</span> method of personal transformation...</p>
+{{ page.testimonials.overlay_style }} bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light">
+    <p class="text-feature mb-8">Thousands of women around the world are using Mana Movement as a <span class="font-serif">life-changing</span> method of personal transformation...</p>
     <div class="testimonial-container">
         {% for item in page.testimonials.testimonials %}
         <div class="testimonial-item">
+          <div class="px-10p">
             <p class="text-center"><em>"{{item.testimonial}}"</em></p>
             <p class="text-right">{{item.author}}</p>
+          </div>
         </div>
         {% endfor %}
     </div>
 </section>
 
 <!-- CTA -->
-{% include cta-course.html %}
+<section>
+  <!-- 2 Columns -->
+  <div class="grid md:grid-cols-2">
+
+    <!-- Left Column (image) -->
+    <div class="m-10p bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('/uploads/images/manamei-93.JPEG');"></div>
+
+    <!-- Right Column (text) -->
+    <div class="flex items-center justify-center">
+      <div class="md:py-10p pr-10p md:pr-[20%]">
+        <div>
+          <h2>Are you ready to meet every moment from a place of feeling <span class="font-serif">open, courageous,</span> and <span class="font-serif">full of creative inspiration</span>?</h2>
+          <div>
+              <p>{{page.cta.description_html}}</p>
+          </div>
+
+          <!-- Button -->
+          <div class="mt-8">
+              <a href="{{page.cta.button.url}}" class="button">{{page.cta.button.text}}</a>
+          </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
