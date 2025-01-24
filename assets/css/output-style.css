@@ -1128,11 +1128,11 @@ input[type="checkbox"]:checked::before {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
-.m-4 {
-  margin: 1rem;
-}
 .m-10p {
   margin: 10%;
+}
+.m-4 {
+  margin: 1rem;
 }
 .mx-0 {
   margin-left: 0px;
@@ -1308,9 +1308,6 @@ input[type="checkbox"]:checked::before {
 .min-h-\[92vh\] {
   min-height: 92vh;
 }
-.min-h-full {
-  min-height: 100%;
-}
 .w-4\/5 {
   width: 80%;
 }
@@ -1325,9 +1322,6 @@ input[type="checkbox"]:checked::before {
 }
 .w-full {
   width: 100%;
-}
-.w-\[60\%\] {
-  width: 60%;
 }
 .max-w-3xl {
   max-width: 48rem;
@@ -1364,9 +1358,6 @@ input[type="checkbox"]:checked::before {
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -1495,23 +1486,17 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\/uploads\/images\/manamei-52\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-52.jpg');
 }
-.bg-\[url\(\'\/uploads\/images\/manamei-55\.jpg\'\)\] {
-  background-image: url('/uploads/images/manamei-55.jpg');
-}
 .bg-\[url\(\'\/uploads\/images\/manamei-63\.jpg\'\)\] {
   background-image: url('/uploads/images/manamei-63.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/manamei-92\.JPEG\'\)\] {
+  background-image: url('/uploads/images/manamei-92.JPEG');
 }
 .bg-\[url\(\'\{\{page\.details\.featured_image\}\}\'\)\] {
   background-image: url('{{page.details.featured_image}}');
 }
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
-}
-.bg-\[url\(\'\/uploads\/images\/manamei-95\.JPEG\'\)\] {
-  background-image: url('/uploads/images/manamei-95.JPEG');
-}
-.bg-\[url\(\'\/uploads\/images\/manamei-92\.JPEG\'\)\] {
-  background-image: url('/uploads/images/manamei-92.JPEG');
 }
 .bg-cover {
   background-size: cover;
@@ -1953,12 +1938,6 @@ input[type="checkbox"]:checked::before {
   .md\:border-none {
     border-style: none;
   }
-  .md\:bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
-    background-image: url('{{page.testimonials.background_image}}');
-  }
-  .md\:bg-\[url\(\'\/uploads\/images\/manamei-92\.JPEG\'\)\] {
-    background-image: url('/uploads/images/manamei-92.JPEG');
-  }
   .md\:p-0 {
     padding: 0px;
   }
@@ -1980,11 +1959,11 @@ input[type="checkbox"]:checked::before {
     padding-top: 10%;
     padding-bottom: 10%;
   }
-  .md\:pr-\[20\%\] {
-    padding-right: 20%;
-  }
   .md\:pl-0 {
     padding-left: 0px;
+  }
+  .md\:pr-\[20\%\] {
+    padding-right: 20%;
   }
   .md\:text-center {
     text-align: center;
@@ -2017,11 +1996,11 @@ input[type="checkbox"]:checked::before {
   .lg\:mr-20p {
     margin-right: 20%;
   }
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
   .lg\:block {
     display: block;
