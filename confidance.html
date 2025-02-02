@@ -225,17 +225,15 @@ seo:
 
 <!-- Testimonials -->
 <section class="bg-image-style bg-overlay 
-{{ page.testimonials.overlay_style }} bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light">
-    <p class="text-feature mb-8">Thousands of women around the world are using Mana Movement as a <span class="font-serif">life-changing</span> method of personal transformation...</p>
-    <div class="testimonial-container">
-        {% for item in page.testimonials.testimonials %}
-        <div class="testimonial-item">
-          <div class="px-10p">
-            <p class="text-center"><em>"{{item.testimonial}}"</em></p>
-            <p class="text-right">{{item.author}}</p>
-          </div>
-        </div>
-        {% endfor %}
+{{ page.testimonials.overlay_style }} bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light" style="background-position: 50% 65%;">
+    <p class="text-feature">Thousands of women around the world are using Mana Movement as a <span class="font-serif">life-changing</span> method of personal transformation...</p>
+    <div>
+      {% for item in page.testimonials.testimonials %}
+      <div class="px-10p">
+        <p class="text-center mt-8"><em>"{{item.testimonial}}"</em></p>
+        <p class="text-right">{{item.author}}</p>
+      </div>
+      {% endfor %}
     </div>
 </section>
 
