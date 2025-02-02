@@ -1498,6 +1498,9 @@ input[type="checkbox"]:checked::before {
 .bg-\[url\(\'\{\{page\.testimonials\.background_image\}\}\'\)\] {
   background-image: url('{{page.testimonials.background_image}}');
 }
+.bg-\[url\(\'\/uploads\/images\/manamei-93\.JPEG\'\)\] {
+  background-image: url('/uploads/images/manamei-93.JPEG');
+}
 .bg-cover {
   background-size: cover;
 }
@@ -1505,6 +1508,9 @@ input[type="checkbox"]:checked::before {
   background-attachment: fixed;
 }
 .bg-\[bottom\] {
+  background-position: bottom;
+}
+.bg-bottom {
   background-position: bottom;
 }
 .bg-no-repeat {
