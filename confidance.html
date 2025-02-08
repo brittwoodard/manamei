@@ -130,6 +130,9 @@ seo:
       </div>
   </div>
   {% endfor %}
+  <div class="text-center">
+    <a href="{{page.cta.button.url}}" class="button">{{page.cta.button.text}}</a>
+  </div>
 </section>
 
 <!-- Who It's For -->
@@ -235,7 +238,7 @@ seo:
     <p class="text-feature">Thousands of women around the world are using Mana Movement as a <span class="font-serif">life-changing</span> method of personal transformation...</p>
     <div>
       {% for item in page.testimonials.testimonials %}
-      <div class="px-10p">
+      <div class="md:px-10p">
         <p class="text-center mt-8"><em>"{{item.testimonial}}"</em></p>
         <p class="text-right">{{item.author}}</p>
       </div>
