@@ -27,10 +27,16 @@
         const popupClose = document.getElementById('popupClose');
         const popupContent = document.getElementById('popupContent');
 
-        // Show the popup after 5 seconds
-        setTimeout(function () {
-            popup.classList.remove('hidden');
-        }, 5000);
+        // Check if popup has already been shown this session
+        if (!sessionStorage.getItem('popupShown')) {
+            // Show the popup after 5 seconds
+            setTimeout(function () {
+                popup.classList.remove('hidden');
+            }, 5000);
+
+            // Mark popup as shown in this session
+            sessionStorage.setItem('popupShown', 'true');
+        }
 
         // Function to close the popup
         function closePopup() {
@@ -39,7 +45,7 @@
 
         // Close the popup when clicking the 'X' button
         popupClose.addEventListener('click', function (e) {
-            e.stopPropagation(); // Prevent the event from bubbling up
+            e.stopPropagation(); // Prevent event from bubbling up
             closePopup();
         });
 
