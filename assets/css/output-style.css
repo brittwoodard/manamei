@@ -1407,6 +1407,9 @@ input[type="checkbox"]:checked::before {
 .gap-8 {
   gap: 2rem;
 }
+.gap-\[10p\] {
+  gap: 10p;
+}
 .overflow-hidden {
   overflow: hidden;
 }
