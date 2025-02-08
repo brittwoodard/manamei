@@ -1,21 +1,20 @@
 <!-- Popup -->
 <div id="popup"
     class="hidden fixed top-5p md:top-20p bottom-5p md:bottom-20p right-5p sm:right-10p md:right-20p left-5p sm:left-10p md:left-20p flex items-center justify-center align-center border border-feature bg-black z-20 bg-image-style bg-overlay dark"
-    style="background-image: url('/uploads/images/manamei-54.jpg')">
+    style="background-image: url('/uploads/images/manamei-93.JPEG'); background-position: 50% 70%;">
+
+    <!-- Close Button (X) in upper-right corner -->
+    <button id="popupClose"
+    class="absolute top-4 right-6 text-[1.5rem] font-100 text-white hover:text-feature hover:duration-500">
+    X
+    </button>
 
     <div id="popupContent" class="relative">
-        <!-- Close Button (X) in upper-right corner -->
-        <button id="popupClose"
-            class="absolute top-4 right-6 text-[1.5rem] font-100 text-white hover:text-feature hover:duration-500">
-            X
-        </button>
+
         <div class="text-center p-10p">
-            <h2 class="text-md-serif mb-4 text-feature">Are you interested in joining <span
-                    class="underline">in-person</span> retreats and workshops with Mana Mei?</h2>
-            <p>Join the retreat waitlist to be the first to know when Mana announces her next in-person
-                offerings</p>
-            <div>
-                {% include form-retreat.html %}
+            <h2 class="text-md-serif mb-4 text-feature">New <span class="underline">Mana Movement</span> course out now.</h2>
+            <div class="text-center">
+                <a href="/confidance.html" class="button">Discover confiDance</a>
             </div>
         </div>
     </div>
