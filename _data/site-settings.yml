@@ -17,6 +17,8 @@ navigation:
   - url: "/contact.html"
     title: "Contact"
 navigation-footer:
+  - url: "/confidance.html"
+    title: "confiDance"
   - url: "/liberation-through-movement.html"
     title: "Liberation Through Movement"
   - url: "/mana-movement-foundations.html"
