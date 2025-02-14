@@ -25,7 +25,7 @@ map:
       image_path: /uploads/icons/manamei-14.png
     - title: Mana Movement Maternity
       type: Online Program
-      description: Mana Movement Maternity is a holistic prenatal movement program designed to help women connect with their bodies during pregnancy. The course emphasizes trust in the body, emotional awareness, and feminine pathways of movement through non-linear practices. It aims to improve mobility, strength, and mindfulness while fostering a deeper bond with the baby.
+      description: This course offers a powerful opportunity for pregnant women to reconnect with their bodies, intuition, and feminine energy in a nurturing and intentional way. Through mindful practices, it helps set the foundation for a transformative and empowering experience, where participants feel fully in their power, deeply attuned to their intuition, and open to receiving the joys of pregnancy and birth.
       url: /liberation-through-movement-mentorship.html
       image_path: /uploads/icons/manamei-15.png
       button-text: Learn more
@@ -36,18 +36,22 @@ map:
       button-text: Join the waitlist
       image_path: /uploads/icons/manamei-16.png
 additional-offerings: 
-  heading: Additional Offerings
+  heading: Liberation Through Movement Offerings
   subheading: You are not alone!
-  description: Become a shining pillar of light in the Liberation Through Movement Community and connect with women around the world also on the Path of Embodied Healing.
+  description: Liberation Through Movement is a modality of healing movement and intentional dance practices that are designed to support you on your personal healing and personal transformation journey. The Somatic Healing tools offered in LTM will support your return to wholeness, personal empowerment, and stepping into authentic expression.</p><p>The practices in LTM are based on Embodied Movement and Somatic Dance.  
   offering: 
-   - title: Liberation Through Movement
-     type: Membership Community
-     description: Connect with like-minded embodied women all over the world in shared experience through monthly live online embodiment workshops and masterclasses. Receive unlimited access to the full Workshop Library of all past events. Feel seen and supported in your journey back home to yourself.
-     url: /liberation-through-movement.html
-   - title: Mana Movement Maternity
+   - title: Wisdom Body
      type: Online Program
-     description: This course offers a powerful opportunity for pregnant women to reconnect with their bodies, intuition, and feminine energy in a nurturing and intentional way. Through mindful practices, it helps set the foundation for a transformative and empowering experience, where participants feel fully in their power, deeply attuned to their intuition, and open to receiving the joys of pregnancy and birth.
-     url: /mana-movement-maternity.html
+     description: Through intentionally designed Movement Meditations, Somatic Dance Exercises, and Embodied Dance Journeys, you will touch deeper layers of your self-connection, expand your movement vocabulary, and explore vast realms of your authentic self expression.
+     url: /wisdom-body.html
+   - title: LTM Workshop Library Membership
+     type: Workshop Library
+     description: Receive unlimited access to the full Workshop Library of all past LTM events. Feel seen and supported in your journey back home to yourself.
+     url: /liberation-through-movement.html
+   - title: Liberation Through Movement Mentorship
+     type: Online Program
+     description: Mana Mei’s Keystone Offering! A 4-month deep dive into every facet of your personal embodiment, all Liberation Through Movement Practices, plus Level 1 Facilitation Training, birthing through the other side of this intimate and powerful container as an empowered woman and Embodied Feminine Leader.
+     url: /liberation-through-movement-mentorship.html
 cta: 
   type: masterclass-reply
   heading_html: Liberation Through Movement<br>
@@ -74,7 +78,7 @@ seo:
   <p class="text-md-serif text-feature text-center">{{page.map.heading}}</p>
   <p class="text-center">{{page.map.description}}</p>
 
-  <h2 class="heading-lg-sans mt-12">Mana Movement Courses</h2>
+  <h2 class="heading-md-sans mt-12">Mana Movement Courses</h2>
   <p>Mana Movement is an Embodied Movement Method that is based on introducing the Feminine Pathways and Energetics of movement into the physical body as a way to balance Mind-Body-Spirit connection. It is an all-in-one Somatic Healing Technique that incorporates Mindfulness Meditation, Physical Activation, and Spiritual Liberation. It is accessible to all bodies, and there is no former experience necessary.</p>
 
   <div class="grid grid-cols-5 mt-12">
@@ -107,8 +111,8 @@ seo:
 <section class="hidden md:block md:px-5p lg:px-10p pt-10p">
   <p class="text-md-serif text-feature text-center">{{page.map.heading}}</p>
   <p class="text-center">{{page.map.description}}</p>
-  <h2 class="heading-lg-sans mt-12">Mana Movement Courses</h2>
-  <p>Mana Movement is an Embodied Movement Method that is based on introducing the Feminine Pathways and Energetics of movement into the physical body as a way to balance Mind-Body-Spirit connection. It is an all-in-one Somatic Healing Technique that incorporates Mindfulness Meditation, Physical Activation, and Spiritual Liberation. It is accessible to all bodies, and there is no former experience necessary.</p>
+  <h2 class="heading-md-sans mt-12 text-center">Mana Movement Courses</h2>
+  <p class="text-center">Mana Movement is an Embodied Movement Method that is based on introducing the Feminine Pathways and Energetics of movement into the physical body as a way to balance Mind-Body-Spirit connection. It is an all-in-one Somatic Healing Technique that incorporates Mindfulness Meditation, Physical Activation, and Spiritual Liberation. It is accessible to all bodies, and there is no former experience necessary.</p>
 
   <div class="grid grid-cols-12 mt-12">
       {% for item in page.map.offering %}
@@ -167,7 +171,23 @@ seo:
 </section>
 
 <!-- Additional Offerings -->
-{% include additional-offerings.html %}
+<section class="py-16 md:py-10p px-5p md:px-10p border-t border-feature md:border-none">
+  <div class="text-center">
+      <h2 class="heading-md-sans">{{page.additional-offerings.heading}}</h2>
+      <!-- <span class="text-md-serif text-feature block">{{page.additional-offerings.subheading}}</span> -->
+      <p>{{page.additional-offerings.description}}</p>
+  </div>
+  <div>
+      {% for item in page.additional-offerings.offering %}
+      <div class="mt-12">
+          <h3 class="heading-md-sans text-feature">{{item.title}}</h3>
+          <span class="lowercase text-feature">{{item.type}}</span>
+          <p>{{item.description}}</p>
+          <a href="{{item.url}}" class="link">Learn more</a>
+      </div>
+      {% endfor %}
+  </div>
+</section>
 
 <!-- Masterclass Reply -->
 {% include optin.html %}
