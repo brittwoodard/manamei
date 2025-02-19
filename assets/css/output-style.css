@@ -1393,6 +1393,9 @@ input[type="checkbox"]:checked::before {
 .justify-around {
   justify-content: space-around;
 }
+.justify-items-center {
+  justify-items: center;
+}
 .gap-10p {
   gap: 10%;
 }
