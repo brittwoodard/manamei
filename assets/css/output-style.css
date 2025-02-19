@@ -1541,6 +1541,9 @@ input[type="checkbox"]:checked::before {
 .p-5p {
   padding: 5%;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
