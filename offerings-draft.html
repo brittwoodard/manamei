@@ -30,7 +30,7 @@ map:
       image_path: /uploads/icons/manamei-15.png
       button-text: Learn more
     - title: Mana Movement Online Teacher Training (coming soon)
-      type: Online mentorship
+      type: Online Training
       description: The Mana Movement Teacher Training is a 4-month Live Online Program for women who wish to be certified as Mana Movement Teachers with the ability to offer Mana Movement classes under the official brand. The minimum pre-requisite to join the MM Teacher Training is to have completed the Mana Movement Full Course PLUS at least 3 months of personal practice.
       url: 
       button-text: Join the waitlist
@@ -80,6 +80,7 @@ seo:
 
   <h2 class="heading-md-sans mt-12">Mana Movement Courses</h2>
   <p>Mana Movement is an Embodied Movement Method that is based on introducing the Feminine Pathways and Energetics of movement into the physical body as a way to balance Mind-Body-Spirit connection. It is an all-in-one Somatic Healing Technique that incorporates Mindfulness Meditation, Physical Activation, and Spiritual Liberation. It is accessible to all bodies, and there is no former experience necessary.</p>
+  <p class="italic">Programs do not have to be completed in order. You are free to choose whichever one calls to you!</p>
 
   <div class="grid grid-cols-5 mt-12">
       {% for item in page.map.offering %}
@@ -109,12 +110,15 @@ seo:
 
 <!-- Medium Devices & Larger -->
 <section class="hidden md:block md:px-5p lg:px-10p pt-10p">
-  <p class="text-md-serif text-feature text-center">{{page.map.heading}}</p>
-  <p class="text-center">{{page.map.description}}</p>
-  <h2 class="heading-md-sans mt-12 text-center">Mana Movement Courses</h2>
-  <p class="text-center">Mana Movement is an Embodied Movement Method that is based on introducing the Feminine Pathways and Energetics of movement into the physical body as a way to balance Mind-Body-Spirit connection. It is an all-in-one Somatic Healing Technique that incorporates Mindfulness Meditation, Physical Activation, and Spiritual Liberation. It is accessible to all bodies, and there is no former experience necessary.</p>
+  <div class="text-center">
+    <p class="text-md-serif text-feature">{{page.map.heading}}</p>
+    <p>{{page.map.description}}</p>
+    <h2 class="heading-md-sans mt-12">Mana Movement Courses</h2>
+    <p>Mana Movement is an Embodied Movement Method that is based on introducing the Feminine Pathways and Energetics of movement into the physical body as a way to balance Mind-Body-Spirit connection. It is an all-in-one Somatic Healing Technique that incorporates Mindfulness Meditation, Physical Activation, and Spiritual Liberation. It is accessible to all bodies, and there is no former experience necessary.</p>
+    <p class="italic">Programs do not have to be completed in order. You are free to choose whichever one calls to you!</p>
+  </div>
 
-  <div class="grid grid-cols-12 mt-12">
+  <div class="grid grid-cols-12 mt-16">
       {% for item in page.map.offering %}
       {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
       {% if thecycle == 'left' %}
