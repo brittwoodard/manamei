@@ -1170,10 +1170,6 @@ input[type="checkbox"]:checked::before {
   margin-top: auto;
   margin-bottom: auto;
 }
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1225,6 +1221,9 @@ input[type="checkbox"]:checked::before {
 .mt-12 {
   margin-top: 3rem;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1233,9 +1232,6 @@ input[type="checkbox"]:checked::before {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-16 {
-  margin-top: 4rem;
 }
 .block {
   display: block;
@@ -1541,9 +1537,6 @@ input[type="checkbox"]:checked::before {
 .p-5p {
   padding: 5%;
 }
-.p-1 {
-  padding: 0.25rem;
-}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1720,9 +1713,6 @@ input[type="checkbox"]:checked::before {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.outline {
-  outline-style: solid;
 }
 
 @font-face {
