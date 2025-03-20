@@ -3,6 +3,8 @@ layout: promo
 cta: 
   heading_html: Apply to join the Mana Movement Online Teacher Training
   subtitle: Fill out the form below to receive your application via email.
+  description_html: |
+    <p>If you don’t see it within the next few minutes, be sure to check your spam or promotions folder—sometimes our emails like to hide there. To make sure you don’t miss anything important, add mana@manamei.com to your contacts.</p>
   background:
     background_image: /uploads/images/manamei-101.jpg
     background_position: 50% 65%
@@ -19,8 +21,8 @@ seo:
     style="background-image: url('{{page.cta.background.background_image}}'); background-position: {{page.cta.background.background_position}};">
     <div>
       <h2 class="heading-lg-sans text-feature">{{page.cta.heading_html}}</h2>
-      <h3 class="text-feature mb-4">{{page.cta.subtitle}}</h3>
-      <p>{{page.cta.description_html}}</p>
+      <h3 class="text-feature mb-2">{{page.cta.subtitle}}</h3>
+      <div class="mb-8">{{page.cta.description_html}}</div>
       {% include form-apply-ttc.html %}
     </div>
     
