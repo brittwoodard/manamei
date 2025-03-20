@@ -1,0 +1,28 @@
+---
+layout: promo
+cta: 
+  type: waitlist
+  heading_html: Apply to join the Mana Movement Online Teacher Training
+  subtitle: Fill out the form below to receive your application via email.
+  background:
+    background_image: /uploads/images/manamei-101.jpg
+    background_position: 50% 65%
+    overlay_style: medium
+seo: 
+  title: Apply to join the Liberation Through Movement Mentorship
+  description: Application to join Mana Mei's mentorship.
+  social_image: https://manamei.embodiedcreativeagency.com/path-to-waitlist-image.jpg
+  hide-from-google: true
+---
+
+<!-- Opt-In -->
+<section id="cta" class="bg-image-style py-10p px-5p md:p-10p text-center bg-overlay {{page.cta.background.overlay_style}} min-h-[100vh] flex items-center"
+    style="background-image: url('{{page.cta.background.background_image}}'); background-position: {{page.cta.background.background_position}};">
+    <div>
+      <h2 class="heading-lg-sans text-feature">{{page.cta.heading_html}}</h2>
+      <h3 class="text-feature mb-4">{{page.cta.subtitle}}</h3>
+      <p>{{page.cta.description_html}}</p>
+      {% include form-apply-ttc.html %}
+    </div>
+    
+</section>
