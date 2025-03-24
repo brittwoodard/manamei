@@ -1323,9 +1323,6 @@ input[type="checkbox"]:checked::before {
 .min-h-\[92vh\] {
   min-height: 92vh;
 }
-.min-h-full {
-  min-height: 100%;
-}
 .w-4\/5 {
   width: 80%;
 }

@@ -24,7 +24,6 @@
     {% include cookie-banner.html %}
 
     <!-- Popup -->
-    <!-- {% include popup-ttc.html %} -->
 
     <!-- Alpine -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -46,73 +45,73 @@
     <script src="/main.js" defer></script>
 
     <!-- Click to pop up video scripts -->
-        <script>
-            {% if page.video %}
-            // Click to pop up video
-            $(document).ready(function () {
-                // Open modal on button click
-                $("#openModalBtnVideo").click(function () {
-                    $("#videoModalVideo").css("display", "block");
-                });
-
-                // Close modal on close button click or outside click
-                $(".close, .modal").click(function () {
-                    $("#videoModalVideo").css("display", "none");
-                    // Stop video playback by resetting the src
-                    $("#videoModalVideo iframe").attr("src", $("#videoModalVideo iframe").attr("src"));
-                });
-
-                // Prevent modal from closing when clicking inside the modal content
-                $(".modal-content").click(function (event) {
-                    event.stopPropagation();
-                });
+    <script>
+        {% if page.video %}
+        // Click to pop up video
+        $(document).ready(function () {
+            // Open modal on button click
+            $("#openModalBtnVideo").click(function () {
+                $("#videoModalVideo").css("display", "block");
             });
-            {% endif %}
 
-            {% if page.heading.button-video.show == true %}
-            // Click to pop up video
-            $(document).ready(function () {
-                // Open modal on button click
-                $("#openModalBtnBanner").click(function () {
-                    $("#videoModalBanner").css("display", "block");
-                });
-
-                // Close modal on close button click or outside click
-                $(".close, .modal").click(function () {
-                    $("#videoModalBanner").css("display", "none");
-                    // Stop video playback by resetting the src
-                    $("#videoModalBanner iframe").attr("src", $("#videoModalBanner iframe").attr("src"));
-                });
-
-                // Prevent modal from closing when clicking inside the modal content
-                $(".modal-content").click(function (event) {
-                    event.stopPropagation();
-                });
+            // Close modal on close button click or outside click
+            $(".close, .modal").click(function () {
+                $("#videoModalVideo").css("display", "none");
+                // Stop video playback by resetting the src
+                $("#videoModalVideo iframe").attr("src", $("#videoModalVideo iframe").attr("src"));
             });
-            {% endif %}
 
-            {% if page.about %}
-            // Read More
-            document.addEventListener('DOMContentLoaded', function () {
-                var descriptionContainer = document.getElementById('aboutDescription');
-                var readMoreBtn = document.getElementById('readMoreBtn');
+            // Prevent modal from closing when clicking inside the modal content
+            $(".modal-content").click(function (event) {
+                event.stopPropagation();
+            });
+        });
+        {% endif %}
 
-                if (descriptionContainer.scrollHeight > descriptionContainer.clientHeight) {
-                    readMoreBtn.style.display = 'block';
+        {% if page.heading.button-video.show == true %}
+        // Click to pop up video
+        $(document).ready(function () {
+            // Open modal on button click
+            $("#openModalBtnBanner").click(function () {
+                $("#videoModalBanner").css("display", "block");
+            });
+
+            // Close modal on close button click or outside click
+            $(".close, .modal").click(function () {
+                $("#videoModalBanner").css("display", "none");
+                // Stop video playback by resetting the src
+                $("#videoModalBanner iframe").attr("src", $("#videoModalBanner iframe").attr("src"));
+            });
+
+            // Prevent modal from closing when clicking inside the modal content
+            $(".modal-content").click(function (event) {
+                event.stopPropagation();
+            });
+        });
+        {% endif %}
+
+        {% if page.about %}
+        // Read More
+        document.addEventListener('DOMContentLoaded', function () {
+            var descriptionContainer = document.getElementById('aboutDescription');
+            var readMoreBtn = document.getElementById('readMoreBtn');
+
+            if (descriptionContainer.scrollHeight > descriptionContainer.clientHeight) {
+                readMoreBtn.style.display = 'block';
+            }
+
+            readMoreBtn.addEventListener('click', function () {
+                if (descriptionContainer.style.maxHeight) {
+                    descriptionContainer.style.maxHeight = null;
+                    readMoreBtn.textContent = 'Read More';
+                } else {
+                    descriptionContainer.style.maxHeight = descriptionContainer.scrollHeight + 'px';
+                    readMoreBtn.textContent = 'Read Less';
                 }
-
-                readMoreBtn.addEventListener('click', function () {
-                    if (descriptionContainer.style.maxHeight) {
-                        descriptionContainer.style.maxHeight = null;
-                        readMoreBtn.textContent = 'Read More';
-                    } else {
-                        descriptionContainer.style.maxHeight = descriptionContainer.scrollHeight + 'px';
-                        readMoreBtn.textContent = 'Read Less';
-                    }
-                });
             });
-            {% endif %}
-        </script>
+        });
+        {% endif %}
+    </script>
 
 </body>
 
