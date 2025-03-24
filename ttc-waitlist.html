@@ -18,8 +18,11 @@ seo:
 
 <!-- Opt-In -->
 <section id="cta"
-    class="bg-image-style py-10p px-5p md:p-10p text-center bg-overlay {{page.cta.background.overlay_style}}"
+    class="bg-image-style py-10p px-5p md:p-10p text-center bg-overlay {{page.cta.background.overlay_style}} min-h-[100vh] flex items-center"
     style="background-image: url('{{page.cta.background.background_image}}'); background-position: {{page.cta.background.background_position}};">
+    <div>
+
+    
     <h2 class="heading-md-sans text-feature">{{page.cta.heading_html}}</h2>
     <h3 class="mb-8">{{page.cta.subtitle}}</h3>
     <p>{{page.cta.description_html}}</p>
@@ -36,27 +39,27 @@ seo:
 
                     <!-- First Name -->
                     <div class="mc-field-group md:col-span-2">
-                        <input type="text" name="FNAME" class="required text bg-transparent border border-white w-full px-2"
+                        <input type="text" name="FNAME" class="required text bg-transparent border border-white w-full p-2"
                             placeholder=" First Name" id="mce-FNAME" required="" value="">
                     </div>
 
                     <!-- Last Name -->
                     <div class="mc-field-group md:col-span-2">
-                        <input type="text" name="LNAME" class="required text bg-transparent border border-white w-full px-2"
+                        <input type="text" name="LNAME" class="required text bg-transparent border border-white w-full p-2"
                             placeholder=" Last Name" id="mce-LNAME" required="" value="">
                     </div>
 
                     <!-- Email -->
                     <div class="mc-field-group md:col-span-2">
                         <input type="email" name="EMAIL"
-                            class="required email bg-transparent border border-white w-full px-2" placeholder=" Email"
+                            class="required email bg-transparent border border-white w-full p-2" placeholder=" Email"
                             id="mce-EMAIL" required="" value="">
                     </div>
 
                     <!-- Button -->
                     <div class="clear col-span-1">
                         <input type="submit" name="subscribe" id="mc-embedded-subscribe"
-                            class="button rounded-none py-0 cursor-pointer w-full" value="Submit">
+                            class="button rounded-none cursor-pointer w-full p-2" value="Submit">
                     </div>
 
                     <div hidden=""><input type="hidden" name="tags" value="24288238"></div>
@@ -72,5 +75,6 @@ seo:
             </form>
         </div>
     </div>
+</div>
 
 </section>
