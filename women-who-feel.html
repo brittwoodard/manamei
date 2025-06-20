@@ -24,7 +24,7 @@ course-description:
     <p>Being human is complicated. And it seems to just be getting more and more complicated.</p>
     <p>We have so many choices on who, what, and how, we can be, what we should believe, and who we should belong to…</p>
     <p>Choices that will hopefully result in actually being happy and satisfied with life?</p>
-    <p>What do we choose that will ensure that we can move through life feeling safe and secure, and authentic and free?</p>
+    <p class="mb-0">What do we choose that will ensure that we can move through life feeling safe and secure, and authentic and free?</p>
 who-its-for:
   heading: If you are a woman who desires to feel...
   description_html: >-
@@ -44,6 +44,7 @@ about:
     <p>Through this Movement Masterclass you will receive in-depth knowledge about the Emotional Body, how to work with it, and get the chance to experience simple, yet potent embodied movement tools and practices that you can apply to your every day experience of life.</p>
     <p>These tools will support you in navigating your life with more ease and grace, no matter what meets you along your path!</p>
     <p>Through this masterclass, you will be held in a container of SAFETY and FREEDOM to be guided to take the driver seat of your own healing journey by connecting with the immense wisdom and healing power within your own body.</p>
+  background_image: /uploads/images/manamei-82.jpg
 inside-the-course:
   heading: Hi, I’m Mana Mei!
   description_html: >-
@@ -100,22 +101,10 @@ seo:
 <section class="bg-image-style min-h-[90vh]" style="background-image: url('{{page.heading.background_image}}');"></section>
 
 <!-- Course Description -->
-<section class="md: pt-5p lg:pt-10p px-10p pb-5p bg-image-style bg-overlay {{page.course-description.background-image.overlay_style}}" style="background-image: url('{{page.course-description.background-image.background_image}}'); background-position: {{page.course-description.background-image.image_focus}};">
-  <div class="md:text-center mb-12">
+<section class="p-10p">
+  <div class="md:text-center">
       <p>{{page.course-description.description_html}}</p>
   </div>
-  {% for item in page.course-description.module %}
-  <div class="flex mb-12">
-      <img src="{{item.image_path}}" class="h-16 mr-4">
-      <div class="col-span-4">
-          <h3 class="text-md-serif text-feature">{{item.title}}</h3>
-          <div>
-              <p>{{item.description_html}}</p>
-          </div>
-      </div>
-  </div>
-  {% endfor %}
-
 </section>
 
 <!-- Who It's For -->
@@ -140,10 +129,15 @@ seo:
 
 
 <!-- About this Course -->
-<section class="section-padding">
-  <div>{{page.about.description_html}}</div>
-  <div class="mt-8">
-    <a href="{{page.cta.button.url}}" class="button">{{page.cta.button.text}}</a>
+<section>
+  <div class="bg-image-style lg:hidden min-h-[60vh] mt-10p" style="background-image: url('{{page.about.background_image}}');"></div>
+  <div class="p-10p">
+    <div>
+      {{page.about.description_html}}
+    </div>
+    <div class="mt-8">
+      <a href="{{page.cta.button.url}}" class="button">{{page.cta.button.text}}</a>
+    </div>
   </div>
 </section>
 
