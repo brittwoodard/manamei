@@ -35,7 +35,7 @@ who-its-for:
     <p>That there is a way home, That there is a spark of light within, That there is an answer hidden inside, That there is Wisdom waiting to be discovered in your own sovereign Body… Then you are in the RIGHT PLACE.</p>
   background-image:
     background_image: /uploads/images/women-who-feel-3.png
-    image_focus: center
+    image_focus: right
     overlay_style: dark
 about: 
   description_html: |
@@ -113,7 +113,7 @@ seo:
   <div class="grid md:grid-cols-2">
 
     <!-- Left Column (image) -->
-    <div class="mb-10p md:mb-0 bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('{{page.who-its-for.background-image.background_image}}');"></div>
+    <div class="mb-10p md:mb-0 bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('{{page.who-its-for.background-image.background_image}}'); background-position: {{page.who-its-for.background-image.image_focus}};"></div>
 
     <!-- Right Column (text) -->
     <div class="flex items-center justify-center">
@@ -122,15 +122,13 @@ seo:
         <div>{{page.who-its-for.description_html}}</div>
       </div>
     </div>
-
   </div>
-
 </section>
 
 
 <!-- About this Course -->
 <section>
-  <div class="bg-image-style lg:hidden min-h-[60vh] mt-10p" style="background-image: url('{{page.about.background_image}}');"></div>
+  <div class="bg-image-style min-h-[60vh] md:min-h-[80vh] lg:hidden mt-10p" style="background-image: url('{{page.about.background_image}}');"></div>
   <div class="p-10p">
     <div>
       {{page.about.description_html}}
@@ -145,7 +143,7 @@ seo:
 <section>
 
   <!-- Mobile Image (hidden on desktop) -->
-  <div class="bg-image-style min-h-[60vh] mt-10p mx-10p md:hidden" style="background-image: url('{{page.inside-the-course.background-image.background_image}}');"></div>
+  <div class="bg-image-style min-h-[60vh] md:min-h-[80vh] mt-10p mx-10p lg:hidden" style="background-image: url('{{page.inside-the-course.background-image.background_image}}');"></div>
 
   <div class="grid lg:grid-cols-3 gap-8">
       <!-- Left Column (text) -->
@@ -160,14 +158,14 @@ seo:
       </div>
 
       <!-- Right Column (image) -->
-      <div class="bg-image-style min-h-[60vh] lg:bg-[bottom]"
+      <div class="hidden lg:block bg-image-style min-h-[60vh] lg:bg-[bottom]"
           style="background-image: url('{{page.inside-the-course.background-image.background_image}}');">
       </div>
   </div>
 </section>
 
 <!-- Testimonials -->
-<section class="mt-10p bg-image-style bg-overlay 
+<section class="mt-10p md:mt-0 lg:mt-10p bg-image-style bg-overlay 
 {{ page.testimonials.overlay_style }} bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light" style="background-position: 50% 65%;">
     <p class="text-feature text-center">What do women have to say about the Liberation Through Movement modality?...</p>
     <div>
