@@ -1496,6 +1496,10 @@ input[type="checkbox"]:checked::before {
 .bg-white\/80 {
   background-color: rgb(255 255 255 / 0.8);
 }
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1636,6 +1640,9 @@ input[type="checkbox"]:checked::before {
 }
 .pt-5p {
   padding-top: 5%;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .text-left {
   text-align: left;

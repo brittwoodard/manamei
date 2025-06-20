@@ -74,7 +74,8 @@ cta:
     <p>Through her life-long studies of classical dance techniques and over 10 years of exploring non-traditional movement, Mana has discovered the immense healing power of somatic movement and intentional dance, and is passionate about sharing this wisdom with people all over the world.</p>
     <p>Mana believes that our bodies are vessels built to explore all of the complexities of the human experience, and by becoming deeply embodied, we can cultivate unwavering inner safety and freedom, and engage in the world from this place, allows us to live in authentic liberation.</p> 
     <p>Mana has been mentoring women through pivotal moments of their healing journeys in 1-on-1 and and small group programs, and has supported over 100 women as their personal mentor as they rise into self-empowerment and become the master Creatrix of their lives. Currently, the best way to work with Mana is through her keystone 3-month Liberation Through Movement Mentorship Program.</p>
-    <p>What do women say about the LTM Mentorship Program?...</p>
+  ltm-description_html: |
+    <h2 class="text-feature mb-4">What do women say about the LTM Mentorship Program?...</h2>
     <p>“I feel infinitely grateful and blessed to have this opportunity to immerse myself and fully receive Mana’s wisdom, teachings and practices at such a potent time in the evolution of consciousness, and will continue daily with these rituals for the days weeks and years to come, watching the magic unfold.”</p>
     <p>“I’m so happy to be part of this journey. It was life changing, it IS LIFE CHANGING…I feel like there is such a new path opening up for me. A path of being TRULY WHO I AM and finding myself and staying true to myself.”</p>
     <p>“Liberation Through Movement has been by far the best training and gift I’ve given myself to peel away the layers and the programs and the conditionings.”</p>
@@ -188,27 +189,28 @@ seo:
 <section>
   <!-- 2 Columns -->
   <div class="grid md:grid-cols-2">
-
+    
     <!-- Left Column (image) -->
-    <div class="order-last md:order-first m-10p bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('{{page.cta.background-image.background_image}}');"></div>
+    <div class="order-last md:order-first m-10p bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" 
+         style="background-image: url('{{page.cta.background-image.background_image}}');"></div>
 
     <!-- Right Column (text) -->
     <div class="flex items-center justify-center">
       <div class="pt-10p md:py-10p pr-10p md:pr-[20%] pl-10p md:pl-0">
         <div>
-          <h2>Are you ready to meet every moment from a place of feeling <span class="font-serif">open, courageous,</span> and <span class="font-serif">full of creative inspiration</span>?</h2>
-          <div>
-              <p>{{page.cta.description_html}}</p>
-          </div>
-
-          <!-- Button -->
-          <div class="mt-8">
-              <a href="{{page.cta.button.url}}" class="button">{{page.cta.button.text}}</a>
-          </div>
-      </div>
+          <p>{{page.cta.description_html}}</p>
+        </div>
       </div>
     </div>
 
+  </div> 
+
+  <div class="section-padding">
+    <div>
+    {{page.cta.ltm-description_html}}
+    </div>
+    <a href="{{page.cta.button.url}}" class="button mt-8">{{page.cta.button.text}}</a>
+  </div>
   </div>
 
 </section>
