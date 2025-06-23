@@ -1822,6 +1822,19 @@ input[type="checkbox"]:checked::before {
     line-height: 1.8em;
   }
 }
+@media (min-width: 1024px) {
+    .lg\:section-padding {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+    @media (min-width: 768px) {
+    .lg\:section-padding {
+      padding: 10%;
+    }
+  }
+}
 .placeholder\:font-serif::-moz-placeholder {
   font-family: modernline, serif;
 }
@@ -2172,6 +2185,9 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:pt-5p {
     padding-top: 5%;
+  }
+  .lg\:text-center {
+    text-align: center;
   }
   .lg\:text-\[2\.5rem\] {
     font-size: 2.5rem;
