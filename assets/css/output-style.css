@@ -1113,6 +1113,18 @@ input[type="checkbox"]:checked::before {
 .top-\[50\%\] {
   top: 50%;
 }
+.bottom-\[28\%\] {
+  bottom: 28%;
+}
+.left-\[20\%\] {
+  left: 20%;
+}
+.bottom-\[26\%\] {
+  bottom: 26%;
+}
+.left-\[33\%\] {
+  left: 33%;
+}
 .z-20 {
   z-index: 20;
 }
@@ -1908,6 +1920,12 @@ input[type="checkbox"]:checked::before {
   .md\:top-\[2rem\] {
     top: 2rem;
   }
+  .md\:bottom-\[29\%\] {
+    bottom: 29%;
+  }
+  .md\:left-\[18\%\] {
+    left: 18%;
+  }
   .md\:order-first {
     order: -9999;
   }
@@ -2052,6 +2070,12 @@ input[type="checkbox"]:checked::before {
   }
 }
 @media (min-width: 1024px) {
+  .lg\:bottom-\[28\%\] {
+    bottom: 28%;
+  }
+  .lg\:left-\[20\%\] {
+    left: 20%;
+  }
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
