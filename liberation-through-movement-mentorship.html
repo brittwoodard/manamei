@@ -113,24 +113,27 @@ testimonials:
 instructor:
   show: true
 investment:
-  heading: Investment
+  heading: What You'll Recieve
   includes:
     heading: What's included
     list:
-      - list-item: Weekly pre-recorded audio & video practices
-      - list-item: Weekly Live Group Transmissions with Mana Mei
-      - list-item: Monthly Guest Facilitator Experiences
-      - list-item: 1:1 Mentoring calls with Mana Mei and Assistant Mentor
-      - list-item: Access to the exclusive Online Mentorship Haven
-      - list-item: Free lifetime membership to the Liberation Through Movement Online Community
+      - list-item_html: Weekly pre-recorded audio & video practices (plus lifetime access to all curriculum)
+      - list-item_html: 2 per month Live Group Transmission with Mana Mei
+      - list-item_html: Monthly Guest Facilitator Experiences
+      - list-item_html: 1 per month Guest Facilitator Experience
+      - list-item_html: Each month, you will be encouraged to join the <span class="text-feature">weekly Live Group Transmission</span>, where you can share about your journey, connect with the other women in the program, and receive additional knowledge on the topics being covered that week.
+      - list-item_html: Every month you will be invited to book a <strong>1:1 Mentoring call</strong> with Mana Mei (45-minutes)
+      - list-item_html: You will receive access to the <span class="text-feature italic">exclusive Online Mentorship Haven</span>, where you will have life-time access to all course material.
+      - list-item_html: You will also be held in an exclusive Mentorship Group Community through Telegram where you can connect with the other women in the program and share inspiration and support with each other.
+      - list-item_html: As well, you will receive free life-time membership to the Liberation Through Movement Online Community & LTM Workshop Library where you will have access to all of Mana Mei’s past LTM Masterclasses, Workshops, and experiences!! A massive resource to keep diving into your embodied education.
   pricing:
     pay-in-full:
       heading: Pay in full
-      price: $3,700
+      price: $2,700
     payment-plan:
       show: true
       heading: Payment plan
-      price: $975 x 4 months
+      price: $975 x 3 months
   button: 
     url: /mentorship-waitlist.html
     text: Join the Waitlist
@@ -342,8 +345,48 @@ seo:
 {% include about-mana-course.html %}
 {% endif %}
 
-<!-- Investment -->
-{% include investment.html %}
+<!-- Included -->
+<section class="section-padding">
+    <h2 class="text-lg-serif text-feature">{{ page.investment.heading }}</h2>
+      <!-- Includes -->
+      <div>
+        <ul>
+          {% for item in page.investment.includes.list %}
+          <li class="list-none sm:list-disc sm:ml-4">{{item.list-item_html}}</li>
+          {% endfor %}
+        </ul>   
+      </div>
+  
+    <div class="mt-8 text-center">
+      <p>Basically, you are guaranteed to have the tools and support available to you at every step of the journey that will ensure an expansive and transformational experience. All you need to do is lean in, show up, and do the work!</p>
+      <p>I will be there guiding you through every step of the process, and you will be safely held throughout your whole journey by our intricate, multi-layer community support system.</p> 
+      <p class="text-feature">We are in this together!</p>
+      <p>No one is alone on this journey. We are here every step of the way to support you, offer strength and encouragement, inspire and be inspired, and celebrate YOU in every moment of your authentic experience.</p> 
+      </div>
+
+      <!-- Pricing Options -->
+       <hr class="border-feature w-[40%] mx-auto mt-16">
+       <h2 class="text-lg-serif text-feature mt-12 text-center">Investment</h2>
+        <div class="text-center">
+            <div class="mt-8 sm:mt-0 sm:mb-8">
+                <h3 class="uppercase text-2xl">{{page.investment.pricing.pay-in-full.heading}}</h3>
+                <span>{{page.investment.pricing.pay-in-full.price}}</span>
+                {% if page.investment.pricing.payment-plan.show == true %}
+            </div>
+            <div>
+                <h3 class="uppercase text-2xl">{{page.investment.pricing.payment-plan.heading}}</h3>
+                <span>{{page.investment.pricing.payment-plan.price}}</span>
+            </div>
+            {% endif %}
+
+            <!-- CTA -->
+            <div class="flex justify-center mt-8">
+              <a href="{{page.investment.button.url}}" class="button">{{page.investment.button.text}}</a>
+            </div>
+        </div>
+
+</section>
+
 
 <!-- CTA -->
 {% include cta-course.html %}
