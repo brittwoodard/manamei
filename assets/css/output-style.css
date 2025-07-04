@@ -1435,6 +1435,9 @@ input[type="checkbox"]:checked::before {
 .gap-8 {
   gap: 2rem;
 }
+.gap-12 {
+  gap: 3rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1695,6 +1698,10 @@ input[type="checkbox"]:checked::before {
 }
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 .font-\[100\] {
