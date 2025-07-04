@@ -256,15 +256,15 @@ seo:
 </section>
 
 <!-- How It Works -->
-<section class="text-center section-padding">
-  <div>
+<section class="py-10p">
+  <div class="text-center px-5p md:px-10p">
     <h2 class="heading-lg-sans text-feature">How it Works</h2>
-    <div class="lg:w-[80%] mx-auto mb-8">
+    <div class="lg:w-[80%] mx-auto mb-12">
       <p>This 3-Month Program follows the LTM Model. Each month we will dive deep into one of the Pillars of Connection. All weekly practices and transmissions will focus on a different aspect of the Pillar.</p>
     </div>
   </div>
 
-  <div class="grid grid-cols-3 gap-12">
+  <div class="grid grid-cols-3 gap-12 text-center px-5p md:px-10p">
 
     <!-- Month 1 -->
     <div>
@@ -298,11 +298,41 @@ seo:
     </div>
   </div>
 
-  <div class="mt-8 lg:w-[80%] mx-auto">
+  <div class="mt-12 lg:w-[80%] mx-auto text-center">
     <p>This program is designed to be a Holistic Healing experience where we work with the mind-body-spirit connection, integrating mindfulness meditation, physical activation, and spiritual liberation along with theory-based knowledge of somatic healing and embodiment.</p>
   </div>
 
+  <!-- Mobile Image (hidden on desktop) -->
+  <div class="bg-image-style min-h-[60vh] md:min-h-[80vh] mt-10p mx-10p lg:hidden" style="background-image: url('/uploads/images/manamei-9.jpg');"></div>
+
+  <div class="grid lg:grid-cols-3 gap-8 mt-10p">
+      <!-- Left Column (text) -->
+      <div class="lg:col-span-2 p-10p">
+          <div>
+              <p>This 3-month journey is a time to turn your attention inwards, a time of introspection and connecting deeply with your inner landscape.</p>
+              <p>Each month, you will be invited to devote yourself to your inner work, prioritize YOU and the process of awakening self awareness at all levels.</p>
+              <p>You do this by committing to</p>
+              <ul class="ml-4 text-feature">
+                <li>Daily pre-recorded embodied movement and somatic dance practices</li>
+                <li>Weekly journaling prompts</li>
+                <li>Weekly live group transmissions with Mana Mei & Guest Facilitators</li>
+                <li>Monthly POD Support Calls</li>
+                <li>1:1 Mentoring calls</li>
+              </ul> 
+              <p class="mt-4">Stepping onto this path is stepping into a new way of being. One that prioritizes creating sacred space every day to dive into deep, uninterrupted, vulnerable presence with yourself.</p>
+              <p>Each month consists of 3 weeks of content, and 1 week of integration.</p>
+              <p>The Integration weeks are intended to be a time when you are free to replenish and nourish your self, catch up on missed lectures and practices, and prepare yourself to step into the next month.</p> 
+          </div>
+      </div>
+
+      <!-- Right Column (image) -->
+      <div class="hidden lg:block bg-image-style min-h-[60vh] lg:bg-[bottom]"
+          style="background-image: url('/uploads/images/manamei-11.jpg');">
+      </div>
+  </div>
+
 </section>
+
 
 <!-- Testimonials -->
 {% include testimonials.html %}
