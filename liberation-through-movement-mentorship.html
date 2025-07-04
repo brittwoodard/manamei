@@ -46,6 +46,21 @@ who-its-for:
     background_image: /uploads/images/manamei-62.jpg
     image_focus: left
     overlay_style: medium
+experience: 
+  background_image: /uploads/images/manamei-10.jpg
+  image_focus: 
+  heading: Experience
+  description_html: |
+    <p>Our journey together will be a deeply experiential exploration of your inner world.</p>
+    <p>Everything begins inside.</p>
+    <p>All of the change you desire, all of the goals you wish to reach, and the dream life you want to manifest…</p>
+    <p>It all starts in the core of your own being, where the seeds of change are sown, and the flame of your unique spirit is ignited.</p>
+    <p>With my guidance, you will embark on an incredible journey into the intricate weaving of the threads of your own being.</p>
+    <p class="text-feature">Remember, everything touches everything!</p>
+    <p>By awakening to this truth, you can immediately begin weaving and integrating the tools and learnings into every facet of your daily life.</p>
+    <p>Once you learn this model, you have access to the tools and embodied wisdom for the rest of your life.</p>
+    <p>You will never again be left in a place of feeling helpless, hopeless, and unwillingly swept away by the currents of life.</p>
+    <p class="text-feature">You will always have a way to come back home to yourself and your power, feeling deeply safe and expansively free.</p>
 inside-the-course:
   heading: Inside the LTM Mentorship
   description_html: The 4-month program follows the Liberation Through Movement Model, with each month dedicated to one of the 3 Pillars of Connection, culminating in Authentic Space Holding and LTM Facilitation Training. The journey is a deep exploration of your inner world, combining daily practices, weekly transmissions, and monthly mentoring calls.
@@ -222,8 +237,70 @@ seo:
 <!-- Who It's For -->
 {% include who-its-for.html %}
 
-<!-- Inside the Course -->
-{% include inside-the-course.html %}
+<!-- Excperience -->
+<section class="my-10p">
+  <!-- 2 Columns -->
+  <div class="grid md:grid-cols-2">
+
+    <!-- Left Column (image) -->
+    <div class="mb-10p md:mb-0 bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('{{ page.experience.background_image }}'); background-position: {{ page.experience.image_focus }};"></div>
+
+    <!-- Right Column (text) -->
+    <div class="flex items-center justify-center">
+      <div class="md:py-10p pl-10p pr-10p md:pr-[20%]">
+        <h2 class="text-lg-serif text-feature mb-2">{{ page.experience.heading }}</h2>
+        <div>{{ page.experience.description_html }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section>
+  <div>
+    <h2>How it Works</h2>
+    <p>This 3-Month Program follows the LTM Model. Each month we will dive deep into one of the Pillars of Connection. All weekly practices and transmissions will focus on a different aspect of the Pillar.</p>
+  </div>
+
+  <div class="grid grid-cols-3">
+
+    <!-- Month 1 -->
+    <div>
+      <h3>Month 1</h3>
+        <p>Connection to the Physical Body</p>
+        <p>Creating Safety in the Physical Body</p>
+        <p>Meeting the Body as if for the first time</p>
+        <p>Discovering what the body is capable of</p>
+        <p>Cultivating Self Love and Liberated Expression</p>
+    </div>
+
+    <!-- Month 2 -->
+    <div>
+      <h3>Month 2</h3>
+      <p>Connection to the Energy Body</p>
+      <p>Creating Safety in the Emotional Body</p>
+      <p>Releasing Stagnation and Energetic Transmutation</p>
+      <p>Embracing the Ugly and Shadow Sourcing</p>
+      <p>Using the Body as a vessel for Manifestation</p>
+    </div>
+
+    <!-- Month 3 -->
+    <div>
+      <h3>Month 3</h3>
+      <p>Connection to the Transpersonal Body</p>
+      <p>Creating Healthy boundaries in all relationships</p>
+      <p>Curating intentionality in your environment</p>
+      <p>Standing in Your Truth and Speaking with confidence</p>
+      <p>Embodying Authentic Expression</p>
+      <p>Becoming the Leader of your Life</p>
+    </div>
+  </div>
+
+  <div>
+    <p>This program is designed to be a Holistic Healing experience where we work with the mind-body-spirit connection, integrating mindfulness meditation, physical activation, and spiritual liberation along with theory-based knowledge of somatic healing and embodiment.</p>
+  </div>
+
+</section>
 
 <!-- Testimonials -->
 {% include testimonials.html %}
