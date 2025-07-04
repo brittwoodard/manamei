@@ -243,14 +243,14 @@ seo:
 <!-- Excperience -->
 <section class="mt-10p">
   <!-- 2 Columns -->
-  <div class="grid md:grid-cols-2">
+  <div class="grid lg:grid-cols-2">
 
     <!-- Left Column (image) -->
-    <div class="mb-10p md:mb-0 bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" style="background-image: url('{{ page.experience.background_image }}'); background-position: {{ page.experience.image_focus }};"></div>
+    <div class="order-last lg:order-first mb-10p md:mb-0 bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p mt-10p lg:mt-0" style="background-image: url('{{ page.experience.background_image }}'); background-position: {{ page.experience.image_focus }};"></div>
 
     <!-- Right Column (text) -->
     <div class="flex items-center justify-center">
-      <div class="md:py-10p pl-10p pr-10p md:pr-[20%]">
+      <div class="lg:py-10p pl-10p pr-10p md:pr-[20%]">
         <h2 class="text-lg-serif text-feature mb-2">{{ page.experience.heading }}</h2>
         <div>{{ page.experience.description_html }}</div>
       </div>
@@ -259,7 +259,11 @@ seo:
 </section>
 
 <!-- How It Works -->
-<section class="py-10p">
+<section class="pt-10p lg:py-10p">
+
+  <!-- Mobile Image (hidden on desktop) -->
+  <!-- <div class="bg-image-style min-h-[60vh] md:min-h-[80vh] my-10p mx-10p md:hidden" style="background-image: url('/uploads/images/manamei-19.jpg');"></div> -->
+
   <div class="text-center px-5p md:px-10p">
     <h2 class="heading-lg-sans text-feature">How it Works</h2>
     <div class="lg:w-[80%] mx-auto mb-12">
@@ -267,7 +271,7 @@ seo:
     </div>
   </div>
 
-  <div class="grid grid-cols-3 gap-12 text-center px-5p md:px-10p">
+  <div class="grid lg:grid-cols-3 gap-12 text-center px-5p md:px-10p">
 
     <!-- Month 1 -->
     <div>
@@ -301,14 +305,14 @@ seo:
     </div>
   </div>
 
-  <div class="mt-12 lg:w-[80%] mx-auto text-center">
+  <div class="mt-12 lg:w-[80%] mx-auto text-center px-10p">
     <p>This program is designed to be a Holistic Healing experience where we work with the mind-body-spirit connection, integrating mindfulness meditation, physical activation, and spiritual liberation along with theory-based knowledge of somatic healing and embodiment.</p>
   </div>
 
   <!-- Mobile Image (hidden on desktop) -->
   <div class="bg-image-style min-h-[60vh] md:min-h-[80vh] mt-10p mx-10p lg:hidden" style="background-image: url('/uploads/images/manamei-9.jpg');"></div>
 
-  <div class="grid lg:grid-cols-3 gap-8 mt-10p">
+  <div class="grid lg:grid-cols-3 gap-8 lg:mt-10p">
       <!-- Left Column (text) -->
       <div class="lg:col-span-2 p-10p">
           <div>
@@ -346,18 +350,20 @@ seo:
 {% endif %}
 
 <!-- Included -->
-<section class="section-padding">
+<section class="p-10p">
     <h2 class="text-lg-serif text-feature">{{ page.investment.heading }}</h2>
       <!-- Includes -->
       <div>
         <ul>
           {% for item in page.investment.includes.list %}
-          <li class="list-none sm:list-disc sm:ml-4">{{item.list-item_html}}</li>
+          <li class="list-disc ml-4">{{item.list-item_html}}</li>
           {% endfor %}
         </ul>   
       </div>
+
+      <hr class="lg:hidden border-feature w-[40%] mx-auto mt-16">
   
-    <div class="mt-8 text-center">
+    <div class="mt-16 lg:mt-8 text-center">
       <p>Basically, you are guaranteed to have the tools and support available to you at every step of the journey that will ensure an expansive and transformational experience. All you need to do is lean in, show up, and do the work!</p>
       <p>I will be there guiding you through every step of the process, and you will be safely held throughout your whole journey by our intricate, multi-layer community support system.</p> 
       <p class="text-feature">We are in this together!</p>
