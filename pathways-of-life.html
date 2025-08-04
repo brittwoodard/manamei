@@ -94,7 +94,42 @@ seo:
   hide-from-google: true
 ---
 <!-- Course Heading -->
-{% include hero-banner-course.html %}
+<section class="p-10p bg-image-style bg-overlay min-h-[90vh] flex align-middle items-center text-center justify-center {{page.heading.overlay_style}} bg-[url('/uploads/images/pathways-of-life-9.jpg')] md:bg-[url('/uploads/images/pathways-of-life-1.jpg')]"
+    style="background-position: {{page.heading.image_focus}};">
+    <div>
+        <h2 class="heading-lg-sans">{{page.heading.title}}</h2>
+        <h3 class="text-lg-serif">{{page.heading.subtitle}}</h3>
+        <p class="uppercase">{{page.heading.description}}</p>
+
+        <!-- Enroll Button -->
+        <a href="{{page.heading.button-enroll.url}}" class="button m-4">{{page.heading.button-enroll.text}}</a>
+
+        <!-- Video Button -->
+        {% if page.heading.button-video.show == true %}
+
+        <button id="openModalBtnBanner" class="button cursor-pointer">{{page.heading.button-video.text}}</button>
+
+        <div id="videoModalBanner" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                {% if page.heading.button-video.type == 'youtube' %}
+                <!-- YouTube iframe -->
+                <iframe class="w-[360px] h-[202.5px] md:w-[700px] md:h-[394px]" src="{{page.heading.button-video.url}}" frameborder="0"
+                    allowfullscreen></iframe>
+                {% else %}
+                <!-- Fallback for other video types -->
+                <video controls>
+                    <source src="{{page.heading.button-video.url}}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                {% endif %}
+            </div>
+        </div>
+
+        {% endif %}
+    </div>
+</section>
+
 
 <!-- Course Description -->
 <section class="p-5p m-5p bg-image-style bg-no-repeat bg-contain" style="background-image: url({{ page.course-description.background_image }});">

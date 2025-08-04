@@ -1511,6 +1511,9 @@ input[type="checkbox"]:checked::before {
 .bg-white\/80 {
   background-color: rgb(255 255 255 / 0.8);
 }
+.bg-\[\/uploads\/images\/pathways-of-life-1\.jpg\] {
+  background-color: /uploads/images/pathways-of-life-1.jpg;
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1555,6 +1558,12 @@ input[type="checkbox"]:checked::before {
 }
 .bg-\[url\(\'\/uploads\/images\/pathways-of-life-8\.jpg\'\)\] {
   background-image: url('/uploads/images/pathways-of-life-8.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/pathways-of-life-1\.jpg\'\)\] {
+  background-image: url('/uploads/images/pathways-of-life-1.jpg');
+}
+.bg-\[url\(\'\/uploads\/images\/pathways-of-life-9\.jpg\'\)\] {
+  background-image: url('/uploads/images/pathways-of-life-9.jpg');
 }
 .bg-cover {
   background-size: cover;
@@ -2043,6 +2052,9 @@ input[type="checkbox"]:checked::before {
   }
   .md\:border-none {
     border-style: none;
+  }
+  .md\:bg-\[url\(\'\/uploads\/images\/pathways-of-life-1\.jpg\'\)\] {
+    background-image: url('/uploads/images/pathways-of-life-1.jpg');
   }
   .md\:p-0 {
     padding: 0px;
