@@ -1146,6 +1146,9 @@ input[type="checkbox"]:checked::before {
 .m-4 {
   margin: 1rem;
 }
+.m-5p {
+  margin: 5%;
+}
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -1552,6 +1555,9 @@ input[type="checkbox"]:checked::before {
 }
 .bg-cover {
   background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -2138,6 +2144,9 @@ input[type="checkbox"]:checked::before {
   }
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+  .lg\:w-\[70\%\] {
+    width: 70%;
   }
   .lg\:max-w-\[40vw\] {
     max-width: 40vw;
