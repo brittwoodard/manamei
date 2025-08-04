@@ -30,11 +30,11 @@
 /* Default Styles to apply to the whole project */
 @layer base {
     html {
-        @apply scroll-smooth
+        @apply scroll-smooth overflow-x-hidden
     }
 
     body {
-        @apply font-sans bg-black text-white text-lg font-light tracking-wide
+        @apply font-sans bg-black text-white text-lg font-light tracking-wide overflow-x-hidden
     }
 
     header img {
