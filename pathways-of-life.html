@@ -1,5 +1,5 @@
 ---
-layout: no-promo
+layout: default
 slug: pathways-of-life
 title: Pathways of Life
 description: Personal Empowerment through Mind-Body Exploration of Feminine Shapes 
@@ -54,6 +54,13 @@ inside-the-course:
   background-image:
     background_image: /uploads/images/pathways-of-life-4.jpg
     image_focus: 
+testimonials:
+  background_image: /uploads/images/pathways-of-life-8.jpg
+  overlay_style: dark
+  testimonials:
+    - testimonial: These movements and this ethos feel like the culmination of everything I’ve been learning and practicing over the years—it’s as if every time I practice, I return home.
+    - testimonial: We think of wings as freedom, but today I felt the quiet liberation of laying them down. Of letting the wind carry away what no longer belongs, like whispers never meant to stay.
+    - testimonial: I observed the cyclical, spiraling patterns of nature unfold in real time, mirroring those same movements in my own body, reminding me again that we are all woven into the same field. It is beautiful. It is sacred. And the word “gratitude” feels too small for what I am experiencing—for this practice, for this community—for Mana and Ka…I am consistently in awe of this process.
 cta:
   heading: Meet Mana Mei, International Feminine Embodiment Mentor
   description_html: >-
@@ -263,46 +270,13 @@ seo:
 </section>
 
 <!-- Testimonials -->
-<section class="bg-image-style bg-overlay 
-{{ page.testimonials.overlay_style }} bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light" style="background-position: 50% 65%;">
-    <p class="text-[1.5rem] font-medium uppercase mb-2 text-center">What do women have to say about the <span class="text-[#fcbe92]">Liberation Through Movement</span> modality?...</p>
+<section class="testimonial-container bg-image-style bg-overlay mt-10p
+{{ page.testimonials.overlay_style }} bg-[url('{{page.testimonials.background_image}}')] p-10p bg-overlay-light" style="background-position: 50% 35%;">
     <div>
       {% for item in page.testimonials.testimonials %}
       <div class="md:px-10p">
-        <p class="text-center mt-8"><em>"{{item.testimonial}}"</em></p>
+        <p class="text-center mt-8 testimonial-item"><em>"{{item.testimonial}}"</em></p>
       </div>
       {% endfor %}
     </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="md:hidden bg-image-style mt-10p mx-10p min-h-[60vh]" style="background-image: url('{{page.cta.mobile_image}}');"></div>
-
-  <!-- 2 Columns -->
-  <div class="grid md:grid-cols-2">
-    
-    <!-- Left Column (image) -->
-    <div class="order-last md:order-first m-10p bg-image-style min-h-[60vh] md:min-h-[90vh] mx-10p" 
-         style="background-image: url('{{page.cta.background-image.background_image}}');"></div>
-
-    <!-- Right Column (text) -->
-    <div class="flex items-center justify-center">
-      <div class="pt-10p md:py-10p pr-10p md:pr-[20%] pl-10p md:pl-0">
-        <div>
-          <p>{{page.cta.description_html}}</p>
-        </div>
-      </div>
-    </div>
-
-  </div> 
-
-  <div class="pb-24 md:pb-10p lg:pt-5p px-10p md:px-12 lg:px-10p border-b border-feature">
-    <div>
-    {{page.cta.ltm-description_html}}
-    </div>
-    <a href="{{page.cta.button.url}}" class="button mt-8">{{page.cta.button.text}}</a>
-  </div>
-  </div>
-
 </section>
