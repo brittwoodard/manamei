@@ -35,6 +35,22 @@ who-its-for:
     background_image: /uploads/images/pathways-of-life-3.jpeg
     image_focus: 
     overlay_style: 
+investment:
+  heading: What You Will Experience...
+  includes:
+    heading: 
+    list:
+      - list-item_html: Weekly 2-3 Hour Live Group Transmission, guided by Mana Mei & Ka, covering invaluable Theoretical Information PLUS guided embodiment practices to support.<br><span class="text-feature mt-2 inline-block">Weekly Live Transmission will happen on Sundays at 7am PDT - 4pm CET - 10pm Bali, starting on August 31st.</span>
+      - list-item_html: Weekly “do-at-home” tasks to deepen your experience and support your personal process, including a “daily dose” movement invitation, brochure about the psychology of shape, and a Self-Inquiry Shape Journaling Worksheet.
+      - list-item_html: Exclusive Course Community on Telegram to connect with your global sisterhood, seek support and inspiration, offer a space to hold each other in authenticity and vulnerability, and weekly invitations to share reflections and SHAPES studies!
+  pricing:
+    pay-in-full:
+      heading: Pay in full
+      price: $3,500
+    payment-plan:
+      show: true
+      heading: Payment plan
+      price: $950 x 4 months
 about: 
   description_html: |
     <p><strong>“This is for Women who Feel”</strong> is a Masterclass for women who have a desire to get better at feeling through gaining support, understanding, and applicable tools for their every day life.</p>
@@ -52,16 +68,6 @@ inside-the-course:
   background-image:
     background_image: /uploads/images/women-who-feel-4.png
     image_focus: left
-testimonials:
-  background_image: /uploads/images/manamei-58.jpg
-  overlay_style: dark
-  testimonials:
-    - testimonial: This work completely changed my life and brought me to find the missing pieces of so many parts of myself, and continues to be my go-to way to come home to myself, clear, align and embody.
-    - testimonial: I am so grateful for this medicine and the way it weaves through me, supporting me to find ways to embrace all the parts of me that are unknown or I have disowned.
-    - testimonial: I am so happy I have taken the leap, as this wonderful practice has helped me navigate my personal challenges with ease and embody a powerful feminine energy.
-    - testimonial: When I did the practice for the first time, I cried ... because it moved me a lot and evoked emotions. After the practice, I felt lightness, softness. I felt like energy, suppressed emotions and blocks came out with each exhalation. It's unbelievable how quickly I was able to go in and feel the change.
-    - testimonial: I clearly see and feel the changes in my life and in my body. I see more fluidity in every parts of the every day life, professional, personal…It’s really amazing and magical !!! I feel more present, more grounded, more feminine, more aware, more confident, more a lot of things!!! I also have more creativity.
-  border: border-y border-feature
 cta:
   heading: Meet Mana Mei, International Feminine Embodiment Mentor
   description_html: >-
@@ -209,6 +215,32 @@ seo:
   <div class="lg:w-[80%] text-center italic">
     ​“I love the theory aspect of this topic so much, and feel I really gained a much deeper understanding of the circles, spirals & waves—and how they can be used as a profound tool for doing shadow integration work. Combining this newfound theory with my familiar Mana Movement practice felt like experiencing a whole new aspect of the practice for the first time. I can’t wait to keep expanding on and exploring this.”
   </div>
+</section>
+
+
+<!-- Included -->
+<section class="p-10p">
+    <h2 class="text-lg-serif text-feature">{{ page.investment.heading }}</h2>
+      <!-- Includes -->
+      <div>
+        <ul>
+          {% for item in page.investment.includes.list %}
+          <li class="list-disc ml-4">{{item.list-item_html}}</li>
+          {% endfor %}
+        </ul>   
+      </div>
+
+      <hr class="lg:hidden border-feature w-[40%] mx-auto mt-16">
+  
+    <div class="mt-16 lg:mt-8 text-center">
+      <p class="italic">All Live Transmissions will be recorded and available to watch on replay if you cannot join the calls live. All recordings and important information and resources will be posted in the Telegram Group and available for download.</p>
+
+            <!-- CTA -->
+            <div class="flex justify-center mt-8">
+              <a href="{{page.cta.button.url}}" class="button">{{page.cta.button.text}}</a>
+            </div>
+        </div>
+
 </section>
 
 
