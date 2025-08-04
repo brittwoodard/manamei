@@ -2104,6 +2104,9 @@ input[type="checkbox"]:checked::before {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .lg\:m-0 {
+    margin: 0px;
+  }
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
