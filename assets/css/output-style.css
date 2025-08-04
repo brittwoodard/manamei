@@ -1710,6 +1710,10 @@ input[type="checkbox"]:checked::before {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .font-\[100\] {
   font-weight: 100;
 }
