@@ -1185,6 +1185,14 @@ input[type="checkbox"]:checked::before {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mx-5p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.my-\[10\%\] {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1247,6 +1255,9 @@ input[type="checkbox"]:checked::before {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-20p {
+  margin-top: 20%;
 }
 .block {
   display: block;
@@ -1595,6 +1606,9 @@ input[type="checkbox"]:checked::before {
 .p-5p {
   padding: 5%;
 }
+.p-20p {
+  padding: 20%;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1646,6 +1660,10 @@ input[type="checkbox"]:checked::before {
 .py-\[0\.25rem\] {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+.py-20p {
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1969,6 +1987,10 @@ input[type="checkbox"]:checked::before {
   .md\:m-0 {
     margin: 0px;
   }
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2119,6 +2141,9 @@ input[type="checkbox"]:checked::before {
   .lg\:m-0 {
     margin: 0px;
   }
+  .lg\:m-5p {
+    margin: 5%;
+  }
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2126,6 +2151,10 @@ input[type="checkbox"]:checked::before {
   .lg\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .lg\:mb-0 {
     margin-bottom: 0px;
