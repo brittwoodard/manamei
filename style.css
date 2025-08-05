@@ -93,6 +93,14 @@
         @apply uppercase text-2xl sm:text-3xl leading-[1.1em] font-extralight mb-[0.5em]
     }
 
+    .heading-pathways {
+        @apply font-pathways text-feature text-lg tracking-wide mb-4
+    }
+
+    .heading-pathways-lg {
+        @apply font-pathways text-[2rem] md:text-[2.5rem] tracking-wide mb-4 lowercase leading-[1em]
+    }
+
     .text-lg-serif {
         @apply text-[1.375rem] md:text-[2.25rem] font-extralight leading-[2em] font-serif mb-[0.5em]
     }

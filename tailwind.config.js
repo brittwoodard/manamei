@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ['Josefin Sans', 'sans-serif'],
         serif: ['modernline', 'serif'],
+        pathways: ['Belleza', 'sans-serif;']
       },
       extend: {
         spacing: {
