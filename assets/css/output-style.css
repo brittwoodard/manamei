@@ -1529,6 +1529,9 @@ input[type="checkbox"]:checked::before {
 .border {
   border-width: 1px;
 }
+.border-0 {
+  border-width: 0px;
+}
 .border-y {
   border-top-width: 1px;
   border-bottom-width: 1px;
