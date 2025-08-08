@@ -1682,6 +1682,18 @@ input[type="checkbox"]:checked::before {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2121,6 +2133,10 @@ input[type="checkbox"]:checked::before {
   .md\:py-10p {
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .md\:pb-10p {
     padding-bottom: 10%;
