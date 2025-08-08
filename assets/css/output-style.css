@@ -1143,6 +1143,27 @@ input[type="checkbox"]:checked::before {
 .top-\[50\%\] {
   top: 50%;
 }
+.right-8 {
+  right: 2rem;
+}
+.top-8 {
+  top: 2rem;
+}
+.right-16 {
+  right: 4rem;
+}
+.top-12 {
+  top: 3rem;
+}
+.right-12 {
+  right: 3rem;
+}
+.top-\[2\.5rem\] {
+  top: 2.5rem;
+}
+.top-\[10\%\] {
+  top: 10%;
+}
 .z-20 {
   z-index: 20;
 }
