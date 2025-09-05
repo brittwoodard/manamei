@@ -1146,6 +1146,15 @@ input[type="checkbox"]:checked::before {
 .top-\[50\%\] {
   top: 50%;
 }
+.bottom-\[15\%\] {
+  bottom: 15%;
+}
+.bottom-\[10\%\] {
+  bottom: 10%;
+}
+.right-\[1\.3rem\] {
+  right: 1.3rem;
+}
 .z-20 {
   z-index: 20;
 }
@@ -2039,6 +2048,12 @@ input[type="checkbox"]:checked::before {
   }
   .md\:top-\[2rem\] {
     top: 2rem;
+  }
+  .md\:bottom-\[15\%\] {
+    bottom: 15%;
+  }
+  .md\:right-\[1\.5rem\] {
+    right: 1.5rem;
   }
   .md\:order-first {
     order: -9999;
