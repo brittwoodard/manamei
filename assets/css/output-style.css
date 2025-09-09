@@ -1089,11 +1089,11 @@ input[type="checkbox"]:checked::before {
 .bottom-5p {
   bottom: 5%;
 }
+.bottom-\[10\%\] {
+  bottom: 10%;
+}
 .bottom-\[26\%\] {
   bottom: 26%;
-}
-.bottom-\[32\%\] {
-  bottom: 32%;
 }
 .bottom-\[48\%\] {
   bottom: 48%;
@@ -1125,11 +1125,11 @@ input[type="checkbox"]:checked::before {
 .right-\[1\.25rem\] {
   right: 1.25rem;
 }
+.right-\[1\.3rem\] {
+  right: 1.3rem;
+}
 .right-\[1\.5rem\] {
   right: 1.5rem;
-}
-.right-\[3rem\] {
-  right: 3rem;
 }
 .top-3 {
   top: 0.75rem;
@@ -1145,15 +1145,6 @@ input[type="checkbox"]:checked::before {
 }
 .top-\[50\%\] {
   top: 50%;
-}
-.bottom-\[15\%\] {
-  bottom: 15%;
-}
-.bottom-\[10\%\] {
-  bottom: 10%;
-}
-.right-\[1\.3rem\] {
-  right: 1.3rem;
 }
 .z-20 {
   z-index: 20;
@@ -2022,6 +2013,9 @@ input[type="checkbox"]:checked::before {
   .md\:bottom-20p {
     bottom: 20%;
   }
+  .md\:bottom-\[15\%\] {
+    bottom: 15%;
+  }
   .md\:bottom-\[29\%\] {
     bottom: 29%;
   }
@@ -2040,6 +2034,9 @@ input[type="checkbox"]:checked::before {
   .md\:right-20p {
     right: 20%;
   }
+  .md\:right-\[1\.5rem\] {
+    right: 1.5rem;
+  }
   .md\:right-\[2\.5rem\] {
     right: 2.5rem;
   }
@@ -2048,12 +2045,6 @@ input[type="checkbox"]:checked::before {
   }
   .md\:top-\[2rem\] {
     top: 2rem;
-  }
-  .md\:bottom-\[15\%\] {
-    bottom: 15%;
-  }
-  .md\:right-\[1\.5rem\] {
-    right: 1.5rem;
   }
   .md\:order-first {
     order: -9999;
