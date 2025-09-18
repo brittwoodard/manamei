@@ -1,0 +1,147 @@
+---
+layout: blank
+title: Greece Retreat Application
+seo:
+  hide-from-google: true
+---
+
+<section class="p-10p">
+  <h1 class="text-lg-serif text-feature mb-12">Liberation Through Movement Retreat — Application</h1>
+
+  <p class="mb-6 text-feature">
+    Thank you for your interest in joining the Liberation Through Movement Retreat in Pelion, Greece!
+    Please find a quiet moment to carefully complete this application. Once successfully completed,
+    you will receive an email invitation to book your 30-minute Connection Call with Mana.
+  </p>
+
+  <form
+    id="ltm-retreat-application"
+    name="ltm-retreat-application"
+    method="post"
+    data-netlify="true"
+    action="/application-thank-you-retreat.html"
+    data-netlify-honeypot="bot-field"
+  >
+    <input type="hidden" name="form-name" value="ltm-retreat-application">
+    <p class="hidden">
+      <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+    </p>
+
+    <!-- Name -->
+    <fieldset class="mt-12">
+      <legend>What is your name?</legend>
+      <div>
+        <label class="block">
+          <input type="text" name="Name" required class="w-full px-1 py-2 border-b border-white bg-transparent text-feature" autocomplete="name">
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Email -->
+    <fieldset class="mt-12">
+      <legend>What is your best email?</legend>
+      <div>
+        <label class="block">
+          <input type="email" name="Best_Email" required class="w-full px-1 py-2 border-b border-white bg-transparent text-feature" autocomplete="email">
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Location -->
+    <fieldset class="mt-12">
+      <legend>Where are you located?</legend>
+      <div>
+        <label class="block">
+          <input type="text" name="Location" required class="w-full px-1 py-2 border-b border-white bg-transparent text-feature" autocomplete="address-level2">
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Completed Courses -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Please mark <strong>ALL</strong> of the following courses you have successfully completed:</legend>
+      <div>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Liberation Through Movement Mentorship Program" class="mr-2">
+          Liberation Through Movement Mentorship Program
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Level 1 LTM Facilitator Training (online or in-person)" class="mr-2">
+          Level 1 Liberation Through Movement Facilitator Training (online or in-person)
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Mana Movement Teacher Training (online or in-person)" class="mr-2">
+          Mana Movement Teacher Training (online or in-person)
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Mana Movement Foundations Course" class="mr-2">
+          Mana Movement Foundations Course
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Mana Movement Full Course" class="mr-2">
+          Mana Movement Full Course
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="confiDance Program" class="mr-2">
+          confiDance Program
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Mana Movement Maternity Course" class="mr-2">
+          Mana Movement Maternity Course
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Wisdom Body Course" class="mr-2">
+          Wisdom Body Course
+        </label>
+        <label class="block mb-2">
+          <input type="checkbox" name="Completed[]" value="Pathways of Life Program" class="mr-2">
+          Pathways of Life Program
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Experience -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Please share about your past and current experience with embodied movement, somatic dance, Mana Movement, and personal development work.</legend>
+      <div>
+        <label class="block">
+          <textarea name="Experience_Embodied_Movement" required class="w-full p-2 border border-white bg-transparent text-feature h-32"></textarea>
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Interest / Motivation -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Why are you interested and excited to join the Liberation Through Movement Retreat in Greece?</legend>
+      <div>
+        <label class="block">
+          <textarea name="Why_Join_Retreat" required class="w-full p-2 border border-white bg-transparent text-feature h-32"></textarea>
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Previous Retreat Experience -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Do you have previous experience attending destination retreats, women’s wellness retreats, personal development retreats, movement-related retreats, or nature immersion retreats? Please share about your experiences here.</legend>
+      <div>
+        <label class="block">
+          <textarea name="Previous_Retreat_Experience" class="w-full p-2 border border-white bg-transparent text-feature h-32"></textarea>
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Anything Else -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Is there anything else you would like to share?</legend>
+      <div>
+        <label class="block">
+          <textarea name="Additional_Information" class="w-full p-2 border border-white bg-transparent text-feature h-32"></textarea>
+        </label>
+      </div>
+    </fieldset>
+
+    <p class="mt-8 text-feature">Thank you! You should receive a follow-up email from Mana in the next 24 hours.</p>
+
+    <button type="submit" class="button mt-4">Submit</button>
+  </form>
+</section>
